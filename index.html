@@ -1,0 +1,2459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Trade Excellence | [COMPANY NAME]</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-navy: #1E3A5F;
+            --accent-gold: #C9A227;
+            --success-green: #2E7D32;
+            --ocean-blue: #0277BD;
+            --leather-brown: #5D4037;
+            --white: #FFFFFF;
+            --off-white: #F5F7FA;
+            --dark-text: #1A1A1A;
+            --body-text: #4A4A4A;
+            --muted: #757575;
+            --border-color: #E8E8E8;
+            --footer-navy: #0F1F2F;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--body-text);
+            background-color: var(--white);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .max-w-container {
+            max-width: 1320px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+
+        .header-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(90deg, rgba(30,58,95,0.9) 0%, rgba(30,58,95,0.7) 50%, rgba(30,58,95,0.3) 100%);
+        }
+
+        .nav-link {
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--dark-text);
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-navy);
+        }
+
+        .nav-link.active {
+            color: var(--primary-navy);
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -32px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent-gold);
+        }
+
+        .product-card {
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-4px);
+        }
+
+        .why-card {
+            transition: all 0.3s ease;
+        }
+
+        .why-card:hover {
+            border-left: 4px solid var(--accent-gold);
+        }
+
+        .cert-logo {
+            filter: grayscale(70%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+
+        .cert-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        .stat-separator {
+            border-right: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .map-container {
+            position: relative;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            opacity: 0.15;
+            height: 450px;
+        }
+        
+        /* Map Markers */
+        .marker {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        .marker-origin { background-color: var(--accent-gold); width: 14px; height: 14px; box-shadow: 0 0 0 4px rgba(201, 162, 39, 0.2); }
+        .marker-import { background-color: var(--ocean-blue); }
+        .marker-export { background-color: var(--success-green); }
+
+        /* Mega menu simulation */
+        .group:hover .mega-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="pt-[116px]">
+
+    <!-- HEADER SECTION -->
+    <header class="header-fixed bg-white">
+        <!-- Top Utility Bar -->
+        <div class="h-[36px] bg-[#1E3A5F] flex items-center">
+            <div class="max-w-container w-full flex justify-between items-center text-white text-[12px]">
+                <div class="flex items-center gap-6">
+                    <span class="flex items-center gap-2">
+                        <i class="fa-solid fa-envelope text-[#C9A227] text-[14px]"></i> info@company.com
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-[#C9A227] text-[14px]"></i> +91 98XXX XXXXX
+                    </span>
+                </div>
+                <div class="flex items-center gap-6">
+                    <span>IEC: XXXXXXX</span>
+                    <span>GST: XXXXXXX</span>
+                    <div class="flex items-center gap-4 ml-2">
+                        <a href="#"><i class="fa-brands fa-linkedin-in hover:text-[#C9A227]"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter hover:text-[#C9A227]"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp hover:text-[#C9A227]"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="h-[80px] border-b border-[#E8E8E8] bg-white">
+            <div class="max-w-container h-full flex items-center justify-between">
+                <!-- Logo Zone -->
+                <div class="w-[200px]">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-[#1E3A5F] rounded flex items-center justify-center">
+                            <i class="fa-solid fa-globe text-white text-xl"></i>
+                        </div>
+                        <span class="font-poppins font-bold text-xl tracking-tighter text-[#1E3A5F]">[COMPANY]</span>
+                    </div>
+                </div>
+
+                <!-- Navigation Zone -->
+                <nav class="flex items-center gap-[36px]">
+                    <a href="javascript:void(0)" onclick="navigateTo('home')" id="nav-home" class="nav-link active">Home</a>
+                    <a href="javascript:void(0)" onclick="navigateTo('about')" id="nav-about" class="nav-link">About Us</a>
+                    <div class="relative group">
+                        <a href="javascript:void(0)" onclick="navigateTo('products')" id="nav-products" class="nav-link flex items-center gap-1">Products <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+                        <!-- Simple dropdown -->
+                        <div class="absolute top-full left-0 mt-[32px] w-64 bg-white border border-gray-100 shadow-xl hidden group-hover:block animate-in fade-in slide-in-from-top-2 duration-200">
+                            <div class="py-2">
+                                <a href="javascript:void(0)" onclick="navigateTo('products')" class="block px-6 py-3 text-[13px] hover:bg-gray-50 hover:text-[#1E3A5F]">Metal Scrap</a>
+                                <a href="javascript:void(0)" onclick="navigateTo('products')" class="block px-6 py-3 text-[13px] hover:bg-gray-50 hover:text-[#1E3A5F]">Agricultural Products</a>
+                                <a href="javascript:void(0)" onclick="navigateTo('products')" class="block px-6 py-3 text-[13px] hover:bg-gray-50 hover:text-[#1E3A5F]">Premium Seafood</a>
+                                <a href="javascript:void(0)" onclick="navigateTo('products')" class="block px-6 py-3 text-[13px] hover:bg-gray-50 hover:text-[#1E3A5F]">Leather Goods</a>
+                                <a href="javascript:void(0)" onclick="navigateTo('products')" class="block px-6 py-3 text-[13px] hover:bg-gray-50 hover:text-[#1E3A5F]">Handicrafts</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" onclick="navigateTo('import')" id="nav-import" class="nav-link">Import Services</a>
+                    <a href="#" class="nav-link">Export Services</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- CTA Zone -->
+                <div class="w-[200px] flex justify-end">
+                    <button class="w-[150px] h-[46px] bg-[#C9A227] hover:bg-[#B8911F] text-white font-poppins font-semibold text-[13px] rounded-[4px] transition-colors duration-300">
+                        GET A QUOTE
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="home-view">
+    <!-- HERO SECTION -->
+    <section class="relative h-[720px] w-full overflow-hidden bg-gray-900">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop" alt="Global Trade" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+
+        <div class="relative z-10 h-full max-w-container flex items-center">
+            <div class="max-w-[650px]">
+                <div class="inline-flex items-center bg-white/15 border border-white/30 px-4 py-2 rounded-[4px] mb-6">
+                    <span class="text-white text-[11px] font-medium tracking-[2px]">🇮🇳 PROUDLY MADE IN INDIA</span>
+                </div>
+                
+                <h1 class="text-white text-[54px] font-bold font-poppins leading-[1.2] mb-5">
+                    Your Trusted Partner for<br>Global Trade Excellence
+                </h1>
+
+                <p class="text-white/90 text-[18px] leading-[1.7] max-w-[580px] mb-7">
+                    Indian exporter of premium Metal Scrap, Agricultural Products, Seafood, Leather Goods & Handicrafts. Connecting Indian quality with global markets across 40+ countries.
+                </p>
+
+                <div class="flex flex-wrap gap-3 mb-9">
+                    <span class="bg-white/10 border border-white/30 px-[14px] py-[6px] rounded-[4px] text-white text-[12px] font-medium">Metal Scrap</span>
+                    <span class="bg-white/10 border border-white/30 px-[14px] py-[6px] rounded-[4px] text-white text-[12px] font-medium">Agriculture</span>
+                    <span class="bg-white/10 border border-white/30 px-[14px] py-[6px] rounded-[4px] text-white text-[12px] font-medium">Seafood</span>
+                    <span class="bg-white/10 border border-white/30 px-[14px] py-[6px] rounded-[4px] text-white text-[12px] font-medium">Leather</span>
+                    <span class="bg-white/10 border border-white/30 px-[14px] py-[6px] rounded-[4px] text-white text-[12px] font-medium">Handicrafts</span>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <button class="w-[200px] h-[54px] bg-[#C9A227] hover:bg-[#B8911F] text-white font-poppins font-semibold text-[14px] rounded-[4px] flex items-center justify-center gap-2 transition-all">
+                        EXPLORE PRODUCTS <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
+                    <button class="w-[180px] h-[54px] bg-transparent border-2 border-white hover:bg-white/10 text-white font-poppins font-semibold text-[14px] rounded-[4px] transition-all">
+                        REQUEST QUOTE
+                    </button>
+                </div>
+            </div>
+
+            <!-- Floating Stats Cards -->
+            <div class="absolute right-[80px] flex flex-col gap-4">
+                <div class="w-[180px] bg-white p-[20px] px-[28px] rounded-[8px] border-l-4 border-[#C9A227] shadow-lg">
+                    <div class="font-poppins font-bold text-[36px] text-[#1E3A5F] leading-none mb-1">15+</div>
+                    <div class="text-[#666666] text-[13px]">Years Experience</div>
+                </div>
+                <div class="w-[180px] bg-white p-[20px] px-[28px] rounded-[8px] border-l-4 border-[#C9A227] shadow-lg">
+                    <div class="font-poppins font-bold text-[36px] text-[#1E3A5F] leading-none mb-1">40+</div>
+                    <div class="text-[#666666] text-[13px]">Countries Served</div>
+                </div>
+                <div class="w-[180px] bg-white p-[20px] px-[28px] rounded-[8px] border-l-4 border-[#C9A227] shadow-lg">
+                    <div class="font-poppins font-bold text-[36px] text-[#1E3A5F] leading-none mb-1">500+</div>
+                    <div class="text-[#666666] text-[13px]">Clients Worldwide</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST INDICATORS BAR -->
+    <section class="h-[100px] bg-[#1E3A5F] flex items-center">
+        <div class="max-w-container w-full flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <i class="fa-solid fa-certificate text-[32px] text-[#C9A227]"></i>
+                <div>
+                    <div class="font-medium text-[15px] text-white">ISO 9001:2015</div>
+                    <div class="text-[12px] text-white/70">Quality Certified</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="fa-solid fa-file-contract text-[32px] text-[#C9A227]"></i>
+                <div>
+                    <div class="font-medium text-[15px] text-white">IEC Registered</div>
+                    <div class="text-[12px] text-white/70">Import Export Code</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="fa-solid fa-building-columns text-[32px] text-[#C9A227]"></i>
+                <div>
+                    <div class="font-medium text-[15px] text-white">GST Compliant</div>
+                    <div class="text-[12px] text-white/70">Tax Registered</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="fa-solid fa-ship text-[32px] text-[#C9A227]"></i>
+                <div>
+                    <div class="font-medium text-[15px] text-white">Major Ports</div>
+                    <div class="text-[12px] text-white/70">Mundra, Nhava Sheva</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="fa-solid fa-handshake text-[32px] text-[#C9A227]"></i>
+                <div>
+                    <div class="font-medium text-[15px] text-white">Go Global Partner</div>
+                    <div class="text-[12px] text-white/70">International Network</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPANY INTRO SECTION -->
+    <section class="py-[100px] bg-white">
+        <div class="max-w-container flex items-center gap-[80px]">
+            <div class="w-1/2">
+                <div class="text-[#C9A227] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">ABOUT US</div>
+                <h2 class="text-[#1A1A1A] font-poppins font-bold text-[38px] leading-[1.3] mb-6">Bridging Indian Excellence with Global Markets</h2>
+                <p class="text-[16px] leading-[1.8] text-[#4A4A4A] mb-4">
+                    With over 15 years in the export-import industry, we have established ourselves as a reliable bridge between Indian manufacturers and global buyers. Our diverse portfolio spans Metal Scrap, Agricultural Products, Premium Seafood, Leather Goods, and Traditional Handicrafts.
+                </p>
+                <p class="text-[16px] leading-[1.8] text-[#4A4A4A] mb-6">
+                    We pride ourselves on quality assurance, timely deliveries, and transparent business practices. Connected with the Go Global team, we're expanding opportunities for Indian products worldwide.
+                </p>
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div class="flex items-center gap-2 text-[15px] text-[#4A4A4A]">
+                        <i class="fa-solid fa-circle-check text-[#2E7D32]"></i> Quality inspection at every stage
+                    </div>
+                    <div class="flex items-center gap-2 text-[15px] text-[#4A4A4A]">
+                        <i class="fa-solid fa-circle-check text-[#2E7D32]"></i> Competitive international pricing
+                    </div>
+                    <div class="flex items-center gap-2 text-[15px] text-[#4A4A4A]">
+                        <i class="fa-solid fa-circle-check text-[#2E7D32]"></i> Complete documentation support
+                    </div>
+                    <div class="flex items-center gap-2 text-[15px] text-[#4A4A4A]">
+                        <i class="fa-solid fa-circle-check text-[#2E7D32]"></i> Door-to-door logistics solutions
+                    </div>
+                </div>
+                <a href="#" class="font-poppins font-medium text-[14px] text-[#1E3A5F] hover:underline">Learn More About Us <i class="fa-solid fa-arrow-right ml-1"></i></a>
+            </div>
+            <div class="w-[45%] relative">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop" alt="Our Facility" class="w-full aspect-[4/3] object-cover rounded-[8px] border border-[#E0E0E0]">
+                <div class="absolute bottom-[-20px] right-[-20px] bg-[#C9A227] text-white px-[20px] py-[12px] font-poppins font-semibold text-[14px] rounded-[4px] shadow-lg">
+                    Since 2009
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SNAPSHOT -->
+    <section class="py-[100px] bg-[#F5F7FA]">
+        <div class="max-w-container">
+            <div class="text-center mb-[64px]">
+                <div class="text-[#C9A227] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">WHAT WE TRADE</div>
+                <h2 class="text-[#1A1A1A] font-poppins font-bold text-[40px] mb-3">Our Product Categories</h2>
+                <p class="text-[#666666] text-[17px]">Premium quality products for international markets</p>
+            </div>
+
+            <div class="grid grid-cols-5 gap-6">
+                <!-- Card 1 -->
+                <div class="product-card bg-white border border-[#E8E8E8] rounded-[12px] overflow-hidden flex flex-col h-[380px]">
+                    <div class="h-[55%] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=2070&auto=format&fit=crop" alt="Metal Scrap" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-recycle text-[#1E3A5F]"></i>
+                        </div>
+                    </div>
+                    <div class="h-[45%] p-6 flex flex-col">
+                        <h3 class="font-poppins font-semibold text-[20px] text-[#1A1A1A] mb-2">Metal Scrap</h3>
+                        <p class="text-[14px] text-[#666666] line-clamp-2">Copper, Aluminium, Brass, Zinc, Lead, Steel scrap for recycling industries</p>
+                        <a href="#" class="mt-auto font-poppins font-medium text-[13px] text-[#1E3A5F] flex items-center gap-1">View Products <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="product-card bg-white border border-[#E8E8E8] rounded-[12px] overflow-hidden flex flex-col h-[380px]">
+                    <div class="h-[55%] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?q=80&w=1992&auto=format&fit=crop" alt="Agricultural Products" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-wheat-awn text-[#1E3A5F]"></i>
+                        </div>
+                    </div>
+                    <div class="h-[45%] p-6 flex flex-col">
+                        <h3 class="font-poppins font-semibold text-[20px] text-[#1A1A1A] mb-2">Agricultural Products</h3>
+                        <p class="text-[14px] text-[#666666] line-clamp-2">Premium grains, spices, pulses sourced from Indian farms</p>
+                        <a href="#" class="mt-auto font-poppins font-medium text-[13px] text-[#1E3A5F] flex items-center gap-1">View Products <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="product-card bg-white border border-[#E8E8E8] rounded-[12px] overflow-hidden flex flex-col h-[380px]">
+                    <div class="h-[55%] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1553659971-f01207815844?q=80&w=1964&auto=format&fit=crop" alt="Premium Seafood" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-fish text-[#1E3A5F]"></i>
+                        </div>
+                    </div>
+                    <div class="h-[45%] p-6 flex flex-col">
+                        <h3 class="font-poppins font-semibold text-[20px] text-[#1A1A1A] mb-2">Premium Seafood</h3>
+                        <p class="text-[14px] text-[#666666] line-clamp-2">Fresh and frozen seafood meeting international quality standards</p>
+                        <a href="#" class="mt-auto font-poppins font-medium text-[13px] text-[#1E3A5F] flex items-center gap-1">View Products <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="product-card bg-white border border-[#E8E8E8] rounded-[12px] overflow-hidden flex flex-col h-[380px]">
+                    <div class="h-[55%] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1524333865981-3a4bd4199400?q=80&w=2070&auto=format&fit=crop" alt="Leather Goods" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-briefcase text-[#1E3A5F]"></i>
+                        </div>
+                    </div>
+                    <div class="h-[45%] p-6 flex flex-col">
+                        <h3 class="font-poppins font-semibold text-[20px] text-[#1A1A1A] mb-2">Leather Goods</h3>
+                        <p class="text-[14px] text-[#666666] line-clamp-2">Handcrafted leather belts, bags, and accessories</p>
+                        <a href="#" class="mt-auto font-poppins font-medium text-[13px] text-[#1E3A5F] flex items-center gap-1">View Products <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="product-card bg-white border border-[#E8E8E8] rounded-[12px] overflow-hidden flex flex-col h-[380px]">
+                    <div class="h-[55%] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1627733560662-7901844031d2?q=80&w=2070&auto=format&fit=crop" alt="Handicrafts" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-hands text-[#1E3A5F]"></i>
+                        </div>
+                    </div>
+                    <div class="h-[45%] p-6 flex flex-col">
+                        <h3 class="font-poppins font-semibold text-[20px] text-[#1A1A1A] mb-2">Handicrafts</h3>
+                        <p class="text-[14px] text-[#666666] line-clamp-2">Traditional Indian handicrafts and artisanal products</p>
+                        <a href="#" class="mt-auto font-poppins font-medium text-[13px] text-[#1E3A5F] flex items-center gap-1">View Products <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center mt-[48px]">
+                <button class="w-[220px] h-[52px] bg-[#1E3A5F] hover:bg-[#162d4a] text-white font-poppins font-semibold text-[14px] rounded-[4px] transition-colors duration-300">
+                    VIEW ALL PRODUCTS
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPORT & EXPORT REGIONS MAP -->
+    <section class="py-[100px] bg-white">
+        <div class="max-w-container">
+            <div class="text-center mb-[64px]">
+                <div class="text-[#C9A227] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">GLOBAL PRESENCE</div>
+                <h2 class="text-[#1A1A1A] font-poppins font-bold text-[38px]">Where We Trade</h2>
+            </div>
+
+            <div class="flex gap-[80px]">
+                <div class="w-[55%]">
+                    <div class="map-container flex items-center justify-center">
+                        <!-- Origin Marker India -->
+                        <div class="marker marker-origin" style="top: 48%; left: 68%;"></div>
+                        
+                        <!-- Import Markers (Blue) -->
+                        <div class="marker marker-import" style="top: 30%; left: 15%;"></div> <!-- USA -->
+                        <div class="marker marker-import" style="top: 25%; left: 48%;"></div> <!-- UK/Germany -->
+                        <div class="marker marker-import" style="top: 35%; left: 60%;"></div> <!-- UAE -->
+                        <div class="marker marker-import" style="top: 75%; left: 88%;"></div> <!-- Australia -->
+
+                        <!-- Export Markers (Green) -->
+                        <div class="marker marker-export" style="top: 55%; left: 62%;"></div> <!-- Africa -->
+                        <div class="marker marker-export" style="top: 65%; left: 55%;"></div> <!-- S.Africa -->
+                        <div class="marker marker-export" style="top: 50%; left: 80%;"></div> <!-- SE Asia -->
+                        <div class="marker marker-export" style="top: 30%; left: 52%;"></div> <!-- Europe -->
+                    </div>
+                    <div class="flex justify-center gap-8 mt-6">
+                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-[#C9A227]"></div> <span class="text-[13px]">Origin (India)</span></div>
+                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-[#0277BD]"></div> <span class="text-[13px]">Import Sources</span></div>
+                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-[#2E7D32]"></div> <span class="text-[13px]">Export Destinations</span></div>
+                    </div>
+                </div>
+
+                <div class="w-[40%] flex flex-col gap-6">
+                    <div class="bg-[#F0F7FF] border-l-4 border-[#0277BD] p-[28px] rounded-[8px]">
+                        <h3 class="font-poppins font-semibold text-[18px] text-[#0277BD] mb-4">We Import From</h3>
+                        <div class="flex flex-wrap gap-x-4 gap-y-2 mb-4">
+                            <span class="text-[15px] text-[#4A4A4A]">• USA</span>
+                            <span class="text-[15px] text-[#4A4A4A]">• United Kingdom</span>
+                            <span class="text-[15px] text-[#4A4A4A]">• Germany</span>
+                            <span class="text-[15px] text-[#4A4A4A]">• Netherlands</span>
+                            <span class="text-[15px] text-[#4A4A4A]">• UAE</span>
+                            <span class="text-[15px] text-[#4A4A4A]">• Australia</span>
+                        </div>
+                        <p class="italic text-[13px] text-[#666666]">"Metal scrap, raw materials, machinery parts"</p>
+                    </div>
+
+                    <div class="bg-[#F0FFF4] border-l-4 border-[#2E7D32] p-[28px] rounded-[8px]">
+                        <h3 class="font-poppins font-semibold text-[18px] text-[#2E7D32] mb-4">We Export To</h3>
+                        <div class="flex flex-col gap-3">
+                            <div>
+                                <span class="text-[14px] font-semibold text-[#4A4A4A]">Middle East:</span>
+                                <span class="text-[14px] text-[#4A4A4A]"> UAE, Saudi Arabia, Qatar</span>
+                            </div>
+                            <div>
+                                <span class="text-[14px] font-semibold text-[#4A4A4A]">Africa:</span>
+                                <span class="text-[14px] text-[#4A4A4A]"> Nigeria, Kenya, South Africa</span>
+                            </div>
+                            <div>
+                                <span class="text-[14px] font-semibold text-[#4A4A4A]">Southeast Asia:</span>
+                                <span class="text-[14px] text-[#4A4A4A]"> Vietnam, Thailand</span>
+                            </div>
+                            <div>
+                                <span class="text-[14px] font-semibold text-[#4A4A4A]">Europe:</span>
+                                <span class="text-[14px] text-[#4A4A4A]"> UK, Germany, France</span>
+                            </div>
+                        </div>
+                        <p class="italic text-[13px] text-[#666666] mt-4">"Agricultural products, seafood, leather goods, handicrafts"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES OVERVIEW -->
+    <section class="py-[80px] bg-[#1E3A5F]">
+        <div class="max-w-container">
+            <div class="text-center mb-[56px]">
+                <h2 class="text-white font-poppins font-bold text-[36px] mb-3">Import & Export Services</h2>
+                <p class="text-white/80 text-[17px]">End-to-end trade solutions for global business</p>
+            </div>
+
+            <div class="flex gap-[40px]">
+                <!-- Import Service Card -->
+                <div class="w-1/2 bg-white rounded-[12px] p-[48px]">
+                    <i class="fa-solid fa-download text-[48px] text-[#0277BD]"></i>
+                    <h3 class="font-poppins font-bold text-[26px] text-[#1A1A1A] mt-5">Import Services</h3>
+                    <p class="text-[15px] text-[#666666] leading-[1.6] mt-4 mb-6">
+                        We source quality metal scrap and raw materials from international markets with complete compliance and documentation.
+                    </p>
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center gap-3 text-[15px] text-[#4A4A4A]">
+                            <i class="fa-solid fa-check text-[#0277BD]"></i> Quality inspection at origin
+                        </div>
+                        <div class="flex items-center gap-3 text-[15px] text-[#4A4A4A]">
+                            <i class="fa-solid fa-check text-[#0277BD]"></i> Customs clearance support
+                        </div>
+                        <div class="flex items-center gap-3 text-[15px] text-[#4A4A4A]">
+                            <i class="fa-solid fa-check text-[#0277BD]"></i> Competitive sourcing
+                        </div>
+                        <div class="flex items-center gap-3 text-[15px] text-[#4A4A4A]">
+                            <i class="fa-solid fa-check text-[#0277BD]"></i> Full documentation
+                        </div>
+                    </div>
+                    <button class="px-8 py-3 border-2 border-[#0277BD] text-[#0277BD] font-poppins font-semibold text-[14px] hover:bg-[#0277BD] hover:text-white transition-all">LEARN MORE</button>
+                </div>
+
+                <!-- Export Service Card -->
+                <div class="w-1/2 bg-white rounded-[12px] p-[48px]">
+                    <i class="fa-solid fa-upload text-[48px] text-[#2E7D32]"></i>
+                    <h3 class="font-poppins font-bold text-[26px] text-[#1A1A1A] mt-5">Export Services</h3>
+                    <p class="text-[15px] text-[#666666] leading-[1.6] mt-4 mb-6">
+                        We connect Indian agricultural products, seafood, leather goods, and handicrafts with buyers across 40+ countries.
+                    </p>
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center gap-3 text-[15px] text-[#4A4A4A]">
+                            <i class="fa-solid fa-check text-[#2E7D32]"></i> Export documentation (IEC, GST, Phyto)
+                        </div>
+                        <div class="flex items-center gap-3 text-[15px] text-[#4A4A4A]">
+                            <i class="fa-solid fa-check text-[#2E7D32]"></i> Quality certification
+                        </div>
+                        <div class="flex items-center gap-3 text-[15px] text-[#4A4A4A]">
+                            <i class="fa-solid fa-check text-[#2E7D32]"></i> Packaging standards
+                        </div>
+                        <div class="flex items-center gap-3 text-[15px] text-[#4A4A4A]">
+                            <i class="fa-solid fa-check text-[#2E7D32]"></i> Shipping coordination
+                        </div>
+                    </div>
+                    <button class="px-8 py-3 border-2 border-[#2E7D32] text-[#2E7D32] font-poppins font-semibold text-[14px] hover:bg-[#2E7D32] hover:text-white transition-all">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="py-[64px] bg-[#F5F7FA]">
+        <div class="max-w-container">
+            <h2 class="text-center font-poppins font-semibold text-[28px] mb-[40px]">Certifications & Compliance</h2>
+            <div class="flex justify-center items-center gap-[60px]">
+                <img src="https://via.placeholder.com/120x60/FFFFFF/1E3A5F?text=ISO+9001" alt="ISO 9001" class="cert-logo h-[60px]">
+                <img src="https://via.placeholder.com/120x60/FFFFFF/1E3A5F?text=IEC+CODE" alt="IEC" class="cert-logo h-[60px]">
+                <img src="https://via.placeholder.com/120x60/FFFFFF/1E3A5F?text=GST+REG" alt="GST" class="cert-logo h-[60px]">
+                <img src="https://via.placeholder.com/120x60/FFFFFF/1E3A5F?text=FSSAI" alt="FSSAI" class="cert-logo h-[60px]">
+                <img src="https://via.placeholder.com/120x60/FFFFFF/1E3A5F?text=APEDA" alt="APEDA" class="cert-logo h-[60px]">
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="py-[100px] bg-white">
+        <div class="max-w-container">
+            <div class="mb-[56px]">
+                <div class="text-[#C9A227] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">WHY PARTNER WITH US</div>
+                <h2 class="text-[#1A1A1A] font-poppins font-bold text-[36px]">The [COMPANY] Advantage</h2>
+            </div>
+
+            <div class="grid grid-cols-3 gap-[32px]">
+                <!-- Feature 1 -->
+                <div class="why-card bg-[#F5F7FA] border border-[#E8E8E8] rounded-[8px] p-[32px]">
+                    <i class="fa-solid fa-shield-halved text-[40px] text-[#1E3A5F]"></i>
+                    <h3 class="font-poppins font-semibold text-[18px] text-[#1A1A1A] mt-5 mb-3">Quality Assurance</h3>
+                    <p class="text-[14px] text-[#666666]">Rigorous inspection at every stage from sourcing to delivery</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="why-card bg-[#F5F7FA] border border-[#E8E8E8] rounded-[8px] p-[32px]">
+                    <i class="fa-solid fa-globe text-[40px] text-[#1E3A5F]"></i>
+                    <h3 class="font-poppins font-semibold text-[18px] text-[#1A1A1A] mt-5 mb-3">Global Network</h3>
+                    <p class="text-[14px] text-[#666666]">Strong partnerships across 40+ countries and major trading hubs</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="why-card bg-[#F5F7FA] border border-[#E8E8E8] rounded-[8px] p-[32px]">
+                    <i class="fa-solid fa-file-invoice text-[40px] text-[#1E3A5F]"></i>
+                    <h3 class="font-poppins font-semibold text-[18px] text-[#1A1A1A] mt-5 mb-3">Complete Documentation</h3>
+                    <p class="text-[14px] text-[#666666]">All export-import paperwork handled professionally</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="why-card bg-[#F5F7FA] border border-[#E8E8E8] rounded-[8px] p-[32px]">
+                    <i class="fa-solid fa-truck-fast text-[40px] text-[#1E3A5F]"></i>
+                    <h3 class="font-poppins font-semibold text-[18px] text-[#1A1A1A] mt-5 mb-3">Reliable Logistics</h3>
+                    <p class="text-[14px] text-[#666666]">Partnerships with major shipping lines for timely delivery</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="why-card bg-[#F5F7FA] border border-[#E8E8E8] rounded-[8px] p-[32px]">
+                    <i class="fa-solid fa-handshake-simple text-[40px] text-[#1E3A5F]"></i>
+                    <h3 class="font-poppins font-semibold text-[18px] text-[#1A1A1A] mt-5 mb-3">Transparent Dealings</h3>
+                    <p class="text-[14px] text-[#666666]">Clear communication, honest pricing, no hidden costs</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="why-card bg-[#F5F7FA] border border-[#E8E8E8] rounded-[8px] p-[32px]">
+                    <i class="fa-solid fa-clock-rotate-left text-[40px] text-[#1E3A5F]"></i>
+                    <h3 class="font-poppins font-semibold text-[18px] text-[#1A1A1A] mt-5 mb-3">Timely Delivery</h3>
+                    <p class="text-[14px] text-[#666666]">Consistent track record of on-time shipments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTICS SECTION -->
+    <section class="py-[80px] bg-[#1E3A5F]">
+        <div class="max-w-[1200px] mx-auto px-12 flex justify-between items-center">
+            <div class="text-center w-1/5 stat-separator pr-4">
+                <div class="font-poppins font-bold text-[48px] text-[#C9A227]">15+</div>
+                <div class="text-white text-[14px] font-medium tracking-[2px] uppercase mt-2">YEARS</div>
+                <div class="text-white/60 text-[12px]">In Export-Import</div>
+            </div>
+            <div class="text-center w-1/5 stat-separator px-4">
+                <div class="font-poppins font-bold text-[48px] text-[#C9A227]">40+</div>
+                <div class="text-white text-[14px] font-medium tracking-[2px] uppercase mt-2">COUNTRIES</div>
+                <div class="text-white/60 text-[12px]">Trade Network</div>
+            </div>
+            <div class="text-center w-1/5 stat-separator px-4">
+                <div class="font-poppins font-bold text-[48px] text-[#C9A227]">5</div>
+                <div class="text-white text-[14px] font-medium tracking-[2px] uppercase mt-2">PRODUCT LINES</div>
+                <div class="text-white/60 text-[12px]">Diverse Portfolio</div>
+            </div>
+            <div class="text-center w-1/5 stat-separator px-4">
+                <div class="font-poppins font-bold text-[48px] text-[#C9A227]">500+</div>
+                <div class="text-white text-[14px] font-medium tracking-[2px] uppercase mt-2">CLIENTS</div>
+                <div class="text-white/60 text-[12px]">Worldwide</div>
+            </div>
+            <div class="text-center w-1/5 px-4">
+                <div class="font-poppins font-bold text-[48px] text-[#C9A227]">98%</div>
+                <div class="text-white text-[14px] font-medium tracking-[2px] uppercase mt-2">DELIVERY</div>
+                <div class="text-white/60 text-[12px]">On-Time Rate</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRADE NEWS SECTION -->
+    <section class="py-[80px] bg-white">
+        <div class="max-w-container">
+            <div class="mb-[48px]">
+                <div class="text-[#C9A227] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">STAY INFORMED</div>
+                <h2 class="text-[#1A1A1A] font-poppins font-bold text-[32px] mb-2">Trade News & Market Insights</h2>
+                <p class="text-[#666666] text-[16px]">Regular updates on import-export business trends and global trade</p>
+            </div>
+
+            <div class="flex gap-[32px]">
+                <!-- News 1 -->
+                <div class="w-1/3 border border-[#E8E8E8] rounded-[8px] overflow-hidden group">
+                    <div class="h-[180px] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop" alt="News 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-[24px]">
+                        <div class="text-[12px] text-[#888888] mb-2">Jan 10, 2026</div>
+                        <h3 class="font-poppins font-semibold text-[18px] text-[#1A1A1A] leading-[1.4] mb-3">India's Agricultural Exports Cross $50 Billion Mark</h3>
+                        <p class="text-[14px] text-[#666666] line-clamp-2 mb-4">India reaches a historic milestone in agricultural exports with growing demand for organic produce.</p>
+                        <a href="#" class="font-poppins font-medium text-[13px] text-[#1E3A5F]">Read More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                <!-- News 2 -->
+                <div class="w-1/3 border border-[#E8E8E8] rounded-[8px] overflow-hidden group">
+                    <div class="h-[180px] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop" alt="News 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-[24px]">
+                        <div class="text-[12px] text-[#888888] mb-2">Jan 05, 2026</div>
+                        <h3 class="font-poppins font-semibold text-[18px] text-[#1A1A1A] leading-[1.4] mb-3">New Trade Agreement Opens European Markets for Indian Leather</h3>
+                        <p class="text-[14px] text-[#666666] line-clamp-2 mb-4">The latest bilateral treaty is set to boost handcrafted leather exports to major EU economies.</p>
+                        <a href="#" class="font-poppins font-medium text-[13px] text-[#1E3A5F]">Read More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                <!-- News 3 -->
+                <div class="w-1/3 border border-[#E8E8E8] rounded-[8px] overflow-hidden group">
+                    <div class="h-[180px] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=2070&auto=format&fit=crop" alt="News 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-[24px]">
+                        <div class="text-[12px] text-[#888888] mb-2">Dec 28, 2025</div>
+                        <h3 class="font-poppins font-semibold text-[18px] text-[#1A1A1A] leading-[1.4] mb-3">Metal Scrap Recycling Industry Shows Strong Growth</h3>
+                        <p class="text-[14px] text-[#666666] line-clamp-2 mb-4">Increasing focus on sustainability is driving massive growth in the global secondary metals market.</p>
+                        <a href="#" class="font-poppins font-medium text-[13px] text-[#1E3A5F]">Read More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-[80px] bg-[#C9A227]">
+        <div class="max-w-container text-center">
+            <h2 class="text-white font-poppins font-bold text-[38px] mb-3">Ready to Start Trading?</h2>
+            <p class="text-white/90 text-[18px] mb-[36px]">Get a competitive quote for your import or export requirements</p>
+            
+            <div class="flex justify-center gap-5 mb-[40px]">
+                <button class="w-[200px] h-[54px] bg-[#1E3A5F] text-white font-poppins font-semibold text-[14px] rounded-[4px] shadow-lg">REQUEST A QUOTE</button>
+                <button class="w-[200px] h-[54px] bg-transparent border-2 border-white text-white font-poppins font-semibold text-[14px] rounded-[4px] hover:bg-white/10 transition-all">CONTACT US</button>
+            </div>
+
+            <div class="flex justify-center items-center gap-10 text-white font-medium text-[15px]">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-[18px]"></i> +91 98XXX XXXXX
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-envelope text-[18px]"></i> info@company.com
+                </div>
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <i class="fa-brands fa-whatsapp text-[18px]"></i> Chat Now
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- ABOUT US VIEW -->
+    <main id="about-view" class="hidden">
+        <!-- PAGE HERO -->
+        <section class="relative h-[420px] w-full overflow-hidden bg-gray-900">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1494412574021-ad58bb45967c?q=80&w=2070&auto=format&fit=crop" alt="About Us" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-[#1E3A5F]/70"></div>
+            </div>
+            <div class="relative z-10 h-full max-w-container flex flex-col justify-center">
+                <div class="text-white/70 text-[13px] font-medium mb-4">Home / About Us</div>
+                <h1 class="text-white text-[52px] font-bold font-poppins leading-tight mb-4">About Our Company</h1>
+                <p class="text-white/85 text-[20px]">15+ years of trust, quality, and global trade excellence</p>
+                <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/50 flex flex-col items-center gap-2 animate-bounce">
+                    <i class="fa-solid fa-computer-mouse"></i>
+                    <span class="text-[12px] uppercase tracking-widest">Scroll to explore</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPANY STORY SECTION -->
+        <section class="py-[100px] bg-white">
+            <div class="max-w-container flex gap-[80px]">
+                <div class="w-[55%]">
+                    <div class="text-[#C9A227] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">OUR STORY</div>
+                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[36px] leading-[1.35] mb-7">Building Bridges Between Indian Excellence and Global Markets</h2>
+                    <div class="text-[16px] leading-[1.85] text-[#4A4A4A] space-y-5">
+                        <p>Founded in 2009, [COMPANY NAME] began with a simple vision: to showcase the best of Indian products to the world. What started as a small trading operation has grown into a comprehensive export-import enterprise serving clients across 40+ countries.</p>
+                        <p>Our journey has been defined by an unwavering commitment to quality, transparency, and building lasting partnerships. From premium metal scrap to farm-fresh agricultural products, from the finest seafood to handcrafted leather goods and traditional handicrafts - we take pride in every product we trade.</p>
+                        <p>Today, we are proudly connected with the Go Global team, expanding opportunities for Indian exporters and providing reliable sourcing solutions for international importers. Our network spans across the Middle East, Africa, Southeast Asia, Europe, and beyond.</p>
+                    </div>
+                    <div class="mt-8 bg-[#F5F7FA] border-l-4 border-[#C9A227] p-6 space-y-2">
+                        <div class="flex items-center gap-3 text-[15px] font-medium text-[#333333]"><span class="text-xl">🏆</span> 15+ Years in Export-Import Industry</div>
+                        <div class="flex items-center gap-3 text-[15px] font-medium text-[#333333]"><span class="text-xl">🌍</span> Trading with 40+ Countries</div>
+                        <div class="flex items-center gap-3 text-[15px] font-medium text-[#333333]"><span class="text-xl">📦</span> 5 Diverse Product Categories</div>
+                        <div class="flex items-center gap-3 text-[15px] font-medium text-[#333333]"><span class="text-xl">✅</span> ISO 9001:2015 Certified</div>
+                    </div>
+                </div>
+                <div class="w-[40%] relative">
+                    <div class="relative w-full aspect-[3/4] rounded-lg border border-[#E0E0E0] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1974&auto=format&fit=crop" alt="Team" class="w-full h-full object-cover">
+                        <div class="absolute bottom-6 right-6 bg-[#C9A227] text-white px-6 py-3.5 rounded-sm font-poppins font-semibold text-[16px] shadow-xl">
+                            Since 2009
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-10 -left-10 w-[60%] aspect-video rounded-lg border-4 border-white shadow-2xl overflow-hidden hidden lg:block">
+                        <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaad21?q=80&w=1965&auto=format&fit=crop" alt="Operations" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISION & MISSION -->
+        <section class="py-[100px] bg-[#F5F7FA]">
+            <div class="max-w-[1100px] mx-auto px-12 text-center">
+                <h2 class="text-[#1A1A1A] font-poppins font-bold text-[36px] mb-[56px]">Our Vision & Mission</h2>
+                <div class="grid grid-cols-2 gap-10">
+                    <div class="bg-white border border-[#E8E8E8] border-t-4 border-t-[#1E3A5F] rounded-lg p-12 flex flex-col items-center">
+                        <i class="fa-solid fa-eye text-[48px] text-[#1E3A5F]"></i>
+                        <div class="mt-5 font-poppins font-semibold text-[13px] text-[#1E3A5F] tracking-[2px]">OUR VISION</div>
+                        <p class="mt-5 text-[16px] leading-[1.75] text-[#4A4A4A]">To become India's most trusted name in international trade, known for quality products, ethical practices, and reliable partnerships that create value for all stakeholders.</p>
+                    </div>
+                    <div class="bg-white border border-[#E8E8E8] border-t-4 border-t-[#C9A227] rounded-lg p-12 flex flex-col items-center">
+                        <i class="fa-solid fa-bullseye text-[48px] text-[#C9A227]"></i>
+                        <div class="mt-5 font-poppins font-semibold text-[13px] text-[#C9A227] tracking-[2px]">OUR MISSION</div>
+                        <p class="mt-5 text-[16px] leading-[1.75] text-[#4A4A4A]">To bridge Indian manufacturers with global markets through comprehensive trade solutions, ensuring quality at every step, transparent dealings, and timely delivery that exceeds expectations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OUR VALUES -->
+        <section class="py-[100px] bg-white">
+            <div class="max-w-container">
+                <div class="text-[#C9A227] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">WHAT WE STAND FOR</div>
+                <h2 class="text-[#1A1A1A] font-poppins font-bold text-[36px] mb-[56px]">Our Core Values</h2>
+                <div class="grid grid-cols-4 gap-7">
+                    <div class="border border-[#E8E8E8] rounded-lg p-9 text-center hover:bg-[#F5F7FA] hover:border-[#C9A227] transition-all duration-300">
+                        <i class="fa-solid fa-gem text-[44px] text-[#1E3A5F]"></i>
+                        <h3 class="mt-6 font-poppins font-semibold text-[18px] text-[#1A1A1A]">Quality First</h3>
+                        <p class="mt-3 text-[14px] text-[#666666] leading-[1.7]">Every product undergoes rigorous inspection to meet international standards before shipment</p>
+                    </div>
+                    <div class="border border-[#E8E8E8] rounded-lg p-9 text-center hover:bg-[#F5F7FA] hover:border-[#C9A227] transition-all duration-300">
+                        <i class="fa-solid fa-handshake text-[44px] text-[#1E3A5F]"></i>
+                        <h3 class="mt-6 font-poppins font-semibold text-[18px] text-[#1A1A1A]">Integrity</h3>
+                        <p class="mt-3 text-[14px] text-[#666666] leading-[1.7]">Transparent pricing, honest communication, and ethical business practices in every transaction</p>
+                    </div>
+                    <div class="border border-[#E8E8E8] rounded-lg p-9 text-center hover:bg-[#F5F7FA] hover:border-[#C9A227] transition-all duration-300">
+                        <i class="fa-solid fa-globe text-[44px] text-[#1E3A5F]"></i>
+                        <h3 class="mt-6 font-poppins font-semibold text-[18px] text-[#1A1A1A]">Global Mindset</h3>
+                        <p class="mt-3 text-[14px] text-[#666666] leading-[1.7]">Understanding diverse market needs and cultural nuances of our international partners</p>
+                    </div>
+                    <div class="border border-[#E8E8E8] rounded-lg p-9 text-center hover:bg-[#F5F7FA] hover:border-[#C9A227] transition-all duration-300">
+                        <i class="fa-solid fa-clock text-[44px] text-[#1E3A5F]"></i>
+                        <h3 class="mt-6 font-poppins font-semibold text-[18px] text-[#1A1A1A]">Reliability</h3>
+                        <p class="mt-3 text-[14px] text-[#666666] leading-[1.7]">Consistent on-time delivery with 98% track record and proactive communication</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE & INFRASTRUCTURE -->
+        <section class="py-[100px] bg-[#1E3A5F]">
+            <div class="max-w-container">
+                <div class="text-[#C9A227] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">OUR CAPABILITIES</div>
+                <h2 class="text-white font-poppins font-bold text-[36px] mb-[56px]">Experience & Infrastructure</h2>
+                <div class="flex gap-[60px]">
+                    <!-- Timeline -->
+                    <div class="w-[45%]">
+                        <div class="space-y-12 relative before:content-[''] before:absolute before:left-[6px] before:top-2 before:bottom-2 before:w-[2px] before:bg-white/20">
+                            <div class="relative pl-7">
+                                <div class="absolute left-0 top-2 w-[14px] h-[14px] rounded-full bg-[#C9A227] border-[3px] border-[#1E3A5F]"></div>
+                                <div class="font-poppins font-bold text-[24px] text-[#C9A227]">2009</div>
+                                <div class="font-poppins font-semibold text-[17px] text-white mt-1">Company Founded</div>
+                                <p class="text-[14px] text-white/70 mt-1.5">Started with metal scrap trading in local markets</p>
+                            </div>
+                            <div class="relative pl-7">
+                                <div class="absolute left-0 top-2 w-[14px] h-[14px] rounded-full bg-[#C9A227] border-[3px] border-[#1E3A5F]"></div>
+                                <div class="font-poppins font-bold text-[24px] text-[#C9A227]">2012</div>
+                                <div class="font-poppins font-semibold text-[17px] text-white mt-1">First International Export</div>
+                                <p class="text-[14px] text-white/70 mt-1.5">Expanded to Middle East markets with agricultural products</p>
+                            </div>
+                            <div class="relative pl-7">
+                                <div class="absolute left-0 top-2 w-[14px] h-[14px] rounded-full bg-[#C9A227] border-[3px] border-[#1E3A5F]"></div>
+                                <div class="font-poppins font-bold text-[24px] text-[#C9A227]">2016</div>
+                                <div class="font-poppins font-semibold text-[17px] text-white mt-1">ISO Certification</div>
+                                <p class="text-[14px] text-white/70 mt-1.5">Achieved ISO 9001:2015 for quality management</p>
+                            </div>
+                            <div class="relative pl-7">
+                                <div class="absolute left-0 top-2 w-[14px] h-[14px] rounded-full bg-[#C9A227] border-[3px] border-[#1E3A5F]"></div>
+                                <div class="font-poppins font-bold text-[24px] text-[#C9A227]">2021</div>
+                                <div class="font-poppins font-semibold text-[17px] text-white mt-1">Go Global Partnership</div>
+                                <p class="text-[14px] text-white/70 mt-1.5">Joined Go Global network, expanding to 40+ countries</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Infrastructure Grid -->
+                    <div class="w-[50%] grid grid-cols-2 gap-5">
+                        <div class="bg-white/5 border border-white/10 rounded-lg p-7">
+                            <i class="fa-solid fa-warehouse text-[36px] text-[#C9A227]"></i>
+                            <h3 class="mt-4 font-poppins font-semibold text-[16px] text-white">Warehousing</h3>
+                            <p class="mt-2 text-[13px] text-white/70">Modern storage facilities with proper handling equipment</p>
+                        </div>
+                        <div class="bg-white/5 border border-white/10 rounded-lg p-7">
+                            <i class="fa-solid fa-ship text-[36px] text-[#C9A227]"></i>
+                            <h3 class="mt-4 font-poppins font-semibold text-[16px] text-white">Port Access</h3>
+                            <p class="mt-2 text-[13px] text-white/70">Direct connectivity to Mundra & Nhava Sheva ports</p>
+                        </div>
+                        <div class="bg-white/5 border border-white/10 rounded-lg p-7">
+                            <i class="fa-solid fa-truck-fast text-[36px] text-[#C9A227]"></i>
+                            <h3 class="mt-4 font-poppins font-semibold text-[16px] text-white">Logistics Network</h3>
+                            <p class="mt-2 text-[13px] text-white/70">Partnerships with major shipping and freight companies</p>
+                        </div>
+                        <div class="bg-white/5 border border-white/10 rounded-lg p-7">
+                            <i class="fa-solid fa-clipboard-check text-[36px] text-[#C9A227]"></i>
+                            <h3 class="mt-4 font-poppins font-semibold text-[16px] text-white">Quality Lab</h3>
+                            <p class="mt-2 text-[13px] text-white/70">In-house inspection and testing capabilities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM SECTION -->
+        <section class="py-[80px] bg-white">
+            <div class="max-w-[1000px] mx-auto px-12">
+                <h2 class="text-[#1A1A1A] font-poppins font-bold text-center text-[32px] mb-[48px]">Our Leadership</h2>
+                <div class="grid grid-cols-3 gap-8 text-center">
+                    <div class="bg-[#F5F7FA] rounded-lg p-8">
+                        <div class="w-[120px] h-[120px] bg-gray-300 rounded-full mx-auto overflow-hidden">
+                            <img src="https://via.placeholder.com/120?text=CEO" alt="CEO" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="mt-5 font-poppins font-semibold text-[20px] text-[#1A1A1A]">[Founder Name]</h3>
+                        <p class="mt-1 text-[14px] font-medium text-[#C9A227]">Founder & CEO</p>
+                        <p class="mt-3 text-[14px] text-[#666666] leading-relaxed">15+ years in international trade with expertise in metal and agricultural exports</p>
+                        <div class="mt-4 text-[#1E3A5F] text-[20px]"><i class="fa-brands fa-linkedin cursor-pointer"></i></div>
+                    </div>
+                    <div class="bg-[#F5F7FA] rounded-lg p-8">
+                        <div class="w-[120px] h-[120px] bg-gray-300 rounded-full mx-auto overflow-hidden">
+                            <img src="https://via.placeholder.com/120?text=Ops" alt="Ops" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="mt-5 font-poppins font-semibold text-[20px] text-[#1A1A1A]">[Name]</h3>
+                        <p class="mt-1 text-[14px] font-medium text-[#C9A227]">Head of Operations</p>
+                        <p class="mt-3 text-[14px] text-[#666666] leading-relaxed">Specializes in logistics, documentation, and supply chain management</p>
+                        <div class="mt-4 text-[#1E3A5F] text-[20px]"><i class="fa-brands fa-linkedin cursor-pointer"></i></div>
+                    </div>
+                    <div class="bg-[#F5F7FA] rounded-lg p-8">
+                        <div class="w-[120px] h-[120px] bg-gray-300 rounded-full mx-auto overflow-hidden">
+                            <img src="https://via.placeholder.com/120?text=BD" alt="BD" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="mt-5 font-poppins font-semibold text-[20px] text-[#1A1A1A]">[Name]</h3>
+                        <p class="mt-1 text-[14px] font-medium text-[#C9A227]">Business Development</p>
+                        <p class="mt-3 text-[14px] text-[#666666] leading-relaxed">Building partnerships across Middle East, Africa, and European markets</p>
+                        <div class="mt-4 text-[#1E3A5F] text-[20px]"><i class="fa-brands fa-linkedin cursor-pointer"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS & COMPLIANCE -->
+        <section class="py-[80px] bg-[#F5F7FA]">
+            <div class="max-w-container text-center">
+                <h2 class="text-[#1A1A1A] font-poppins font-semibold text-[28px] mb-2">Certifications & Compliance</h2>
+                <p class="text-[#666666] text-[16px] mb-12">We maintain the highest standards of quality and regulatory compliance</p>
+                <div class="grid grid-cols-5 gap-6">
+                    <div class="bg-white border border-[#E8E8E8] rounded-lg p-8 h-[180px] flex flex-col items-center justify-center">
+                        <div class="h-[60px] flex items-center"><img src="https://via.placeholder.com/120x60?text=ISO" alt="ISO" class="h-full grayscale opacity-70"></div>
+                        <div class="mt-4 font-poppins font-semibold text-[15px] text-[#1A1A1A]">ISO 9001:2015</div>
+                        <p class="mt-2 text-[12px] text-[#888888]">Quality Management System</p>
+                    </div>
+                    <div class="bg-white border border-[#E8E8E8] rounded-lg p-8 h-[180px] flex flex-col items-center justify-center">
+                        <div class="h-[60px] flex items-center"><img src="https://via.placeholder.com/120x60?text=IEC" alt="IEC" class="h-full grayscale opacity-70"></div>
+                        <div class="mt-4 font-poppins font-semibold text-[15px] text-[#1A1A1A]">IEC Registration</div>
+                        <p class="mt-2 text-[12px] text-[#888888]">Import Export Code</p>
+                    </div>
+                    <div class="bg-white border border-[#E8E8E8] rounded-lg p-8 h-[180px] flex flex-col items-center justify-center">
+                        <div class="h-[60px] flex items-center"><img src="https://via.placeholder.com/120x60?text=GST" alt="GST" class="h-full grayscale opacity-70"></div>
+                        <div class="mt-4 font-poppins font-semibold text-[15px] text-[#1A1A1A]">GST Compliant</div>
+                        <p class="mt-2 text-[12px] text-[#888888]">Tax Registration</p>
+                    </div>
+                    <div class="bg-white border border-[#E8E8E8] rounded-lg p-8 h-[180px] flex flex-col items-center justify-center">
+                        <div class="h-[60px] flex items-center"><img src="https://via.placeholder.com/120x60?text=FSSAI" alt="FSSAI" class="h-full grayscale opacity-70"></div>
+                        <div class="mt-4 font-poppins font-semibold text-[15px] text-[#1A1A1A]">FSSAI License</div>
+                        <p class="mt-2 text-[12px] text-[#888888]">Food Safety Compliance</p>
+                    </div>
+                    <div class="bg-white border border-[#E8E8E8] rounded-lg p-8 h-[180px] flex flex-col items-center justify-center">
+                        <div class="h-[60px] flex items-center"><img src="https://via.placeholder.com/120x60?text=APEDA" alt="APEDA" class="h-full grayscale opacity-70"></div>
+                        <div class="mt-4 font-poppins font-semibold text-[15px] text-[#1A1A1A]">APEDA Registered</div>
+                        <p class="mt-2 text-[12px] text-[#888888]">Agricultural Exports</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US (ABOUT VERSION) -->
+        <section class="py-[100px] bg-white">
+            <div class="max-w-container flex items-center">
+                <div class="w-[40%]">
+                    <div class="text-[#C9A227] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">THE [COMPANY] DIFFERENCE</div>
+                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[34px] leading-[1.3] mb-5">Why Partner With Us?</h2>
+                    <p class="text-[16px] text-[#666666]">We combine decades of experience with modern trade practices to deliver exceptional value to our partners.</p>
+                </div>
+                <div class="w-[55%] ml-auto grid grid-cols-2 gap-x-12 gap-y-8">
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-circle-check text-[32px] text-[#C9A227]"></i>
+                        <div>
+                            <h3 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">Quality Inspection</h3>
+                            <p class="text-[13px] text-[#666666] mt-1">Multi-stage quality checks at source and dispatch</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-tags text-[32px] text-[#C9A227]"></i>
+                        <div>
+                            <h3 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">Competitive Pricing</h3>
+                            <p class="text-[13px] text-[#666666] mt-1">Best value for international markets via direct sourcing</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-file-lines text-[32px] text-[#C9A227]"></i>
+                        <div>
+                            <h3 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">Documentation Support</h3>
+                            <p class="text-[13px] text-[#666666] mt-1">Complete export-import paperwork managed by experts</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-headset text-[32px] text-[#C9A227]"></i>
+                        <div>
+                            <h3 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">Dedicated Support</h3>
+                            <p class="text-[13px] text-[#666666] mt-1">Personal account managers for smooth communication</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-shield-halved text-[32px] text-[#C9A227]"></i>
+                        <div>
+                            <h3 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">Secure Transactions</h3>
+                            <p class="text-[13px] text-[#666666] mt-1">Safe payment processing and verified LC/TT terms</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-rotate text-[32px] text-[#C9A227]"></i>
+                        <div>
+                            <h3 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">Consistent Supply</h3>
+                            <p class="text-[13px] text-[#666666] mt-1">Reliable sourcing network for bulk requirements</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION (SHARED) -->
+        <section class="py-[80px] bg-[#C9A227]">
+            <div class="max-w-container text-center">
+                <h2 class="text-white font-poppins font-bold text-[38px] mb-3">Ready to Start Trading?</h2>
+                <p class="text-white/90 text-[18px] mb-[36px]">Get a competitive quote for your import or export requirements</p>
+                
+                <div class="flex justify-center gap-5 mb-[40px]">
+                    <button class="w-[200px] h-[54px] bg-[#1E3A5F] text-white font-poppins font-semibold text-[14px] rounded-[4px] shadow-lg">REQUEST A QUOTE</button>
+                    <button class="w-[200px] h-[54px] bg-transparent border-2 border-white text-white font-poppins font-semibold text-[14px] rounded-[4px] hover:bg-white/10 transition-all">CONTACT US</button>
+                </div>
+
+                <div class="flex justify-center items-center gap-10 text-white font-medium text-[15px]">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-phone text-[18px]"></i> +91 98XXX XXXXX</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-envelope text-[18px]"></i> info@company.com</div>
+                    <div class="flex items-center gap-2 cursor-pointer"><i class="fa-brands fa-whatsapp text-[18px]"></i> Chat Now</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PRODUCTS VIEW -->
+    <main id="products-view" class="hidden">
+        <!-- PAGE HERO -->
+        <section class="relative h-[380px] w-full overflow-hidden bg-gray-900">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop" alt="Our Products" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-[#1E3A5F]/65"></div>
+            </div>
+            <div class="relative z-10 h-full max-w-container flex flex-col justify-center">
+                <div class="text-white/70 text-[13px] font-medium mb-4">Home / Products</div>
+                <h1 class="text-white text-[52px] font-bold font-poppins leading-tight mb-4">Our Products</h1>
+                <p class="text-white/85 text-[19px]">Premium quality export products across five diverse categories</p>
+            </div>
+        </section>
+
+        <!-- CATEGORY FILTER BAR (Sticky) -->
+        <div class="sticky top-[116px] z-40 bg-white border-b border-[#E8E8E8] h-[72px]">
+            <div class="max-w-container h-full flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <button class="px-7 py-3.5 bg-[#1E3A5F] text-white font-poppins font-medium text-[13px] rounded-[4px] shadow-sm">ALL PRODUCTS</button>
+                    <button class="px-7 py-3.5 bg-transparent hover:bg-[#F5F7FA] text-[#666666] font-poppins font-medium text-[13px] rounded-[4px] transition-all">METAL SCRAP</button>
+                    <button class="px-7 py-3.5 bg-transparent hover:bg-[#F5F7FA] text-[#666666] font-poppins font-medium text-[13px] rounded-[4px] transition-all">AGRICULTURAL</button>
+                    <button class="px-7 py-3.5 bg-transparent hover:bg-[#F5F7FA] text-[#666666] font-poppins font-medium text-[13px] rounded-[4px] transition-all">SEAFOOD</button>
+                    <button class="px-7 py-3.5 bg-transparent hover:bg-[#F5F7FA] text-[#666666] font-poppins font-medium text-[13px] rounded-[4px] transition-all">LEATHER GOODS</button>
+                    <button class="px-7 py-3.5 bg-transparent hover:bg-[#F5F7FA] text-[#666666] font-poppins font-medium text-[13px] rounded-[4px] transition-all">HANDICRAFTS</button>
+                </div>
+                <div class="text-[14px] text-[#888888] font-inter">Showing 24 products</div>
+            </div>
+        </div>
+
+        <!-- PRODUCT CATEGORIES OVERVIEW -->
+        <section class="py-[80px] bg-[#F5F7FA]">
+            <div class="max-w-container">
+                <div class="text-center mb-[56px]">
+                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[36px] mb-3">Explore Our Product Range</h2>
+                    <p class="text-[#666666] text-[16px]">Click on any category to view detailed product listings</p>
+                </div>
+
+                <div class="grid grid-cols-5 gap-6">
+                    <!-- Category 1 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[12px] overflow-hidden flex flex-col h-[420px] transition-all duration-300 hover:border-[#C9A227] hover:-translate-y-1.5 group">
+                        <div class="h-[60%] relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=2070&auto=format&fit=crop" alt="Metal Scrap" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="h-[40%] p-7 flex flex-col relative">
+                            <i class="fa-solid fa-recycle text-[36px] text-[#C9A227] absolute top-6 right-7"></i>
+                            <h3 class="font-poppins font-bold text-[24px] text-[#1A1A1A]">Metal Scrap</h3>
+                            <div class="text-[13px] text-[#888888] mt-1">6 Products</div>
+                            <p class="text-[14px] text-[#666666] mt-3 line-clamp-2">Copper, Aluminium, Brass, Zinc, Lead, and Steel scrap for global recycling industries</p>
+                            <a href="#" class="mt-auto font-poppins font-semibold text-[13px] text-[#1E3A5F]">VIEW PRODUCTS <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[12px] overflow-hidden flex flex-col h-[420px] transition-all duration-300 hover:border-[#C9A227] hover:-translate-y-1.5 group">
+                        <div class="h-[60%] relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?q=80&w=1992&auto=format&fit=crop" alt="Agricultural Products" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="h-[40%] p-7 flex flex-col relative">
+                            <i class="fa-solid fa-wheat-awn text-[36px] text-[#C9A227] absolute top-6 right-7"></i>
+                            <h3 class="font-poppins font-bold text-[24px] text-[#1A1A1A]">Agricultural Products</h3>
+                            <div class="text-[13px] text-[#888888] mt-1">8 Products</div>
+                            <p class="text-[14px] text-[#666666] mt-3 line-clamp-2">Premium grains, spices, pulses, and organic produce from Indian farms</p>
+                            <a href="#" class="mt-auto font-poppins font-semibold text-[13px] text-[#1E3A5F]">VIEW PRODUCTS <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[12px] overflow-hidden flex flex-col h-[420px] transition-all duration-300 hover:border-[#C9A227] hover:-translate-y-1.5 group">
+                        <div class="h-[60%] relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1553659971-f01207815844?q=80&w=1964&auto=format&fit=crop" alt="Premium Seafood" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="h-[40%] p-7 flex flex-col relative">
+                            <i class="fa-solid fa-fish text-[36px] text-[#C9A227] absolute top-6 right-7"></i>
+                            <h3 class="font-poppins font-bold text-[24px] text-[#1A1A1A]">Premium Seafood</h3>
+                            <div class="text-[13px] text-[#888888] mt-1">5 Products</div>
+                            <p class="text-[14px] text-[#666666] mt-3 line-clamp-2">Fresh and frozen seafood meeting international quality and safety standards</p>
+                            <a href="#" class="mt-auto font-poppins font-semibold text-[13px] text-[#1E3A5F]">VIEW PRODUCTS <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[12px] overflow-hidden flex flex-col h-[420px] transition-all duration-300 hover:border-[#C9A227] hover:-translate-y-1.5 group">
+                        <div class="h-[60%] relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1524333865981-3a4bd4199400?q=80&w=2070&auto=format&fit=crop" alt="Leather Goods" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="h-[40%] p-7 flex flex-col relative">
+                            <i class="fa-solid fa-briefcase text-[36px] text-[#C9A227] absolute top-6 right-7"></i>
+                            <h3 class="font-poppins font-bold text-[24px] text-[#1A1A1A]">Leather Goods</h3>
+                            <div class="text-[13px] text-[#888888] mt-1">4 Products</div>
+                            <p class="text-[14px] text-[#666666] mt-3 line-clamp-2">Handcrafted leather belts, bags, wallets, and accessories</p>
+                            <a href="#" class="mt-auto font-poppins font-semibold text-[13px] text-[#1E3A5F]">VIEW PRODUCTS <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Category 5 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[12px] overflow-hidden flex flex-col h-[420px] transition-all duration-300 hover:border-[#C9A227] hover:-translate-y-1.5 group">
+                        <div class="h-[60%] relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1627733560662-7901844031d2?q=80&w=2070&auto=format&fit=crop" alt="Handicrafts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="h-[40%] p-7 flex flex-col relative">
+                            <i class="fa-solid fa-hands text-[36px] text-[#C9A227] absolute top-6 right-7"></i>
+                            <h3 class="font-poppins font-bold text-[24px] text-[#1A1A1A]">Handicrafts</h3>
+                            <div class="text-[13px] text-[#888888] mt-1">6 Products</div>
+                            <p class="text-[14px] text-[#666666] mt-3 line-clamp-2">Traditional Indian artisanal products and decorative items</p>
+                            <a href="#" class="mt-auto font-poppins font-semibold text-[13px] text-[#1E3A5F]">VIEW PRODUCTS <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- METAL SCRAP SECTION -->
+        <section class="py-[100px] bg-white">
+            <div class="max-w-container">
+                <div class="mb-[56px]">
+                    <div class="text-[#888888] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">CATEGORY 01</div>
+                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[38px] mb-2">Metal Scrap</h2>
+                    <p class="text-[#666666] text-[17px]">Export-grade scrap metals for global recycling and manufacturing industries</p>
+                </div>
+
+                <div class="grid grid-cols-3 gap-8">
+                    <!-- Metal Product 1 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[10px] overflow-hidden hover:border-[#1E3A5F] transition-all duration-300 flex flex-col shadow-sm">
+                        <div class="h-[220px]">
+                            <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=2070&auto=format&fit=crop" alt="Copper Scrap" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-7 flex flex-col flex-grow">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-poppins font-semibold text-[20px] text-[#1A1A1A]">Copper Scrap</h3>
+                                <span class="bg-[#F0F0F0] px-2.5 py-1 rounded text-[#666666] text-[11px] font-medium uppercase tracking-wider">Grade: Millberry</span>
+                            </div>
+                            <p class="text-[14px] text-[#666666] mb-5 leading-relaxed">High-quality copper scrap including wire, turnings, and cable scrap</p>
+                            <div class="space-y-0 text-[12px] border-t border-[#F0F0F0]">
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Purity</span> <span class="text-[#333333] font-medium">95-99.9%</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Form</span> <span class="text-[#333333] font-medium">Wire, Cable, Cathode</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Origin</span> <span class="text-[#333333] font-medium">India / Imported</span></div>
+                                <div class="flex justify-between py-2"><span class="text-[#888888]">HS Code</span> <span class="text-[#333333] font-medium">7404.00.10</span></div>
+                            </div>
+                            <div class="mt-4 flex items-center gap-2 text-[13px] text-[#666666]">
+                                <i class="fa-solid fa-box text-[#888888]"></i> Packaging: Bales, Bundles
+                            </div>
+                            <div class="mt-6 flex items-center justify-between">
+                                <div class="text-[14px] text-[#1A1A1A] font-semibold">MOQ: 20 MT</div>
+                                <button class="h-[40px] px-6 bg-[#C9A227] hover:bg-[#B8911F] text-white font-poppins font-semibold text-[12px] rounded transition-colors uppercase">GET QUOTE</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metal Product 2 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[10px] overflow-hidden hover:border-[#1E3A5F] transition-all duration-300 flex flex-col shadow-sm">
+                        <div class="h-[220px]">
+                            <img src="https://images.unsplash.com/photo-1544921612-4f30325439a2?q=80&w=2070&auto=format&fit=crop" alt="Aluminium Scrap" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-7 flex flex-col flex-grow">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-poppins font-semibold text-[20px] text-[#1A1A1A]">Aluminium Scrap</h3>
+                                <span class="bg-[#F0F0F0] px-2.5 py-1 rounded text-[#666666] text-[11px] font-medium uppercase tracking-wider">Grade: Taint/Tabor</span>
+                            </div>
+                            <p class="text-[14px] text-[#666666] mb-5 leading-relaxed">Aluminium scrap from extrusions, beverage cans, and sheet metal</p>
+                            <div class="space-y-0 text-[12px] border-t border-[#F0F0F0]">
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Purity</span> <span class="text-[#333333] font-medium">92-98%</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Form</span> <span class="text-[#333333] font-medium">Sheets, UBC, Extrusion</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Origin</span> <span class="text-[#333333] font-medium">India / Imported</span></div>
+                                <div class="flex justify-between py-2"><span class="text-[#888888]">HS Code</span> <span class="text-[#333333] font-medium">7602.00.10</span></div>
+                            </div>
+                            <div class="mt-4 flex items-center gap-2 text-[13px] text-[#666666]">
+                                <i class="fa-solid fa-box text-[#888888]"></i> Packaging: Bales, Loose
+                            </div>
+                            <div class="mt-6 flex items-center justify-between">
+                                <div class="text-[14px] text-[#1A1A1A] font-semibold">MOQ: 25 MT</div>
+                                <button class="h-[40px] px-6 bg-[#C9A227] hover:bg-[#B8911F] text-white font-poppins font-semibold text-[12px] rounded transition-colors uppercase">GET QUOTE</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metal Product 3 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[10px] overflow-hidden hover:border-[#1E3A5F] transition-all duration-300 flex flex-col shadow-sm">
+                        <div class="h-[220px]">
+                            <img src="https://images.unsplash.com/photo-1590566373809-5f2f53434680?q=80&w=2070&auto=format&fit=crop" alt="Brass Scrap" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-7 flex flex-col flex-grow">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-poppins font-semibold text-[20px] text-[#1A1A1A]">Brass Scrap</h3>
+                                <span class="bg-[#F0F0F0] px-2.5 py-1 rounded text-[#666666] text-[11px] font-medium uppercase tracking-wider">Grade: Honey</span>
+                            </div>
+                            <p class="text-[14px] text-[#666666] mb-5 leading-relaxed">Brass scrap from fittings, valves, and industrial applications</p>
+                            <div class="space-y-0 text-[12px] border-t border-[#F0F0F0]">
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Purity</span> <span class="text-[#333333] font-medium">60-70% Cu Content</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Form</span> <span class="text-[#333333] font-medium">Honey, Shells, Turnings</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Origin</span> <span class="text-[#333333] font-medium">India</span></div>
+                                <div class="flex justify-between py-2"><span class="text-[#888888]">HS Code</span> <span class="text-[#333333] font-medium">7404.00.20</span></div>
+                            </div>
+                            <div class="mt-4 flex items-center gap-2 text-[13px] text-[#666666]">
+                                <i class="fa-solid fa-box text-[#888888]"></i> Packaging: Bundles, Drums
+                            </div>
+                            <div class="mt-6 flex items-center justify-between">
+                                <div class="text-[14px] text-[#1A1A1A] font-semibold">MOQ: 10 MT</div>
+                                <button class="h-[40px] px-6 bg-[#C9A227] hover:bg-[#B8911F] text-white font-poppins font-semibold text-[12px] rounded transition-colors uppercase">GET QUOTE</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metal Product 4 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[10px] overflow-hidden hover:border-[#1E3A5F] transition-all duration-300 flex flex-col shadow-sm">
+                        <div class="h-[220px]">
+                            <img src="https://images.unsplash.com/photo-1542332213-9b5a5a3fab30?q=80&w=2070&auto=format&fit=crop" alt="Zinc Scrap" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-7 flex flex-col flex-grow">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-poppins font-semibold text-[20px] text-[#1A1A1A]">Zinc Scrap</h3>
+                                <span class="bg-[#F0F0F0] px-2.5 py-1 rounded text-[#666666] text-[11px] font-medium uppercase tracking-wider">Grade: Die-cast</span>
+                            </div>
+                            <p class="text-[14px] text-[#666666] mb-5 leading-relaxed">Zinc scrap from die-casting and galvanizing industries</p>
+                            <div class="space-y-0 text-[12px] border-t border-[#F0F0F0]">
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Purity</span> <span class="text-[#333333] font-medium">92-99%</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Form</span> <span class="text-[#333333] font-medium">Die-cast, Ingots, Dross</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Origin</span> <span class="text-[#333333] font-medium">India</span></div>
+                                <div class="flex justify-between py-2"><span class="text-[#888888]">HS Code</span> <span class="text-[#333333] font-medium">7902.00.10</span></div>
+                            </div>
+                            <div class="mt-4 flex items-center gap-2 text-[13px] text-[#666666]">
+                                <i class="fa-solid fa-box text-[#888888]"></i> Packaging: Drums, Pallets
+                            </div>
+                            <div class="mt-6 flex items-center justify-between">
+                                <div class="text-[14px] text-[#1A1A1A] font-semibold">MOQ: 15 MT</div>
+                                <button class="h-[40px] px-6 bg-[#C9A227] hover:bg-[#B8911F] text-white font-poppins font-semibold text-[12px] rounded transition-colors uppercase">GET QUOTE</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metal Product 5 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[10px] overflow-hidden hover:border-[#1E3A5F] transition-all duration-300 flex flex-col shadow-sm">
+                        <div class="h-[220px]">
+                            <img src="https://images.unsplash.com/photo-1610411130612-4f30325439a2?q=80&w=2070&auto=format&fit=crop" alt="Lead Scrap" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-7 flex flex-col flex-grow">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-poppins font-semibold text-[20px] text-[#1A1A1A]">Lead Scrap</h3>
+                                <span class="bg-[#F0F0F0] px-2.5 py-1 rounded text-[#666666] text-[11px] font-medium uppercase tracking-wider">Grade: Battery</span>
+                            </div>
+                            <p class="text-[14px] text-[#666666] mb-5 leading-relaxed">Lead scrap primarily from battery recycling and industrial sources</p>
+                            <div class="space-y-0 text-[12px] border-t border-[#F0F0F0]">
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Purity</span> <span class="text-[#333333] font-medium">97-99%</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Form</span> <span class="text-[#333333] font-medium">Ingots, Plates, Soft Lead</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Origin</span> <span class="text-[#333333] font-medium">India</span></div>
+                                <div class="flex justify-between py-2"><span class="text-[#888888]">HS Code</span> <span class="text-[#333333] font-medium">7802.00.10</span></div>
+                            </div>
+                            <div class="mt-4 flex items-center gap-2 text-[13px] text-[#666666]">
+                                <i class="fa-solid fa-box text-[#888888]"></i> Packaging: Pallets
+                            </div>
+                            <div class="mt-6 flex items-center justify-between">
+                                <div class="text-[14px] text-[#1A1A1A] font-semibold">MOQ: 20 MT</div>
+                                <button class="h-[40px] px-6 bg-[#C9A227] hover:bg-[#B8911F] text-white font-poppins font-semibold text-[12px] rounded transition-colors uppercase">GET QUOTE</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metal Product 6 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[10px] overflow-hidden hover:border-[#1E3A5F] transition-all duration-300 flex flex-col shadow-sm">
+                        <div class="h-[220px]">
+                            <img src="https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?q=80&w=2070&auto=format&fit=crop" alt="Steel Scrap" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-7 flex flex-col flex-grow">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-poppins font-semibold text-[20px] text-[#1A1A1A]">Steel / MS Scrap</h3>
+                                <span class="bg-[#F0F0F0] px-2.5 py-1 rounded text-[#666666] text-[11px] font-medium uppercase tracking-wider">Grade: HMS 1&2</span>
+                            </div>
+                            <p class="text-[14px] text-[#666666] mb-5 leading-relaxed">Ferrous scrap for steel mills and foundries including HMS and shredded</p>
+                            <div class="space-y-0 text-[12px] border-t border-[#F0F0F0]">
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Purity</span> <span class="text-[#333333] font-medium">Ferrous 92%+</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Form</span> <span class="text-[#333333] font-medium">HMS, Shredded, P&S</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Origin</span> <span class="text-[#333333] font-medium">India</span></div>
+                                <div class="flex justify-between py-2"><span class="text-[#888888]">HS Code</span> <span class="text-[#333333] font-medium">7204.10.00</span></div>
+                            </div>
+                            <div class="mt-4 flex items-center gap-2 text-[13px] text-[#666666]">
+                                <i class="fa-solid fa-box text-[#888888]"></i> Packaging: Loose, Container
+                            </div>
+                            <div class="mt-6 flex items-center justify-between">
+                                <div class="text-[14px] text-[#1A1A1A] font-semibold">MOQ: 100 MT</div>
+                                <button class="h-[40px] px-6 bg-[#C9A227] hover:bg-[#B8911F] text-white font-poppins font-semibold text-[12px] rounded transition-colors uppercase">GET QUOTE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center mt-10">
+                    <a href="#" class="font-poppins font-medium text-[14px] text-[#1E3A5F] hover:underline">View Complete Catalog <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- AGRICULTURAL PRODUCTS SECTION -->
+        <section class="py-[100px] bg-[#F5F7FA]">
+            <div class="max-w-container">
+                <div class="mb-[56px]">
+                    <div class="text-[#888888] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">CATEGORY 02</div>
+                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[38px] mb-2">Agricultural Products</h2>
+                    <p class="text-[#666666] text-[17px]">Farm-fresh produce from India's fertile lands, meeting international quality standards</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-8">
+                    <!-- Agri Product 1 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[10px] overflow-hidden flex h-[380px] shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-[45%] h-full">
+                            <img src="https://images.unsplash.com/photo-1586201327693-86649f7214e2?q=80&w=2070&auto=format&fit=crop" alt="Basmati Rice" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-[55%] p-8 flex flex-col">
+                            <h3 class="font-poppins font-semibold text-[22px] text-[#1A1A1A]">Basmati Rice</h3>
+                            <div class="mt-2 text-[#2E7D32] text-[11px] font-medium tracking-wider uppercase flex items-center gap-1.5">
+                                🇮🇳 Product of India
+                            </div>
+                            <p class="text-[14px] text-[#666666] mt-4 leading-relaxed">Premium long-grain basmati rice, aged for authentic aroma and taste. Sourced from the best farms.</p>
+                            <div class="mt-4 text-[12px] text-[#888888] font-medium">FSSAI | APEDA Certified</div>
+                            <div class="mt-5 space-y-1.5 text-[13px]">
+                                <div class="flex justify-between border-b border-gray-100 pb-1.5"><span class="text-[#888888]">Varieties</span> <span class="text-[#333333] font-medium">1121, Pusa, Traditional</span></div>
+                                <div class="flex justify-between border-b border-gray-100 pb-1.5"><span class="text-[#888888]">Packaging</span> <span class="text-[#333333] font-medium">PP, Jute (25/50kg)</span></div>
+                                <div class="flex justify-between"><span class="text-[#888888]">MOQ</span> <span class="text-[#333333] font-medium">20 MT</span></div>
+                            </div>
+                            <button class="mt-auto h-[44px] border-2 border-[#2E7D32] text-[#2E7D32] hover:bg-[#2E7D32] hover:text-white font-poppins font-semibold text-[12px] rounded transition-all uppercase">REQUEST QUOTE</button>
+                        </div>
+                    </div>
+
+                    <!-- Agri Product 2 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[10px] overflow-hidden flex h-[380px] shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-[45%] h-full">
+                            <img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?q=80&w=2070&auto=format&fit=crop" alt="Indian Spices" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-[55%] p-8 flex flex-col">
+                            <h3 class="font-poppins font-semibold text-[22px] text-[#1A1A1A]">Indian Spices</h3>
+                            <div class="mt-2 text-[#2E7D32] text-[11px] font-medium tracking-wider uppercase flex items-center gap-1.5">
+                                🇮🇳 Product of India
+                            </div>
+                            <p class="text-[14px] text-[#666666] mt-4 leading-relaxed">Premium quality whole and ground spices - turmeric, chili, cumin, coriander, and more.</p>
+                            <div class="mt-4 text-[12px] text-[#888888] font-medium">FSSAI | APEDA Certified</div>
+                            <div class="mt-5 space-y-1.5 text-[13px]">
+                                <div class="flex justify-between border-b border-gray-100 pb-1.5"><span class="text-[#888888]">Varieties</span> <span class="text-[#333333] font-medium">Whole, Ground, Blends</span></div>
+                                <div class="flex justify-between border-b border-gray-100 pb-1.5"><span class="text-[#888888]">Packaging</span> <span class="text-[#333333] font-medium">PP bags, Cartons</span></div>
+                                <div class="flex justify-between"><span class="text-[#888888]">MOQ</span> <span class="text-[#333333] font-medium">5 MT</span></div>
+                            </div>
+                            <button class="mt-auto h-[44px] border-2 border-[#2E7D32] text-[#2E7D32] hover:bg-[#2E7D32] hover:text-white font-poppins font-semibold text-[12px] rounded transition-all uppercase">REQUEST QUOTE</button>
+                        </div>
+                    </div>
+
+                    <!-- Agri Product 3 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[10px] overflow-hidden flex h-[380px] shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-[45%] h-full">
+                            <img src="https://images.unsplash.com/photo-1515942400420-2b98fed1f515?q=80&w=2070&auto=format&fit=crop" alt="Pulses" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-[55%] p-8 flex flex-col">
+                            <h3 class="font-poppins font-semibold text-[22px] text-[#1A1A1A]">Pulses & Lentils</h3>
+                            <div class="mt-2 text-[#2E7D32] text-[11px] font-medium tracking-wider uppercase flex items-center gap-1.5">
+                                🇮🇳 Product of India
+                            </div>
+                            <p class="text-[14px] text-[#666666] mt-4 leading-relaxed">Protein-rich lentils and pulses including chickpeas, red lentils, and green gram.</p>
+                            <div class="mt-4 text-[12px] text-[#888888] font-medium">FSSAI | APEDA Certified</div>
+                            <div class="mt-5 space-y-1.5 text-[13px]">
+                                <div class="flex justify-between border-b border-gray-100 pb-1.5"><span class="text-[#888888]">Varieties</span> <span class="text-[#333333] font-medium">Chana, Toor, Moong</span></div>
+                                <div class="flex justify-between border-b border-gray-100 pb-1.5"><span class="text-[#888888]">Packaging</span> <span class="text-[#333333] font-medium">PP bags (50kg)</span></div>
+                                <div class="flex justify-between"><span class="text-[#888888]">MOQ</span> <span class="text-[#333333] font-medium">25 MT</span></div>
+                            </div>
+                            <button class="mt-auto h-[44px] border-2 border-[#2E7D32] text-[#2E7D32] hover:bg-[#2E7D32] hover:text-white font-poppins font-semibold text-[12px] rounded transition-all uppercase">REQUEST QUOTE</button>
+                        </div>
+                    </div>
+
+                    <!-- Agri Product 4 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[10px] overflow-hidden flex h-[380px] shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-[45%] h-full">
+                            <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?q=80&w=2070&auto=format&fit=crop" alt="Organic Produce" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-[55%] p-8 flex flex-col">
+                            <h3 class="font-poppins font-semibold text-[22px] text-[#1A1A1A]">Organic Produce</h3>
+                            <div class="mt-2 text-[#2E7D32] text-[11px] font-medium tracking-wider uppercase flex items-center gap-1.5">
+                                🇮🇳 Product of India
+                            </div>
+                            <p class="text-[14px] text-[#666666] mt-4 leading-relaxed">Certified organic fruits, vegetables, and grains for health-conscious global markets.</p>
+                            <div class="mt-4 text-[12px] text-[#888888] font-medium">Organic Certified (NPOP/USDA)</div>
+                            <div class="mt-5 space-y-1.5 text-[13px]">
+                                <div class="flex justify-between border-b border-gray-100 pb-1.5"><span class="text-[#888888]">Variety</span> <span class="text-[#333333] font-medium">Seasonal, Certified</span></div>
+                                <div class="flex justify-between border-b border-gray-100 pb-1.5"><span class="text-[#888888]">Packaging</span> <span class="text-[#333333] font-medium">As per requirements</span></div>
+                                <div class="flex justify-between"><span class="text-[#888888]">MOQ</span> <span class="text-[#333333] font-medium">Varies</span></div>
+                            </div>
+                            <button class="mt-auto h-[44px] border-2 border-[#2E7D32] text-[#2E7D32] hover:bg-[#2E7D32] hover:text-white font-poppins font-semibold text-[12px] rounded transition-all uppercase">REQUEST QUOTE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center mt-10">
+                    <a href="#" class="font-poppins font-medium text-[14px] text-[#2E7D32] hover:underline">+ View 4 More Agricultural Products</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEAFOOD SECTION -->
+        <section class="py-[100px] bg-white">
+            <div class="max-w-container">
+                <div class="mb-[40px]">
+                    <div class="text-[#0277BD] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">CATEGORY 03</div>
+                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[38px] mb-2">Premium Seafood</h2>
+                    <p class="text-[#666666] text-[17px]">Fresh and frozen seafood from India's coastal waters, processed to international standards</p>
+                </div>
+
+                <!-- Seafood Quality Badges -->
+                <div class="flex flex-wrap gap-4 mb-12">
+                    <div class="bg-[#F0F7FF] border border-[#0277BD] px-4 py-2 rounded text-[#0277BD] text-[12px] font-medium">HACCP Certified</div>
+                    <div class="bg-[#F0F7FF] border border-[#0277BD] px-4 py-2 rounded text-[#0277BD] text-[12px] font-medium">EU Approved</div>
+                    <div class="bg-[#F0F7FF] border border-[#0277BD] px-4 py-2 rounded text-[#0277BD] text-[12px] font-medium">FDA Compliant</div>
+                    <div class="bg-[#F0F7FF] border border-[#0277BD] px-4 py-2 rounded text-[#0277BD] text-[12px] font-medium">BRC Certified</div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-8">
+                    <!-- Seafood 1 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[10px] overflow-hidden hover:border-[#0277BD] transition-all duration-300 flex flex-col shadow-sm">
+                        <div class="h-[220px]">
+                            <img src="https://images.unsplash.com/photo-1553659971-f01207815844?q=80&w=1964&auto=format&fit=crop" alt="Frozen Shrimp" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-7 flex flex-col flex-grow">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-poppins font-semibold text-[20px] text-[#1A1A1A]">Frozen Shrimp & Prawns</h3>
+                                <span class="bg-[#F0F0F0] px-2.5 py-1 rounded text-[#666666] text-[11px] font-medium uppercase tracking-wider">Grade: HOSO/PD</span>
+                            </div>
+                            <p class="text-[14px] text-[#666666] mb-5 leading-relaxed">Premium quality farmed and wild-caught shrimp, IQF processed for peak freshness.</p>
+                            <div class="space-y-0 text-[12px] border-t border-[#F0F0F0]">
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Species</span> <span class="text-[#333333] font-medium">Vannamei, Black Tiger</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Packaging</span> <span class="text-[#333333] font-medium">IQF Blocks, Retail</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Storage</span> <span class="text-[#333333] font-medium">-18°C</span></div>
+                                <div class="flex justify-between py-2"><span class="text-[#888888]">MOQ</span> <span class="text-[#333333] font-medium">10 MT</span></div>
+                            </div>
+                            <button class="mt-6 h-[40px] px-6 bg-[#0277BD] hover:bg-[#01579b] text-white font-poppins font-semibold text-[12px] rounded transition-colors uppercase">GET QUOTE</button>
+                        </div>
+                    </div>
+
+                    <!-- Seafood 2 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[10px] overflow-hidden hover:border-[#0277BD] transition-all duration-300 flex flex-col shadow-sm">
+                        <div class="h-[220px]">
+                            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=2080&auto=format&fit=crop" alt="Frozen Fish" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-7 flex flex-col flex-grow">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-poppins font-semibold text-[20px] text-[#1A1A1A]">Frozen Fish</h3>
+                                <span class="bg-[#F0F0F0] px-2.5 py-1 rounded text-[#666666] text-[11px] font-medium uppercase tracking-wider">Grade: Fillets/Whole</span>
+                            </div>
+                            <p class="text-[14px] text-[#666666] mb-5 leading-relaxed">Various fish species processed and frozen for international culinary markets.</p>
+                            <div class="space-y-0 text-[12px] border-t border-[#F0F0F0]">
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Species</span> <span class="text-[#333333] font-medium">Ribbon, Mackerel, Pomfret</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Packaging</span> <span class="text-[#333333] font-medium">Blocks, IQF</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Storage</span> <span class="text-[#333333] font-medium">-18°C</span></div>
+                                <div class="flex justify-between py-2"><span class="text-[#888888]">MOQ</span> <span class="text-[#333333] font-medium">15 MT</span></div>
+                            </div>
+                            <button class="mt-6 h-[40px] px-6 bg-[#0277BD] hover:bg-[#01579b] text-white font-poppins font-semibold text-[12px] rounded transition-colors uppercase">GET QUOTE</button>
+                        </div>
+                    </div>
+
+                    <!-- Seafood 3 -->
+                    <div class="bg-white border border-[#E8E8E8] rounded-[10px] overflow-hidden hover:border-[#0277BD] transition-all duration-300 flex flex-col shadow-sm">
+                        <div class="h-[220px]">
+                            <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=2070&auto=format&fit=crop" alt="Dried Seafood" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-7 flex flex-col flex-grow">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-poppins font-semibold text-[20px] text-[#1A1A1A]">Dried Seafood</h3>
+                                <span class="bg-[#F0F0F0] px-2.5 py-1 rounded text-[#666666] text-[11px] font-medium uppercase tracking-wider">Grade: Premium</span>
+                            </div>
+                            <p class="text-[14px] text-[#666666] mb-5 leading-relaxed">Traditional sun-dried and mechanically dried fish products with long shelf life.</p>
+                            <div class="space-y-0 text-[12px] border-t border-[#F0F0F0]">
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Types</span> <span class="text-[#333333] font-medium">Dried Fish, Dried Shrimp</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Packaging</span> <span class="text-[#333333] font-medium">Cartons</span></div>
+                                <div class="flex justify-between py-2 border-b border-[#F0F0F0]"><span class="text-[#888888]">Origin</span> <span class="text-[#333333] font-medium">Coastal India</span></div>
+                                <div class="flex justify-between py-2"><span class="text-[#888888]">MOQ</span> <span class="text-[#333333] font-medium">5 MT</span></div>
+                            </div>
+                            <button class="mt-6 h-[40px] px-6 bg-[#0277BD] hover:bg-[#01579b] text-white font-poppins font-semibold text-[12px] rounded transition-colors uppercase">GET QUOTE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEATHER GOODS SECTION -->
+        <section class="py-[100px] bg-[#F5F7FA]">
+            <div class="max-w-container">
+                <div class="mb-[56px]">
+                    <div class="text-[#5D4037] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">CATEGORY 04</div>
+                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[38px] mb-2">Leather Goods</h2>
+                    <p class="text-[#666666] text-[17px]">Handcrafted leather products from India's renowned leather industry</p>
+                </div>
+
+                <div class="flex gap-12 items-start">
+                    <div class="w-1/2 rounded-lg overflow-hidden shadow-lg h-[500px]">
+                        <img src="https://images.unsplash.com/photo-1524333865981-3a4bd4199400?q=80&w=2070&auto=format&fit=crop" alt="Leather belts and accessories" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-[45%]">
+                        <h3 class="font-poppins font-bold text-[28px] text-[#1A1A1A]">Leather Belts</h3>
+                        <div class="italic text-[16px] text-[#5D4037] mt-1">Handcrafted Excellence</div>
+                        <p class="text-[16px] text-[#666666] mt-5 leading-relaxed">
+                            Premium quality leather belts crafted by skilled Indian artisans. Available in genuine leather and bonded leather options with various high-quality buckle styles to suit diverse fashion markets.
+                        </p>
+                        
+                        <div class="mt-8 bg-white border border-[#E8E8E8] rounded-lg p-6">
+                            <h4 class="font-poppins font-semibold text-[15px] mb-4">Product Specifications</h4>
+                            <div class="space-y-2.5 text-[14px]">
+                                <div class="flex justify-between border-b border-[#F0F0F0] pb-2"><span class="text-[#888888]">Material</span> <span class="text-[#333333] font-medium">Genuine, Bonded Leather</span></div>
+                                <div class="flex justify-between border-b border-[#F0F0F0] pb-2"><span class="text-[#888888]">Widths</span> <span class="text-[#333333] font-medium">30mm, 35mm, 40mm</span></div>
+                                <div class="flex justify-between border-b border-[#F0F0F0] pb-2"><span class="text-[#888888]">Lengths</span> <span class="text-[#333333] font-medium">S, M, L, XL, XXL</span></div>
+                                <div class="flex justify-between border-b border-[#F0F0F0] pb-2"><span class="text-[#888888]">Buckle Types</span> <span class="text-[#333333] font-medium">Pin, Auto, Reversible</span></div>
+                                <div class="flex justify-between"><span class="text-[#888888]">Finish</span> <span class="text-[#333333] font-medium">Matte, Gloss, Antique</span></div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex flex-wrap gap-x-8 gap-y-2">
+                            <div class="flex items-center gap-2 text-[14px] text-[#333333]"><i class="fa-solid fa-check text-[#5D4037]"></i> Custom branding available</div>
+                            <div class="flex items-center gap-2 text-[14px] text-[#333333]"><i class="fa-solid fa-check text-[#5D4037]"></i> Private labeling</div>
+                            <div class="flex items-center gap-2 text-[14px] text-[#333333]"><i class="fa-solid fa-check text-[#5D4037]"></i> Bulk order discounts</div>
+                        </div>
+
+                        <div class="mt-8 flex items-center gap-6">
+                            <div class="text-[16px] font-bold text-[#1A1A1A]">MOQ: 500 Pieces</div>
+                            <button class="px-10 h-[54px] bg-[#5D4037] hover:bg-[#4e362e] text-white font-poppins font-semibold text-[14px] rounded transition-all uppercase">REQUEST SAMPLES</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smaller leather cards -->
+                <div class="grid grid-cols-3 gap-8 mt-12">
+                    <div class="bg-white border border-[#E8E8E8] rounded-lg p-6 flex items-center gap-6 shadow-sm">
+                        <div class="w-20 h-20 rounded bg-[#F5F7FA] overflow-hidden flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=2077&auto=format&fit=crop" alt="Leather Bags" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-poppins font-semibold text-[17px]">Leather Bags</h4>
+                            <p class="text-[13px] text-[#888888] mt-1">Briefcases, handbags, and travel bags</p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-[#E8E8E8] rounded-lg p-6 flex items-center gap-6 shadow-sm">
+                        <div class="w-20 h-20 rounded bg-[#F5F7FA] overflow-hidden flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=1974&auto=format&fit=crop" alt="Leather Wallets" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-poppins font-semibold text-[17px]">Leather Wallets</h4>
+                            <p class="text-[13px] text-[#888888] mt-1">Bi-fold, tri-fold, and slim designs</p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-[#E8E8E8] rounded-lg p-6 flex items-center gap-6 shadow-sm">
+                        <div class="w-20 h-20 rounded bg-[#F5F7FA] overflow-hidden flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1511405946472-a37e3b5ccd47?q=80&w=1974&auto=format&fit=crop" alt="Leather Accessories" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-poppins font-semibold text-[17px]">Leather Accessories</h4>
+                            <p class="text-[13px] text-[#888888] mt-1">Keyrings, passport holders, and more</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HANDICRAFTS SECTION -->
+        <section class="py-[100px] bg-white">
+            <div class="max-w-container">
+                <div class="mb-[48px]">
+                    <div class="text-[#C9A227] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">CATEGORY 05</div>
+                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[38px] mb-2">Traditional Handicrafts</h2>
+                    <p class="text-[#666666] text-[17px]">Authentic Indian artisanal products showcasing centuries of craftsmanship</p>
+                    
+                    <div class="mt-6 inline-flex items-center gap-3 bg-[#FFF8E1] border border-[#C9A227] px-5 py-2.5 rounded">
+                        <i class="fa-solid fa-hands text-[#C9A227]"></i>
+                        <span class="text-[14px] text-[#C9A227] font-poppins font-medium">Supporting 500+ Indian Artisans</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Grid (Simplified for UI consistency) -->
+                <div class="grid grid-cols-3 gap-8">
+                    <!-- Craft 1 -->
+                    <div class="group cursor-pointer">
+                        <div class="h-[280px] rounded-lg overflow-hidden relative shadow-md">
+                            <img src="https://images.unsplash.com/photo-1627733560662-7901844031d2?q=80&w=2070&auto=format&fit=crop" alt="Brass & Copperware" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="mt-4">
+                            <h4 class="font-poppins font-semibold text-[18px] text-[#1A1A1A]">Brass & Copperware</h4>
+                            <div class="text-[13px] text-[#C9A227] font-medium uppercase tracking-wider mt-0.5">Origin: Moradabad</div>
+                            <p class="text-[14px] text-[#666666] mt-2 leading-relaxed">Artistic decorative items, utensils, and idols with intricate carvings.</p>
+                            <a href="#" class="inline-block mt-3 text-[13px] text-[#1E3A5F] font-semibold">Inquire <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Craft 2 -->
+                    <div class="group cursor-pointer">
+                        <div class="h-[280px] rounded-lg overflow-hidden relative shadow-md">
+                            <img src="https://images.unsplash.com/photo-1610433202978-002758f4a187?q=80&w=2070&auto=format&fit=crop" alt="Wooden Crafts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="mt-4">
+                            <h4 class="font-poppins font-semibold text-[18px] text-[#1A1A1A]">Wooden Crafts</h4>
+                            <div class="text-[13px] text-[#C9A227] font-medium uppercase tracking-wider mt-0.5">Origin: Saharanpur</div>
+                            <p class="text-[14px] text-[#666666] mt-2 leading-relaxed">Hand-carved furniture, decorative panels, and home decor items.</p>
+                            <a href="#" class="inline-block mt-3 text-[13px] text-[#1E3A5F] font-semibold">Inquire <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Craft 3 -->
+                    <div class="group cursor-pointer">
+                        <div class="h-[280px] rounded-lg overflow-hidden relative shadow-md">
+                            <img src="https://images.unsplash.com/photo-1590736704728-f4730bb30770?q=80&w=1974&auto=format&fit=crop" alt="Textile Handicrafts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="mt-4">
+                            <h4 class="font-poppins font-semibold text-[18px] text-[#1A1A1A]">Textile Handicrafts</h4>
+                            <div class="text-[13px] text-[#C9A227] font-medium uppercase tracking-wider mt-0.5">Origin: Kashmir / Rajasthan</div>
+                            <p class="text-[14px] text-[#666666] mt-2 leading-relaxed">Embroidered textiles, hand-knotted rugs, and traditional tapestries.</p>
+                            <a href="#" class="inline-block mt-3 text-[13px] text-[#1E3A5F] font-semibold">Inquire <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Craft 4 -->
+                    <div class="group cursor-pointer">
+                        <div class="h-[280px] rounded-lg overflow-hidden relative shadow-md">
+                            <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?q=80&w=2070&auto=format&fit=crop" alt="Pottery & Ceramics" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="mt-4">
+                            <h4 class="font-poppins font-semibold text-[18px] text-[#1A1A1A]">Pottery & Ceramics</h4>
+                            <div class="text-[13px] text-[#C9A227] font-medium uppercase tracking-wider mt-0.5">Origin: Jaipur / Khurja</div>
+                            <p class="text-[14px] text-[#666666] mt-2 leading-relaxed">Blue pottery, terracotta items, and hand-painted ceramic ware.</p>
+                            <a href="#" class="inline-block mt-3 text-[13px] text-[#1E3A5F] font-semibold">Inquire <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Craft 5 -->
+                    <div class="group cursor-pointer">
+                        <div class="h-[280px] rounded-lg overflow-hidden relative shadow-md">
+                            <img src="https://images.unsplash.com/photo-1544413647-ad34887301d3?q=80&w=2070&auto=format&fit=crop" alt="Marble Inlay" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="mt-4">
+                            <h4 class="font-poppins font-semibold text-[18px] text-[#1A1A1A]">Marble Inlay Work</h4>
+                            <div class="text-[13px] text-[#C9A227] font-medium uppercase tracking-wider mt-0.5">Origin: Agra</div>
+                            <p class="text-[14px] text-[#666666] mt-2 leading-relaxed">Exquisite Pietra Dura work on marble tabletops and decorative boxes.</p>
+                            <a href="#" class="inline-block mt-3 text-[13px] text-[#1E3A5F] font-semibold">Inquire <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Craft 6 -->
+                    <div class="group cursor-pointer">
+                        <div class="h-[280px] rounded-lg overflow-hidden relative shadow-md">
+                            <img src="https://images.unsplash.com/photo-1621244249243-436b79b5eea8?q=80&w=2070&auto=format&fit=crop" alt="Wrought Iron" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="mt-4">
+                            <h4 class="font-poppins font-semibold text-[18px] text-[#1A1A1A]">Wrought Iron Decor</h4>
+                            <div class="text-[13px] text-[#C9A227] font-medium uppercase tracking-wider mt-0.5">Origin: Jodhpur</div>
+                            <p class="text-[14px] text-[#666666] mt-2 leading-relaxed">Hand-forged garden furniture, lamps, and architectural elements.</p>
+                            <a href="#" class="inline-block mt-3 text-[13px] text-[#1E3A5F] font-semibold">Inquire <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOWNLOAD CATALOG CTA -->
+        <section class="py-[64px] bg-[#1E3A5F]">
+            <div class="max-w-container text-center">
+                <h2 class="text-white font-poppins font-bold text-[28px] mb-3">Download Our Complete Product Catalog</h2>
+                <p class="text-white/80 text-[16px] mb-10 max-w-[700px] mx-auto">Get detailed specifications, pricing guidelines, and high-resolution images for all our product categories.</p>
+                <button class="px-12 h-[56px] bg-[#C9A227] hover:bg-[#B8911F] text-white font-poppins font-semibold text-[15px] rounded transition-all flex items-center gap-3 mx-auto shadow-lg">
+                    <i class="fa-solid fa-file-pdf text-[20px]"></i> DOWNLOAD PDF CATALOG
+                </button>
+            </div>
+        </section>
+
+        <!-- QUALITY ASSURANCE SECTION -->
+        <section class="py-[100px] bg-[#F5F7FA]">
+            <div class="max-w-container">
+                <div class="text-center mb-[56px]">
+                    <h2 class="text-[#1A1A1A] font-poppins font-semibold text-[32px]">Our Quality Commitment</h2>
+                    <p class="text-[#666666] text-[16px] mt-2">Rigorous inspection at every stage ensures only the best reaches our clients</p>
+                </div>
+
+                <!-- Horizontal Process Flow -->
+                <div class="relative flex justify-between items-start mt-[80px]">
+                    <!-- Connection Line Background -->
+                    <div class="absolute top-[32px] left-[5%] right-[5%] h-[2px] bg-[#E0E0E0] z-0"></div>
+
+                    <!-- Step 01 -->
+                    <div class="relative z-10 flex flex-col items-center w-[180px]">
+                        <div class="w-[64px] h-[64px] rounded-full border-2 border-[#1E3A5F] bg-white flex items-center justify-center font-poppins font-bold text-[24px] text-[#1E3A5F]">01</div>
+                        <h4 class="font-poppins font-semibold text-[15px] text-[#1A1A1A] mt-[20px] text-center">Source Verification</h4>
+                        <p class="text-[13px] text-[#666666] mt-[8px] text-center">Supplier credentials and material origin verified</p>
+                    </div>
+
+                    <!-- Step 02 -->
+                    <div class="relative z-10 flex flex-col items-center w-[180px]">
+                        <div class="w-[64px] h-[64px] rounded-full border-2 border-[#1E3A5F] bg-white flex items-center justify-center font-poppins font-bold text-[24px] text-[#1E3A5F]">02</div>
+                        <h4 class="font-poppins font-semibold text-[15px] text-[#1A1A1A] mt-[20px] text-center">Initial Inspection</h4>
+                        <p class="text-[13px] text-[#666666] mt-[8px] text-center">Quality check at procurement stage</p>
+                    </div>
+
+                    <!-- Step 03 -->
+                    <div class="relative z-10 flex flex-col items-center w-[180px]">
+                        <div class="w-[64px] h-[64px] rounded-full border-2 border-[#1E3A5F] bg-white flex items-center justify-center font-poppins font-bold text-[24px] text-[#1E3A5F]">03</div>
+                        <h4 class="font-poppins font-semibold text-[15px] text-[#1A1A1A] mt-[20px] text-center">Lab Testing</h4>
+                        <p class="text-[13px] text-[#666666] mt-[8px] text-center">Samples tested for purity and specifications</p>
+                    </div>
+
+                    <!-- Step 04 -->
+                    <div class="relative z-10 flex flex-col items-center w-[180px]">
+                        <div class="w-[64px] h-[64px] rounded-full border-2 border-[#1E3A5F] bg-white flex items-center justify-center font-poppins font-bold text-[24px] text-[#1E3A5F]">04</div>
+                        <h4 class="font-poppins font-semibold text-[15px] text-[#1A1A1A] mt-[20px] text-center">Pre-Shipment Check</h4>
+                        <p class="text-[13px] text-[#666666] mt-[8px] text-center">Final inspection before containerization</p>
+                    </div>
+
+                    <!-- Step 05 -->
+                    <div class="relative z-10 flex flex-col items-center w-[180px]">
+                        <div class="w-[64px] h-[64px] rounded-full border-2 border-[#1E3A5F] bg-white flex items-center justify-center font-poppins font-bold text-[24px] text-[#1E3A5F]">05</div>
+                        <h4 class="font-poppins font-semibold text-[15px] text-[#1A1A1A] mt-[20px] text-center">Documentation</h4>
+                        <p class="text-[13px] text-[#666666] mt-[8px] text-center">Complete certificates and test reports issued</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PACKAGING & SHIPPING INFO -->
+        <section class="py-[100px] bg-white">
+            <div class="max-w-container">
+                <div class="flex gap-[80px]">
+                    <!-- Left: Packaging -->
+                    <div class="w-1/2">
+                        <div class="flex items-center gap-4 mb-6">
+                            <i class="fa-solid fa-box text-[40px] text-[#1E3A5F]"></i>
+                            <h3 class="font-poppins font-bold text-[26px] text-[#1A1A1A]">Packaging Standards</h3>
+                        </div>
+                        <p class="text-[16px] text-[#666666] mb-10 leading-relaxed">
+                            All products are packed according to international shipping standards and buyer specifications to ensure maximum safety during transit.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex gap-4 items-start">
+                                <div class="w-10 h-10 rounded-full bg-[#F5F7FA] flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-cube text-[#C9A227] text-[18px]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">Bales & Bundles</h4>
+                                    <p class="text-[14px] text-[#666666]">For metal scrap (standard export packing)</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-start">
+                                <div class="w-10 h-10 rounded-full bg-[#F5F7FA] flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-drum text-[#C9A227] text-[18px]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">Drums & Containers</h4>
+                                    <p class="text-[14px] text-[#666666]">For loose materials and turnings</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-start">
+                                <div class="w-10 h-10 rounded-full bg-[#F5F7FA] flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-sack-xmark text-[#C9A227] text-[18px]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">PP/Jute Bags</h4>
+                                    <p class="text-[14px] text-[#666666]">For agricultural products (25kg, 50kg options)</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-start">
+                                <div class="w-10 h-10 rounded-full bg-[#F5F7FA] flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-snowflake text-[#C9A227] text-[18px]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">Reefer Containers</h4>
+                                    <p class="text-[14px] text-[#666666]">Temperature-controlled for seafood</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-start">
+                                <div class="w-10 h-10 rounded-full bg-[#F5F7FA] flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-boxes-stacked text-[#C9A227] text-[18px]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">Cartons & Crates</h4>
+                                    <p class="text-[14px] text-[#666666]">For leather goods and handicrafts</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Shipping -->
+                    <div class="w-1/2">
+                        <div class="flex items-center gap-4 mb-6">
+                            <i class="fa-solid fa-ship text-[40px] text-[#1E3A5F]"></i>
+                            <h3 class="font-poppins font-bold text-[26px] text-[#1A1A1A]">Shipping & Logistics</h3>
+                        </div>
+                        <p class="text-[16px] text-[#666666] mb-10 leading-relaxed">
+                            We handle complete logistics from our warehouse to your destination port with real-time tracking and documentation support.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="bg-[#F5F7FA] p-8 rounded-[8px] border-l-4 border-[#1E3A5F]">
+                                <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A] mb-3">Ports of Loading</h4>
+                                <p class="text-[14px] text-[#666666] leading-relaxed">
+                                    Mundra Port | Nhava Sheva (JNPT) | Chennai Port | Kolkata Port
+                                </p>
+                            </div>
+                            <div class="bg-[#F5F7FA] p-8 rounded-[8px] border-l-4 border-[#1E3A5F]">
+                                <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A] mb-3">Shipping Terms</h4>
+                                <p class="text-[14px] text-[#666666] leading-relaxed">
+                                    FOB (Free On Board) | CIF (Cost, Insurance & Freight) | CFR (Cost & Freight) | Ex-Works
+                                </p>
+                                <p class="text-[12px] text-[#888888] mt-3 italic">*Terms as per mutual agreement</p>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-[#F5F7FA] p-6 rounded-[8px] text-center">
+                                    <div class="font-poppins font-bold text-[20px] text-[#1E3A5F]">40+</div>
+                                    <div class="text-[12px] text-[#666666] uppercase tracking-wider">Destinations</div>
+                                </div>
+                                <div class="bg-[#F5F7FA] p-6 rounded-[8px] text-center">
+                                    <div class="font-poppins font-bold text-[20px] text-[#1E3A5F]">98%</div>
+                                    <div class="text-[12px] text-[#666666] uppercase tracking-wider">On-Time Rate</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SHARED CTA SECTION -->
+        <section class="py-[80px] bg-[#C9A227]">
+            <div class="max-w-container text-center">
+                <h2 class="text-white font-poppins font-bold text-[38px] mb-3">Ready to Start Trading?</h2>
+                <p class="text-white/90 text-[18px] mb-[36px]">Get a competitive quote for your import or export requirements</p>
+                
+                <div class="flex justify-center gap-5 mb-[40px]">
+                    <button class="w-[200px] h-[54px] bg-[#1E3A5F] text-white font-poppins font-semibold text-[14px] rounded-[4px] shadow-lg">REQUEST A QUOTE</button>
+                    <button class="w-[200px] h-[54px] bg-transparent border-2 border-white text-white font-poppins font-semibold text-[14px] rounded-[4px] hover:bg-white/10 transition-all">CONTACT US</button>
+                </div>
+
+                <div class="flex justify-center items-center gap-10 text-white font-medium text-[15px]">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-phone text-[18px]"></i> +91 98XXX XXXXX</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-envelope text-[18px]"></i> info@company.com</div>
+                    <div class="flex items-center gap-2 cursor-pointer"><i class="fa-brands fa-whatsapp text-[18px]"></i> Chat Now</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- IMPORT SERVICES VIEW -->
+    <main id="import-services-view" class="hidden">
+        <!-- PAGE HERO -->
+        <section class="relative h-[400px] w-full overflow-hidden bg-gray-900">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1494412574021-ad58bb45967c?q=80&w=2070&auto=format&fit=crop" alt="Import Services" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-[#1E3A5F]/70"></div>
+            </div>
+            <div class="relative z-10 h-full max-w-container flex flex-col justify-center">
+                <div class="text-white/70 text-[13px] font-medium mb-4">Home / Import Services</div>
+                <div class="w-12 h-12 rounded-full bg-[#C9A227] flex items-center justify-center text-white text-[24px]">
+                    <i class="fa-solid fa-download"></i>
+                </div>
+                <h1 class="text-white text-[52px] font-bold font-poppins leading-tight mt-4 mb-2">Import Services</h1>
+                <p class="text-white/85 text-[19px] mb-8">Sourcing quality materials from global markets for Indian industries</p>
+                
+                <div class="flex gap-12">
+                    <div>
+                        <div class="font-poppins font-semibold text-[18px] text-[#C9A227]">10+ Countries</div>
+                        <div class="text-[13px] text-white/70">We Source From</div>
+                    </div>
+                    <div>
+                        <div class="font-poppins font-semibold text-[18px] text-[#C9A227]">500+ Shipments</div>
+                        <div class="text-[13px] text-white/70">Successfully Imported</div>
+                    </div>
+                    <div>
+                        <div class="font-poppins font-semibold text-[18px] text-[#C9A227]">100% Compliance</div>
+                        <div class="text-[13px] text-white/70">Documentation Rate</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT WE IMPORT -->
+        <section class="py-[100px] bg-white">
+            <div class="max-w-container">
+                <div class="text-center mb-[56px]">
+                    <div class="text-[#888888] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">OUR IMPORT PORTFOLIO</div>
+                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[38px] mb-2">What We Import</h2>
+                    <p class="text-[#666666] text-[17px]">Quality raw materials and scrap metals sourced from trusted international suppliers</p>
+                </div>
+
+                <div class="grid grid-cols-3 gap-8">
+                    <!-- Import Category 1 -->
+                    <div class="bg-white border border-[#E8E8E8] border-t-4 border-t-[#0277BD] rounded-lg p-9 h-auto transition-all duration-300 hover:border-t-[#1E3A5F] group shadow-sm">
+                        <i class="fa-solid fa-recycle text-[44px] text-[#0277BD]"></i>
+                        <h3 class="font-poppins font-semibold text-[22px] text-[#1A1A1A] mt-5">Metal Scrap</h3>
+                        <p class="text-[15px] text-[#666666] mt-3 leading-relaxed">High-quality ferrous and non-ferrous scrap metals from international sources</p>
+                        <ul class="mt-6 space-y-2">
+                            <li class="flex items-center gap-3 text-[14px] text-[#4A4A4A]"><div class="w-1.5 h-1.5 rounded-full bg-[#0277BD]"></div> Copper Scrap (Millberry, Birch, Berry)</li>
+                            <li class="flex items-center gap-3 text-[14px] text-[#4A4A4A]"><div class="w-1.5 h-1.5 rounded-full bg-[#0277BD]"></div> Aluminium Scrap (Taint Tabor, UBC)</li>
+                            <li class="flex items-center gap-3 text-[14px] text-[#4A4A4A]"><div class="w-1.5 h-1.5 rounded-full bg-[#0277BD]"></div> Brass Scrap (Honey, Mixed Yellow)</li>
+                            <li class="flex items-center gap-3 text-[14px] text-[#4A4A4A]"><div class="w-1.5 h-1.5 rounded-full bg-[#0277BD]"></div> HMS 1&2, Shredded Steel</li>
+                            <li class="flex items-center gap-3 text-[14px] text-[#4A4A4A]"><div class="w-1.5 h-1.5 rounded-full bg-[#0277BD]"></div> Lead & Zinc Scrap</li>
+                        </ul>
+                    </div>
+
+                    <!-- Import Category 2 -->
+                    <div class="bg-white border border-[#E8E8E8] border-t-4 border-t-[#0277BD] rounded-lg p-9 h-auto transition-all duration-300 hover:border-t-[#1E3A5F] group shadow-sm">
+                        <i class="fa-solid fa-cube text-[44px] text-[#0277BD]"></i>
+                        <h3 class="font-poppins font-semibold text-[22px] text-[#1A1A1A] mt-5">Industrial Raw Materials</h3>
+                        <p class="text-[15px] text-[#666666] mt-3 leading-relaxed">Essential raw materials for manufacturing and processing industries</p>
+                        <ul class="mt-6 space-y-2">
+                            <li class="flex items-center gap-3 text-[14px] text-[#4A4A4A]"><div class="w-1.5 h-1.5 rounded-full bg-[#0277BD]"></div> Metal Ingots (Copper, Aluminium, Zinc)</li>
+                            <li class="flex items-center gap-3 text-[14px] text-[#4A4A4A]"><div class="w-1.5 h-1.5 rounded-full bg-[#0277BD]"></div> Alloy Materials</li>
+                            <li class="flex items-center gap-3 text-[14px] text-[#4A4A4A]"><div class="w-1.5 h-1.5 rounded-full bg-[#0277BD]"></div> Industrial Chemicals</li>
+                            <li class="flex items-center gap-3 text-[14px] text-[#4A4A4A]"><div class="w-1.5 h-1.5 rounded-full bg-[#0277BD]"></div> Processing Additives</li>
+                        </ul>
+                    </div>
+
+                    <!-- Import Category 3 -->
+                    <div class="bg-white border border-[#E8E8E8] border-t-4 border-t-[#0277BD] rounded-lg p-9 h-auto transition-all duration-300 hover:border-t-[#1E3A5F] group shadow-sm">
+                        <i class="fa-solid fa-gear text-[44px] text-[#0277BD]"></i>
+                        <h3 class="font-poppins font-semibold text-[22px] text-[#1A1A1A] mt-5">Machinery & Components</h3>
+                        <p class="text-[15px] text-[#666666] mt-3 leading-relaxed">Industrial machinery and spare parts for various sectors</p>
+                        <ul class="mt-6 space-y-2">
+                            <li class="flex items-center gap-3 text-[14px] text-[#4A4A4A]"><div class="w-1.5 h-1.5 rounded-full bg-[#0277BD]"></div> Recycling Equipment</li>
+                            <li class="flex items-center gap-3 text-[14px] text-[#4A4A4A]"><div class="w-1.5 h-1.5 rounded-full bg-[#0277BD]"></div> Processing Machinery</li>
+                            <li class="flex items-center gap-3 text-[14px] text-[#4A4A4A]"><div class="w-1.5 h-1.5 rounded-full bg-[#0277BD]"></div> Spare Parts & Components</li>
+                            <li class="flex items-center gap-3 text-[14px] text-[#4A4A4A]"><div class="w-1.5 h-1.5 rounded-full bg-[#0277BD]"></div> Industrial Tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COUNTRIES WE IMPORT FROM -->
+        <section class="py-[100px] bg-[#F5F7FA]">
+            <div class="max-w-container">
+                <div class="text-center mb-[56px]">
+                    <div class="text-[#888888] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">GLOBAL SOURCING</div>
+                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[36px]">Countries of Origin</h2>
+                    <p class="text-[#666666] text-[16px]">We maintain strong supplier relationships in key international markets</p>
+                </div>
+
+                <div class="flex gap-[80px]">
+                    <!-- Map Visualization -->
+                    <div class="w-[55%]">
+                        <div class="map-container flex items-center justify-center">
+                            <!-- Origin Marker India -->
+                            <div class="marker marker-origin" style="top: 48%; left: 68%;"></div>
+                            
+                            <!-- Source Markers -->
+                            <div class="marker marker-import" style="top: 30%; left: 15%;"></div> <!-- USA -->
+                            <div class="marker marker-import" style="top: 25%; left: 12%;"></div> <!-- Canada -->
+                            <div class="marker marker-import" style="top: 25%; left: 48%;"></div> <!-- Germany/NL -->
+                            <div class="marker marker-import" style="top: 20%; left: 47%;"></div> <!-- UK -->
+                            <div class="marker marker-import" style="top: 35%; left: 60%;"></div> <!-- UAE/Saudi -->
+                            <div class="marker marker-import" style="top: 75%; left: 88%;"></div> <!-- Australia -->
+                        </div>
+                        <div class="flex justify-center gap-8 mt-6">
+                            <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-[#0277BD]"></div> <span class="text-[13px]">Import Sources</span></div>
+                            <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-[#C9A227]"></div> <span class="text-[13px]">India (Destination)</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Country Cards List -->
+                    <div class="w-[40%] flex flex-col gap-4">
+                        <div class="bg-white border border-[#E8E8E8] rounded-lg p-5 flex items-center gap-5 hover:border-l-4 hover:border-l-[#0277BD] transition-all">
+                            <img src="https://flagcdn.com/w40/us.png" alt="USA" class="w-8">
+                            <div>
+                                <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">USA</h4>
+                                <p class="text-[13px] text-[#666666]">Copper Scrap, Aluminium Scrap, HMS</p>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-[#E8E8E8] rounded-lg p-5 flex items-center gap-5 hover:border-l-4 hover:border-l-[#0277BD] transition-all">
+                            <img src="https://flagcdn.com/w40/gb.png" alt="UK" class="w-8">
+                            <div>
+                                <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">United Kingdom</h4>
+                                <p class="text-[13px] text-[#666666]">Mixed Metal Scrap, Brass</p>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-[#E8E8E8] rounded-lg p-5 flex items-center gap-5 hover:border-l-4 hover:border-l-[#0277BD] transition-all">
+                            <img src="https://flagcdn.com/w40/de.png" alt="Germany" class="w-8">
+                            <div>
+                                <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">Germany</h4>
+                                <p class="text-[13px] text-[#666666]">High-grade Copper, Machinery</p>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-[#E8E8E8] rounded-lg p-5 flex items-center gap-5 hover:border-l-4 hover:border-l-[#0277BD] transition-all">
+                            <img src="https://flagcdn.com/w40/nl.png" alt="Netherlands" class="w-8">
+                            <div>
+                                <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">Netherlands</h4>
+                                <p class="text-[13px] text-[#666666]">Aluminium, Zinc Scrap</p>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-[#E8E8E8] rounded-lg p-5 flex items-center gap-5 hover:border-l-4 hover:border-l-[#0277BD] transition-all">
+                            <img src="https://flagcdn.com/w40/be.png" alt="Belgium" class="w-8">
+                            <div>
+                                <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">Belgium</h4>
+                                <p class="text-[13px] text-[#666666]">Metal Scrap, Alloys</p>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-[#E8E8E8] rounded-lg p-5 flex items-center gap-5 hover:border-l-4 hover:border-l-[#0277BD] transition-all">
+                            <img src="https://flagcdn.com/w40/ae.png" alt="UAE" class="w-8">
+                            <div>
+                                <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">UAE</h4>
+                                <p class="text-[13px] text-[#666666]">Re-exported Scrap, Materials</p>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-[#E8E8E8] rounded-lg p-5 flex items-center gap-5 hover:border-l-4 hover:border-l-[#0277BD] transition-all">
+                            <img src="https://flagcdn.com/w40/sa.png" alt="Saudi Arabia" class="w-8">
+                            <div>
+                                <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">Saudi Arabia</h4>
+                                <p class="text-[13px] text-[#666666]">Industrial Materials</p>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-[#E8E8E8] rounded-lg p-5 flex items-center gap-5 hover:border-l-4 hover:border-l-[#0277BD] transition-all">
+                            <img src="https://flagcdn.com/w40/au.png" alt="Australia" class="w-8">
+                            <div>
+                                <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A]">Australia</h4>
+                                <p class="text-[13px] text-[#666666]">Copper, Aluminium Scrap</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMPORT PROCESS (Zigzag) -->
+        <section class="py-[100px] bg-white overflow-hidden">
+            <div class="max-w-container">
+                <div class="text-center mb-[80px]">
+                    <div class="text-[#888888] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">HOW WE WORK</div>
+                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[36px]">Our Import Process</h2>
+                    <p class="text-[#666666] text-[16px]">A streamlined approach ensuring quality, compliance, and timely delivery</p>
+                </div>
+
+                <div class="relative py-20">
+                    <!-- Line -->
+                    <div class="absolute top-1/2 left-0 w-full h-0.5 bg-[#E0E0E0] -translate-y-1/2 z-0"></div>
+
+                    <div class="flex justify-between items-center relative z-10 px-10">
+                        <!-- Step 1 (Above) -->
+                        <div class="flex flex-col items-center group">
+                            <div class="w-[200px] bg-white border border-[#E8E8E8] rounded-lg p-6 mb-8 relative shadow-sm">
+                                <i class="fa-solid fa-magnifying-glass text-[28px] text-[#0277BD]"></i>
+                                <h4 class="font-poppins font-semibold text-[14px] text-[#1A1A1A] mt-3">Requirement Analysis</h4>
+                                <p class="text-[12px] text-[#666666] mt-2">Understanding your material specifications and quantity needs</p>
+                                <div class="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-5 h-5 bg-white border-b border-r border-[#E8E8E8] rotate-45"></div>
+                            </div>
+                            <div class="w-5 h-5 rounded-full bg-[#0277BD] border-4 border-white shadow-md flex items-center justify-center text-[10px] text-white font-bold">1</div>
+                        </div>
+
+                        <!-- Step 2 (Below) -->
+                        <div class="flex flex-col-reverse items-center group">
+                            <div class="w-[200px] bg-white border border-[#E8E8E8] rounded-lg p-6 mt-8 relative shadow-sm">
+                                <i class="fa-solid fa-earth-americas text-[28px] text-[#0277BD]"></i>
+                                <h4 class="font-poppins font-semibold text-[14px] text-[#1A1A1A] mt-3">Supplier Sourcing</h4>
+                                <p class="text-[12px] text-[#666666] mt-2">Identifying verified suppliers from our global network</p>
+                                <div class="absolute top-[-10px] left-1/2 -translate-x-1/2 w-5 h-5 bg-white border-t border-l border-[#E8E8E8] rotate-45"></div>
+                            </div>
+                            <div class="w-5 h-5 rounded-full bg-[#0277BD] border-4 border-white shadow-md flex items-center justify-center text-[10px] text-white font-bold">2</div>
+                        </div>
+
+                        <!-- Step 3 (Above) -->
+                        <div class="flex flex-col items-center group">
+                            <div class="w-[200px] bg-white border border-[#E8E8E8] rounded-lg p-6 mb-8 relative shadow-sm">
+                                <i class="fa-solid fa-clipboard-check text-[28px] text-[#0277BD]"></i>
+                                <h4 class="font-poppins font-semibold text-[14px] text-[#1A1A1A] mt-3">Quality Verification</h4>
+                                <p class="text-[12px] text-[#666666] mt-2">Pre-shipment inspection and sample testing</p>
+                                <div class="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-5 h-5 bg-white border-b border-r border-[#E8E8E8] rotate-45"></div>
+                            </div>
+                            <div class="w-5 h-5 rounded-full bg-[#0277BD] border-4 border-white shadow-md flex items-center justify-center text-[10px] text-white font-bold">3</div>
+                        </div>
+
+                        <!-- Step 4 (Below) -->
+                        <div class="flex flex-col-reverse items-center group">
+                            <div class="w-[200px] bg-white border border-[#E8E8E8] rounded-lg p-6 mt-8 relative shadow-sm">
+                                <i class="fa-solid fa-file-contract text-[28px] text-[#0277BD]"></i>
+                                <h4 class="font-poppins font-semibold text-[14px] text-[#1A1A1A] mt-3">Documentation</h4>
+                                <p class="text-[12px] text-[#666666] mt-2">Complete import paperwork and customs clearance</p>
+                                <div class="absolute top-[-10px] left-1/2 -translate-x-1/2 w-5 h-5 bg-white border-t border-l border-[#E8E8E8] rotate-45"></div>
+                            </div>
+                            <div class="w-5 h-5 rounded-full bg-[#0277BD] border-4 border-white shadow-md flex items-center justify-center text-[10px] text-white font-bold">4</div>
+                        </div>
+
+                        <!-- Step 5 (Above) -->
+                        <div class="flex flex-col items-center group">
+                            <div class="w-[200px] bg-white border border-[#E8E8E8] rounded-lg p-6 mb-8 relative shadow-sm">
+                                <i class="fa-solid fa-ship text-[28px] text-[#0277BD]"></i>
+                                <h4 class="font-poppins font-semibold text-[14px] text-[#1A1A1A] mt-3">Shipping & Transit</h4>
+                                <p class="text-[12px] text-[#666666] mt-2">Coordinated logistics with real-time tracking</p>
+                                <div class="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-5 h-5 bg-white border-b border-r border-[#E8E8E8] rotate-45"></div>
+                            </div>
+                            <div class="w-5 h-5 rounded-full bg-[#0277BD] border-4 border-white shadow-md flex items-center justify-center text-[10px] text-white font-bold">5</div>
+                        </div>
+
+                        <!-- Step 6 (Below) -->
+                        <div class="flex flex-col-reverse items-center group">
+                            <div class="w-[200px] bg-white border border-[#E8E8E8] rounded-lg p-6 mt-8 relative shadow-sm">
+                                <i class="fa-solid fa-warehouse text-[28px] text-[#0277BD]"></i>
+                                <h4 class="font-poppins font-semibold text-[14px] text-[#1A1A1A] mt-3">Delivery</h4>
+                                <p class="text-[12px] text-[#666666] mt-2">Safe delivery to your warehouse or facility</p>
+                                <div class="absolute top-[-10px] left-1/2 -translate-x-1/2 w-5 h-5 bg-white border-t border-l border-[#E8E8E8] rotate-45"></div>
+                            </div>
+                            <div class="w-5 h-5 rounded-full bg-[#0277BD] border-4 border-white shadow-md flex items-center justify-center text-[10px] text-white font-bold">6</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUALITY INSPECTION -->
+        <section class="py-[100px] bg-[#1E3A5F]">
+            <div class="max-w-container flex items-center gap-[80px]">
+                <div class="w-[45%]">
+                    <div class="text-[#C9A227] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">QUALITY FIRST</div>
+                    <h2 class="text-white font-poppins font-bold text-[32px] leading-[1.3] mb-6">Inspection at Origin</h2>
+                    <p class="text-white/85 text-[16px] leading-[1.8] mb-6">
+                        We don't just buy blind. Every import shipment undergoes rigorous quality inspection at the source country before shipping. This ensures you receive exactly what you ordered.
+                    </p>
+                    <p class="text-white/85 text-[16px] leading-[1.8] mb-8">
+                        Our network of trusted inspection agencies verifies material quality, quantity, purity levels, and packaging standards before any container leaves the origin port.
+                    </p>
+                    <div class="grid grid-cols-1 gap-y-3">
+                        <div class="flex items-center gap-3 text-white text-[15px]"><i class="fa-solid fa-check text-[#C9A227]"></i> Material grade verification</div>
+                        <div class="flex items-center gap-3 text-white text-[15px]"><i class="fa-solid fa-check text-[#C9A227]"></i> Purity/composition testing</div>
+                        <div class="flex items-center gap-3 text-white text-[15px]"><i class="fa-solid fa-check text-[#C9A227]"></i> Weight and quantity confirmation</div>
+                        <div class="flex items-center gap-3 text-white text-[15px]"><i class="fa-solid fa-check text-[#C9A227]"></i> Packaging inspection</div>
+                        <div class="flex items-center gap-3 text-white text-[15px]"><i class="fa-solid fa-check text-[#C9A227]"></i> Photo/video documentation</div>
+                        <div class="flex items-center gap-3 text-white text-[15px]"><i class="fa-solid fa-check text-[#C9A227]"></i> Third-party lab reports (when required)</div>
+                    </div>
+                </div>
+                <div class="w-[50%] relative">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop" alt="Quality Inspection" class="w-full aspect-[4/3] object-cover rounded-lg">
+                    <div class="absolute bottom-6 right-6 bg-[#C9A227] text-white px-6 py-3 font-poppins font-semibold rounded shadow-xl">
+                        100% Inspected
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPLIANCE & DOCUMENTATION -->
+        <section class="py-[100px] bg-[#F5F7FA]">
+            <div class="max-w-container">
+                <div class="text-center mb-[56px]">
+                    <div class="text-[#888888] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">FULL COMPLIANCE</div>
+                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[36px]">Documentation & Compliance</h2>
+                    <p class="text-[#666666] text-[16px]">Complete paperwork for hassle-free customs clearance</p>
+                </div>
+
+                <div class="grid grid-cols-4 gap-6">
+                    <div class="bg-white border border-[#E8E8E8] rounded-lg p-8 text-center hover:border-[#0277BD] transition-all group">
+                        <i class="fa-solid fa-file-invoice text-[40px] text-[#1E3A5F] group-hover:text-[#0277BD]"></i>
+                        <h4 class="font-poppins font-semibold text-[17px] text-[#1A1A1A] mt-5">Customs Documentation</h4>
+                        <p class="text-[14px] text-[#666666] mt-3">Bill of Entry, Import License, Customs Declaration forms</p>
+                    </div>
+                    <div class="bg-white border border-[#E8E8E8] rounded-lg p-8 text-center hover:border-[#0277BD] transition-all group">
+                        <i class="fa-solid fa-certificate text-[40px] text-[#1E3A5F] group-hover:text-[#0277BD]"></i>
+                        <h4 class="font-poppins font-semibold text-[17px] text-[#1A1A1A] mt-5">Quality Certificates</h4>
+                        <p class="text-[14px] text-[#666666] mt-3">Certificate of Origin, Test Reports, Inspection Certificates</p>
+                    </div>
+                    <div class="bg-white border border-[#E8E8E8] rounded-lg p-8 text-center hover:border-[#0277BD] transition-all group">
+                        <i class="fa-solid fa-file-lines text-[40px] text-[#1E3A5F] group-hover:text-[#0277BD]"></i>
+                        <h4 class="font-poppins font-semibold text-[17px] text-[#1A1A1A] mt-5">Shipping Documents</h4>
+                        <p class="text-[14px] text-[#666666] mt-3">Bill of Lading, Packing List, Commercial Invoice</p>
+                    </div>
+                    <div class="bg-white border border-[#E8E8E8] rounded-lg p-8 text-center hover:border-[#0277BD] transition-all group">
+                        <i class="fa-solid fa-shield-halved text-[40px] text-[#1E3A5F] group-hover:text-[#0277BD]"></i>
+                        <h4 class="font-poppins font-semibold text-[17px] text-[#1A1A1A] mt-5">Regulatory Compliance</h4>
+                        <p class="text-[14px] text-[#666666] mt-3">DGFT regulations, Environmental clearances, CPCB norms</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-center gap-6 mt-[48px]">
+                    <div class="bg-white border border-[#E0E0E0] px-6 py-3 rounded text-[13px] text-[#1E3A5F] font-medium">IEC REGISTERED</div>
+                    <div class="bg-white border border-[#E0E0E0] px-6 py-3 rounded text-[13px] text-[#1E3A5F] font-medium">DGFT COMPLIANT</div>
+                    <div class="bg-white border border-[#E0E0E0] px-6 py-3 rounded text-[13px] text-[#1E3A5F] font-medium">CUSTOMS BONDED</div>
+                    <div class="bg-white border border-[#E0E0E0] px-6 py-3 rounded text-[13px] text-[#1E3A5F] font-medium">CPCB APPROVED</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY IMPORT WITH US -->
+        <section class="py-[100px] bg-white">
+            <div class="max-w-container">
+                <div class="text-center mb-[56px]">
+                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[34px]">Why Choose Us for Imports</h2>
+                </div>
+
+                <div class="grid grid-cols-3 gap-8">
+                    <div class="bg-[#F5F7FA] rounded-lg p-8 border-l-4 border-transparent hover:border-l-[#0277BD] hover:bg-white transition-all shadow-sm">
+                        <i class="fa-solid fa-globe text-[36px] text-[#0277BD]"></i>
+                        <h4 class="font-poppins font-semibold text-[17px] text-[#1A1A1A] mt-4">Global Supplier Network</h4>
+                        <p class="text-[14px] text-[#666666] mt-3 leading-relaxed">Established relationships with verified suppliers across 10+ countries</p>
+                    </div>
+                    <div class="bg-[#F5F7FA] rounded-lg p-8 border-l-4 border-transparent hover:border-l-[#0277BD] hover:bg-white transition-all shadow-sm">
+                        <i class="fa-solid fa-magnifying-glass-plus text-[36px] text-[#0277BD]"></i>
+                        <h4 class="font-poppins font-semibold text-[17px] text-[#1A1A1A] mt-4">Pre-Shipment Inspection</h4>
+                        <p class="text-[14px] text-[#666666] mt-3 leading-relaxed">Quality verified at origin before shipping to eliminate surprises</p>
+                    </div>
+                    <div class="bg-[#F5F7FA] rounded-lg p-8 border-l-4 border-transparent hover:border-l-[#0277BD] hover:bg-white transition-all shadow-sm">
+                        <i class="fa-solid fa-tags text-[36px] text-[#0277BD]"></i>
+                        <h4 class="font-poppins font-semibold text-[17px] text-[#1A1A1A] mt-4">Competitive Pricing</h4>
+                        <p class="text-[14px] text-[#666666] mt-3 leading-relaxed">Bulk buying power and supplier relationships ensure best rates</p>
+                    </div>
+                    <div class="bg-[#F5F7FA] rounded-lg p-8 border-l-4 border-transparent hover:border-l-[#0277BD] hover:bg-white transition-all shadow-sm">
+                        <i class="fa-solid fa-file-shield text-[36px] text-[#0277BD]"></i>
+                        <h4 class="font-poppins font-semibold text-[17px] text-[#1A1A1A] mt-4">Complete Compliance</h4>
+                        <p class="text-[14px] text-[#666666] mt-3 leading-relaxed">All regulatory requirements handled professionally</p>
+                    </div>
+                    <div class="bg-[#F5F7FA] rounded-lg p-8 border-l-4 border-transparent hover:border-l-[#0277BD] hover:bg-white transition-all shadow-sm">
+                        <i class="fa-solid fa-headset text-[36px] text-[#0277BD]"></i>
+                        <h4 class="font-poppins font-semibold text-[17px] text-[#1A1A1A] mt-4">End-to-End Support</h4>
+                        <p class="text-[14px] text-[#666666] mt-3 leading-relaxed">From inquiry to delivery, dedicated team at every step</p>
+                    </div>
+                    <div class="bg-[#F5F7FA] rounded-lg p-8 border-l-4 border-transparent hover:border-l-[#0277BD] hover:bg-white transition-all shadow-sm">
+                        <i class="fa-solid fa-clock text-[36px] text-[#0277BD]"></i>
+                        <h4 class="font-poppins font-semibold text-[17px] text-[#1A1A1A] mt-4">Timely Delivery</h4>
+                        <p class="text-[14px] text-[#666666] mt-3 leading-relaxed">Efficient logistics ensuring materials reach when needed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION (Import Theme) -->
+        <section class="py-[80px] bg-[#0277BD]">
+            <div class="max-w-container text-center">
+                <h2 class="text-white font-poppins font-bold text-[36px] mb-3">Need to Import Materials?</h2>
+                <p class="text-white/90 text-[18px] mb-[36px]">Share your requirements and we'll source the best quality at competitive prices</p>
+                
+                <div class="flex justify-center gap-5">
+                    <button class="w-[240px] h-[56px] bg-white text-[#0277BD] font-poppins font-semibold text-[15px] rounded shadow-lg">SUBMIT REQUIREMENT</button>
+                    <button class="w-[200px] h-[56px] bg-transparent border-2 border-white text-white font-poppins font-semibold text-[15px] rounded hover:bg-white/10">CALL US NOW</button>
+                </div>
+
+                <div class="flex justify-center items-center gap-10 text-white font-medium text-[15px] mt-[48px]">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-phone"></i> +91 98XXX XXXXX</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-envelope"></i> info@company.com</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#0F1F2F] pt-[80px] pb-[40px]">
+        <div class="max-w-container">
+            <div class="grid grid-cols-5 gap-8 mb-[48px]">
+                <!-- Col 1 -->
+                <div class="col-span-1.5 w-[25%] pr-8">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-white/10 rounded flex items-center justify-center">
+                            <i class="fa-solid fa-globe text-[#C9A227] text-xl"></i>
+                        </div>
+                        <span class="font-poppins font-bold text-xl tracking-tighter text-white">[COMPANY]</span>
+                    </div>
+                    <p class="text-[14px] text-white/70 leading-[1.7] mb-6">
+                        Your trusted partner for international trade. Exporting Indian excellence to the world.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-white/60 hover:text-[#C9A227] text-[20px] transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-white/60 hover:text-[#C9A227] text-[20px] transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-white/60 hover:text-[#C9A227] text-[20px] transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white/60 hover:text-[#C9A227] text-[20px] transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white/60 hover:text-[#C9A227] text-[20px] transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div class="w-[18%]">
+                    <h4 class="font-poppins font-semibold text-[12px] text-[#C9A227] tracking-[2px] uppercase mb-6">QUICK LINKS</h4>
+                    <div class="flex flex-col gap-4">
+                        <a href="#" class="text-[14px] text-white/70 hover:text-white transition-colors">Home</a>
+                        <a href="#" class="text-[14px] text-white/70 hover:text-white transition-colors">About Us</a>
+                        <a href="#" class="text-[14px] text-white/70 hover:text-white transition-colors">Products</a>
+                        <a href="#" class="text-[14px] text-white/70 hover:text-white transition-colors">Import Services</a>
+                        <a href="#" class="text-[14px] text-white/70 hover:text-white transition-colors">Export Services</a>
+                        <a href="#" class="text-[14px] text-white/70 hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Col 3 -->
+                <div class="w-[18%]">
+                    <h4 class="font-poppins font-semibold text-[12px] text-[#C9A227] tracking-[2px] uppercase mb-6">OUR PRODUCTS</h4>
+                    <div class="flex flex-col gap-4">
+                        <a href="#" class="text-[14px] text-white/70 hover:text-white transition-colors">Metal Scrap</a>
+                        <a href="#" class="text-[14px] text-white/70 hover:text-white transition-colors">Agricultural Products</a>
+                        <a href="#" class="text-[14px] text-white/70 hover:text-white transition-colors">Premium Seafood</a>
+                        <a href="#" class="text-[14px] text-white/70 hover:text-white transition-colors">Leather Goods</a>
+                        <a href="#" class="text-[14px] text-white/70 hover:text-white transition-colors">Handicrafts</a>
+                    </div>
+                </div>
+
+                <!-- Col 4 -->
+                <div class="w-[18%]">
+                    <h4 class="font-poppins font-semibold text-[12px] text-[#C9A227] tracking-[2px] uppercase mb-6">SCRAP METALS</h4>
+                    <div class="flex flex-col gap-4">
+                        <a href="#" class="text-[14px] text-white/70 hover:text-white transition-colors">Copper Scrap</a>
+                        <a href="#" class="text-[14px] text-white/70 hover:text-white transition-colors">Aluminium Scrap</a>
+                        <a href="#" class="text-[14px] text-white/70 hover:text-white transition-colors">Brass Scrap</a>
+                        <a href="#" class="text-[14px] text-white/70 hover:text-white transition-colors">Zinc Scrap</a>
+                        <a href="#" class="text-[14px] text-white/70 hover:text-white transition-colors">Lead Scrap</a>
+                        <a href="#" class="text-[14px] text-white/70 hover:text-white transition-colors">Steel Scrap</a>
+                    </div>
+                </div>
+
+                <!-- Col 5 -->
+                <div class="w-[21%]">
+                    <h4 class="font-poppins font-semibold text-[12px] text-[#C9A227] tracking-[2px] uppercase mb-6">CONTACT INFO</h4>
+                    <div class="flex flex-col gap-5">
+                        <div class="flex gap-3 text-[14px] text-white/70 leading-[1.6]">
+                            <i class="fa-solid fa-location-dot text-[#C9A227] mt-1"></i>
+                            <div>[Address Line 1]<br>[City], India - [PIN]</div>
+                        </div>
+                        <div class="flex gap-3 text-[14px] text-white/70 items-center">
+                            <i class="fa-solid fa-phone text-[#C9A227]"></i>
+                            <div>+91 98XXX XXXXX</div>
+                        </div>
+                        <div class="flex gap-3 text-[14px] text-white/70 items-center">
+                            <i class="fa-solid fa-envelope text-[#C9A227]"></i>
+                            <div>info@company.com</div>
+                        </div>
+                        <div class="flex gap-3 text-[14px] text-white/70 items-center">
+                            <i class="fa-solid fa-clock text-[#C9A227]"></i>
+                            <div>Mon-Sat: 9:00 AM - 6:00 PM IST</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certification Badges -->
+            <div class="flex gap-6 mb-12">
+                <div class="px-3 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-white/50 font-bold tracking-widest">ISO 9001</div>
+                <div class="px-3 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-white/50 font-bold tracking-widest">IEC REGISTERED</div>
+                <div class="px-3 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-white/50 font-bold tracking-widest">GST COMPLIANT</div>
+                <div class="px-3 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-white/50 font-bold tracking-widest">FSSAI</div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-white/10 pt-6 flex justify-between items-center text-[13px] text-white/50">
+                <div>© 2026 [Company Name]. All rights reserved.</div>
+                <div>Made with ❤️ in India 🇮🇳</div>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                    <a href="#" class="hover:text-white">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function navigateTo(page) {
+            const homeView = document.getElementById('home-view');
+            const aboutView = document.getElementById('about-view');
+            const productsView = document.getElementById('products-view');
+            const importView = document.getElementById('import-services-view');
+            
+            const navHome = document.getElementById('nav-home');
+            const navAbout = document.getElementById('nav-about');
+            const navProducts = document.getElementById('nav-products');
+            const navImport = document.getElementById('nav-import');
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Hide all views
+            homeView.classList.add('hidden');
+            aboutView.classList.add('hidden');
+            productsView.classList.add('hidden');
+            if(importView) importView.classList.add('hidden');
+
+            // Deactivate all nav links
+            navHome.classList.remove('active');
+            navAbout.classList.remove('active');
+            navProducts.classList.remove('active');
+            if(navImport) navImport.classList.remove('active');
+
+            if (page === 'home') {
+                homeView.classList.remove('hidden');
+                navHome.classList.add('active');
+                window.location.hash = 'home';
+            } else if (page === 'about') {
+                aboutView.classList.remove('hidden');
+                navAbout.classList.add('active');
+                window.location.hash = 'about';
+            } else if (page === 'products') {
+                productsView.classList.remove('hidden');
+                navProducts.classList.add('active');
+                window.location.hash = 'products';
+            } else if (page === 'import') {
+                if(importView) importView.classList.remove('hidden');
+                if(navImport) navImport.classList.add('active');
+                window.location.hash = 'import';
+            }
+        }
+
+        // Simple hash-based routing
+        window.addEventListener('load', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash === 'about') {
+                navigateTo('about');
+            } else if (hash === 'products') {
+                navigateTo('products');
+            } else if (hash === 'import') {
+                navigateTo('import');
+            } else {
+                navigateTo('home');
+            }
+        });
+    </script>
+</body>
+</html>
