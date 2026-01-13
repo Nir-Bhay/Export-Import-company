@@ -105,21 +105,22 @@
         }
 
         .nav-link {
-            font-size: 13px;
-            letter-spacing: 1px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            letter-spacing: 1.2px;
             text-transform: uppercase;
-            font-weight: 600;
-            color: var(--dark-text);
-            transition: color 0.3s ease;
+            font-weight: 700;
+            color: var(--primary-navy);
+            transition: all 0.3s ease;
             position: relative;
         }
 
         .nav-link:hover {
-            color: var(--primary-navy);
+            color: var(--accent-gold);
         }
 
         .nav-link.active {
-            color: var(--primary-navy);
+            color: var(--accent-gold);
         }
 
         @media (min-width: 1024px) {
@@ -395,14 +396,17 @@
         </div>
 
         <!-- Main Header -->
-        <div class="h-[70px] md:h-[80px] border-b border-[#E8E8E8] bg-white">
-            <div class="max-w-container h-full flex items-center justify-between">
+        <div class="h-[80px] md:h-[100px] border-b border-[#E8E8E8] bg-white">
+            <div class="max-w-container h-full flex items-center justify-between py-2 md:py-3">
                 <!-- Logo Zone -->
-                <div class="flex items-center gap-2">
-                    <img src="assets/images/logo.png" alt="GM International LLP Logo" class="h-10 md:h-14 w-auto">
-                    <span
-                        class="font-poppins font-bold text-base md:text-xl tracking-tighter text-[#1E3A5F] hidden sm:block">GM
-                        INTERNATIONAL LLP</span>
+                <div class="flex items-center gap-3 md:gap-4">
+                    <img src="assets/images/logo.png" alt="GM International LLP Logo" class="h-14 md:h-20 w-auto">
+                    <div class="hidden sm:flex flex-col">
+                        <span
+                            class="font-poppins font-bold text-lg md:text-2xl tracking-tight text-[#C9A227] uppercase">GM
+                            INTERNATIONAL LLP</span>
+                        <div class="w-full h-[1.5px] bg-[#1A1A1A] mt-0.5 opacity-80"></div>
+                    </div>
                 </div>
 
                 <!-- Navigation Zone (Desktop) -->
@@ -466,24 +470,27 @@
     <div id="mobile-menu-overlay" class="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
     <div id="mobile-menu" class="mobile-menu">
         <div class="flex justify-between items-center mb-10">
-            <span class="font-poppins font-bold text-xl text-[#1E3A5F]">GM INTERNATIONAL LLP</span>
+            <div class="flex flex-col">
+                <span class="font-poppins font-bold text-xl text-[#C9A227] uppercase">GM INTERNATIONAL LLP</span>
+                <div class="w-full h-[1.5px] bg-[#1A1A1A] mt-0.5 opacity-80"></div>
+            </div>
             <button class="text-2xl text-gray-500" onclick="toggleMobileMenu()">
                 <i class="fa-solid fa-xmark"></i>
             </button>
         </div>
         <nav class="flex flex-col gap-6">
             <a href="javascript:void(0)" onclick="navigateTo('home'); toggleMobileMenu()"
-                class="text-lg font-medium text-[#1A1A1A]">Home</a>
+                class="text-base font-bold text-[#1E3A5F] uppercase tracking-wider hover:text-[#C9A227] transition-colors">Home</a>
             <a href="javascript:void(0)" onclick="navigateTo('about'); toggleMobileMenu()"
-                class="text-lg font-medium text-[#1A1A1A]">About Us</a>
+                class="text-base font-bold text-[#1E3A5F] uppercase tracking-wider hover:text-[#C9A227] transition-colors">About Us</a>
             <a href="javascript:void(0)" onclick="navigateTo('products'); toggleMobileMenu()"
-                class="text-lg font-medium text-[#1A1A1A]">Products</a>
+                class="text-base font-bold text-[#1E3A5F] uppercase tracking-wider hover:text-[#C9A227] transition-colors">Products</a>
             <a href="javascript:void(0)" onclick="navigateTo('import'); toggleMobileMenu()"
-                class="text-lg font-medium text-[#1A1A1A]">Import Services</a>
+                class="text-base font-bold text-[#1E3A5F] uppercase tracking-wider hover:text-[#C9A227] transition-colors">Import Services</a>
             <a href="javascript:void(0)" onclick="navigateTo('export'); toggleMobileMenu()"
-                class="text-lg font-medium text-[#1A1A1A]">Export Services</a>
+                class="text-base font-bold text-[#1E3A5F] uppercase tracking-wider hover:text-[#C9A227] transition-colors">Export Services</a>
             <a href="javascript:void(0)" onclick="navigateTo('contact'); toggleMobileMenu()"
-                class="text-lg font-medium text-[#1A1A1A]">Contact Us</a>
+                class="text-base font-bold text-[#1E3A5F] uppercase tracking-wider hover:text-[#C9A227] transition-colors">Contact Us</a>
         </nav>
         <div class="mt-auto pb-10">
             <button class="w-full h-[54px] bg-[#C9A227] text-white font-poppins font-semibold rounded-[4px]">
@@ -512,7 +519,7 @@
                         </div>
 
                         <h1 class="text-white text-[32px] md:text-[54px] font-bold font-poppins leading-[1.2] mb-5">
-                            Your Trusted Partner for<br class="hidden md:block">Metal Scrap Trading
+                            Your Trusted Partner for <br class="hidden md:block">Metal Scrap Trading
                         </h1>
 
                         <p class="text-white/90 text-[16px] md:text-[18px] leading-[1.7] max-w-[580px] mb-7">
@@ -3622,111 +3629,112 @@
             <div class="max-w-container">
                 <div class="flex flex-col lg:flex-row gap-10 lg:gap-[60px]">
 
-                    <!-- Left Column - Contact Form -->
+                    <!-- Left Column - Owner Profile Section -->
                     <div class="w-full lg:w-[60%]">
                         <div class="border border-[#E8E8E8] rounded-[12px] p-6 md:p-[48px] bg-white">
-                            <h2 class="font-poppins font-bold text-[24px] md:text-[28px] text-[#1A1A1A]">Send Us a
-                                Message</h2>
-                            <p class="text-[#666666] text-[15px] mt-1">Fill out the form and our trade team will get
-                                back to you</p>
-
-                            <form class="mt-8 md:mt-[32px] space-y-6"
-                                onsubmit="event.preventDefault(); alert('Message sent successfully!');">
-                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-[20px]">
-                                    <div>
-                                        <label class="form-label">Full Name *</label>
-                                        <input type="text" placeholder="Your full name" class="form-input w-full"
-                                            required>
-                                    </div>
-                                    <div>
-                                        <label class="form-label">Company Name *</label>
-                                        <input type="text" placeholder="Your company/organization"
-                                            class="form-input w-full" required>
+                            <!-- Profile Header -->
+                            <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-center md:items-start">
+                                <!-- Owner Photo -->
+                                <div class="flex-shrink-0">
+                                    <div class="w-[180px] h-[180px] md:w-[220px] md:h-[220px] rounded-full overflow-hidden border-4 border-[#C9A227] shadow-xl">
+                                        <img src="assets/images/team-1.jpg" alt="Owner - GM International LLP" class="w-full h-full object-cover">
                                     </div>
                                 </div>
-
-                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-[20px]">
-                                    <div>
-                                        <label class="form-label">Email Address *</label>
-                                        <input type="email" placeholder="email@company.com" class="form-input w-full"
-                                            required>
-                                    </div>
-                                    <div>
-                                        <label class="form-label">Phone Number *</label>
-                                        <input type="tel" placeholder="+91 98XXX XXXXX" class="form-input w-full"
-                                            required>
-                                    </div>
-                                </div>
-
-                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-[20px]">
-                                    <div>
-                                        <label class="form-label">Country *</label>
-                                        <select class="form-input w-full">
-                                            <option value="India">India</option>
-                                            <option value="UAE">UAE</option>
-                                            <option value="Saudi Arabia">Saudi Arabia</option>
-                                            <option value="USA">USA</option>
-                                            <option value="UK">UK</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label class="form-label">Inquiry Type *</label>
-                                        <select class="form-input w-full">
-                                            <option value="Export Inquiry">Export Inquiry</option>
-                                            <option value="Import Inquiry">Import Inquiry</option>
-                                            <option value="Price Quote">Price Quote</option>
-                                            <option value="General Question">General Question</option>
-                                        </select>
+                                <!-- Owner Info -->
+                                <div class="text-center md:text-left flex-1">
+                                    <span class="inline-block bg-[#C9A227]/10 text-[#C9A227] font-poppins font-semibold text-[11px] md:text-[12px] tracking-[2px] uppercase px-4 py-1.5 rounded-full mb-3">Founder & Managing Partner</span>
+                                    <h2 class="font-poppins font-bold text-[28px] md:text-[34px] text-[#1A1A1A] leading-tight">Rajesh Kumar</h2>
+                                    <p class="text-[#1E3A5F] font-medium text-[16px] md:text-[18px] mt-1">GM International LLP</p>
+                                    
+                                    <!-- Direct Contact Details -->
+                                    <div class="mt-6 space-y-3">
+                                        <a href="tel:+919876543210" class="flex items-center justify-center md:justify-start gap-3 text-[#333333] hover:text-[#1E3A5F] transition-colors">
+                                            <div class="w-10 h-10 bg-[#1E3A5F] rounded-full flex items-center justify-center">
+                                                <i class="fa-solid fa-phone text-white text-[14px]"></i>
+                                            </div>
+                                            <span class="font-medium text-[15px] md:text-[16px]">+91 98765 43210</span>
+                                        </a>
+                                        <a href="mailto:rajesh@gminternational.com" class="flex items-center justify-center md:justify-start gap-3 text-[#333333] hover:text-[#1E3A5F] transition-colors">
+                                            <div class="w-10 h-10 bg-[#1E3A5F] rounded-full flex items-center justify-center">
+                                                <i class="fa-solid fa-envelope text-white text-[14px]"></i>
+                                            </div>
+                                            <span class="font-medium text-[15px] md:text-[16px]">rajesh@gminternational.com</span>
+                                        </a>
+                                        <a href="https://wa.me/919876543210" target="_blank" class="flex items-center justify-center md:justify-start gap-3 text-[#333333] hover:text-[#25D366] transition-colors">
+                                            <div class="w-10 h-10 bg-[#25D366] rounded-full flex items-center justify-center">
+                                                <i class="fa-brands fa-whatsapp text-white text-[16px]"></i>
+                                            </div>
+                                            <span class="font-medium text-[15px] md:text-[16px]">WhatsApp Direct</span>
+                                        </a>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div>
-                                    <label class="form-label">Products of Interest</label>
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-3">
-                                        <label class="flex items-center gap-3 cursor-pointer">
-                                            <input type="checkbox" class="custom-checkbox">
-                                            <span class="text-[14px] text-[#333333]">Copper Scrap (Armature, Super D,
-                                                Kaliya, CCR)</span>
-                                        </label>
-                                        <label class="flex items-center gap-3 cursor-pointer">
-                                            <input type="checkbox" class="custom-checkbox">
-                                            <span class="text-[14px] text-[#333333]">Brass/Peetal Scrap (Pura, Honey,
-                                                Chadri)</span>
-                                        </label>
-                                        <label class="flex items-center gap-3 cursor-pointer">
-                                            <input type="checkbox" class="custom-checkbox">
-                                            <span class="text-[14px] text-[#333333]">Aluminium Scrap (Purja, Bartan,
-                                                Wire)</span>
-                                        </label>
-                                        <label class="flex items-center gap-3 cursor-pointer">
-                                            <input type="checkbox" class="custom-checkbox">
-                                            <span class="text-[14px] text-[#333333]">Zinc Scrap (Drass, Kuskut, Tukdi,
-                                                PMI)</span>
-                                        </label>
-                                        <label class="flex items-center gap-3 cursor-pointer">
-                                            <input type="checkbox" class="custom-checkbox">
-                                            <span class="text-[14px] text-[#333333]">Lead Scrap (Battery, Lead
-                                                Hard)</span>
-                                        </label>
-                                        <label class="flex items-center gap-3 cursor-pointer">
-                                            <input type="checkbox" class="custom-checkbox">
-                                            <span class="text-[14px] text-[#333333]">Gun Metal & MS/Iron Scrap</span>
-                                        </label>
+                            <!-- Divider -->
+                            <div class="my-8 md:my-10 border-t border-[#E8E8E8]"></div>
+
+                            <!-- About Section -->
+                            <div>
+                                <h3 class="font-poppins font-semibold text-[18px] md:text-[20px] text-[#1A1A1A] mb-4 flex items-center gap-2">
+                                    <i class="fa-solid fa-user text-[#C9A227]"></i> About
+                                </h3>
+                                <p class="text-[#666666] text-[14px] md:text-[15px] leading-[1.8]">
+                                    A visionary entrepreneur with a passion for global trade, Rajesh Kumar founded GM International LLP with the mission to connect Indian metal recycling excellence with global markets. His deep understanding of commodity markets, combined with a commitment to ethical business practices, has established the company as a trusted name in international metal scrap trading.
+                                </p>
+                            </div>
+
+                            <!-- Experience Section -->
+                            <div class="mt-8">
+                                <h3 class="font-poppins font-semibold text-[18px] md:text-[20px] text-[#1A1A1A] mb-4 flex items-center gap-2">
+                                    <i class="fa-solid fa-briefcase text-[#C9A227]"></i> Experience & Expertise
+                                </h3>
+                                <div class="space-y-4">
+                                    <div class="flex items-start gap-4">
+                                        <div class="w-3 h-3 bg-[#2E7D32] rounded-full mt-1.5 flex-shrink-0"></div>
+                                        <div>
+                                            <h4 class="font-poppins font-medium text-[15px] text-[#1A1A1A]">15+ Years in Metal Trading</h4>
+                                            <p class="text-[#666666] text-[13px] md:text-[14px] mt-1">Extensive experience in domestic and international non-ferrous metal scrap markets.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-4">
+                                        <div class="w-3 h-3 bg-[#2E7D32] rounded-full mt-1.5 flex-shrink-0"></div>
+                                        <div>
+                                            <h4 class="font-poppins font-medium text-[15px] text-[#1A1A1A]">Global Trade Network</h4>
+                                            <p class="text-[#666666] text-[13px] md:text-[14px] mt-1">Established business relationships across 40+ countries in Middle East, Africa, Europe, and Southeast Asia.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-4">
+                                        <div class="w-3 h-3 bg-[#2E7D32] rounded-full mt-1.5 flex-shrink-0"></div>
+                                        <div>
+                                            <h4 class="font-poppins font-medium text-[15px] text-[#1A1A1A]">Quality & Compliance Expert</h4>
+                                            <p class="text-[#666666] text-[13px] md:text-[14px] mt-1">Deep knowledge of ISRI standards, international recycling norms, and export documentation requirements.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-4">
+                                        <div class="w-3 h-3 bg-[#2E7D32] rounded-full mt-1.5 flex-shrink-0"></div>
+                                        <div>
+                                            <h4 class="font-poppins font-medium text-[15px] text-[#1A1A1A]">Industry Leadership</h4>
+                                            <p class="text-[#666666] text-[13px] md:text-[14px] mt-1">Active member of Metal Recyclers Association of India (MRAI) and Federation of Indian Export Organisations (FIEO).</p>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div>
-                                    <label class="form-label">Your Message *</label>
-                                    <textarea placeholder="Tell us about your requirements..." rows="5"
-                                        class="form-input w-full h-auto py-[15px] resize-none" required></textarea>
+                            <!-- Social Links -->
+                            <div class="mt-8 pt-6 border-t border-[#E8E8E8]">
+                                <p class="text-[#888888] text-[12px] uppercase tracking-[2px] font-poppins font-medium mb-4">Connect on Social</p>
+                                <div class="flex gap-3">
+                                    <a href="#" class="w-11 h-11 bg-[#0077B5] rounded-full flex items-center justify-center text-white hover:opacity-90 transition-opacity">
+                                        <i class="fa-brands fa-linkedin-in text-[18px]"></i>
+                                    </a>
+                                    <a href="#" class="w-11 h-11 bg-[#1DA1F2] rounded-full flex items-center justify-center text-white hover:opacity-90 transition-opacity">
+                                        <i class="fa-brands fa-twitter text-[18px]"></i>
+                                    </a>
+                                    <a href="#" class="w-11 h-11 bg-[#E4405F] rounded-full flex items-center justify-center text-white hover:opacity-90 transition-opacity">
+                                        <i class="fa-brands fa-instagram text-[18px]"></i>
+                                    </a>
                                 </div>
-
-                                <button type="submit"
-                                    class="w-full h-[54px] md:h-[58px] bg-[#1E3A5F] hover:bg-[#15304F] text-white font-poppins font-semibold text-[15px] rounded-[6px] transition-all flex items-center justify-center gap-2 uppercase">
-                                    Send Message <i class="fa-solid fa-arrow-right text-[14px]"></i>
-                                </button>
-                            </form>
+                            </div>
                         </div>
                     </div>
 
