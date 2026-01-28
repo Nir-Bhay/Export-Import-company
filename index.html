@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Trade Excellence | GM INTERNATIONAL LLP</title>
+    <title>Leading Metal Scrap Traders | NAAZ SCRAP & GM ENTERPRISE</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -365,6 +365,28 @@
             overflow: hidden;
             transition: all 0.3s ease-out;
         }
+
+        /* Carousel Animation */
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-scroll {
+            animation: scroll 40s linear infinite;
+        }
+
+        .carousel-track:hover {
+            animation-play-state: paused;
+        }
+
+        .carousel-item {
+            transition: transform 0.3s ease;
+        }
     </style>
 </head>
 
@@ -377,15 +399,15 @@
             <div class="max-w-container w-full flex justify-between items-center text-white text-[12px]">
                 <div class="flex items-center gap-6">
                     <span class="flex items-center gap-2">
-                        <i class="fa-solid fa-envelope text-[#C9A227] text-[14px]"></i> info@company.com
+                        <i class="fa-solid fa-envelope text-[#C9A227] text-[14px]"></i> naazscrap@yahoo.com
                     </span>
                     <span class="flex items-center gap-2 text-nowrap">
-                        <i class="fa-solid fa-phone text-[#C9A227] text-[14px]"></i> +91 98XXX XXXXX
+                        <i class="fa-solid fa-phone text-[#C9A227] text-[14px]"></i> +91 98797 67019 / +91 93165 90507
                     </span>
                 </div>
                 <div class="flex items-center gap-6">
-                    <span class="text-nowrap">IEC: XXXXXXX</span>
-                    <span class="text-nowrap">GST: XXXXXXX</span>
+                    <span class="text-nowrap">IEC: 3712000472</span>
+                    <span class="text-nowrap">GST: 24ANVPN3685Q1ZU</span>
                     <div class="flex items-center gap-4 ml-2">
                         <a href="#"><i class="fa-brands fa-linkedin-in hover:text-[#C9A227]"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter hover:text-[#C9A227]"></i></a>
@@ -400,11 +422,10 @@
             <div class="max-w-container h-full flex items-center justify-between py-1 md:py-3">
                 <!-- Logo Zone -->
                 <div class="flex items-center gap-3 md:gap-4">
-                    <img src="assets/images/logo.png" alt="GM International LLP Logo" class="h-[70px] md:h-20 w-auto">
+                    <img src="assets/images/logo.png" alt="Naaz Scrap Logo" class="h-[70px] md:h-20 w-auto">
                     <div class="hidden sm:flex flex-col">
                         <span
-                            class="font-poppins font-bold text-lg md:text-2xl tracking-tight text-[#C9A227] uppercase">GM
-                            INTERNATIONAL LLP</span>
+                            class="font-poppins font-bold text-lg md:text-2xl tracking-tight text-[#C9A227] uppercase">NAAZ SCRAP & GM ENTERPRISE</span>
                         <div class="w-full h-[1.5px] bg-[#1A1A1A] mt-0.5 opacity-80"></div>
                     </div>
                 </div>
@@ -471,7 +492,7 @@
     <div id="mobile-menu" class="mobile-menu">
         <div class="flex justify-between items-center mb-10">
             <div class="flex flex-col">
-                <span class="font-poppins font-bold text-xl text-[#C9A227] uppercase">GM INTERNATIONAL LLP</span>
+                <span class="font-poppins font-bold text-xl text-[#C9A227] uppercase">NAAZ SCRAP</span>
                 <div class="w-full h-[1.5px] bg-[#1A1A1A] mt-0.5 opacity-80"></div>
             </div>
             <button class="text-2xl text-gray-500" onclick="toggleMobileMenu()">
@@ -523,8 +544,8 @@
                         </h1>
 
                         <p class="text-white/90 text-[16px] md:text-[18px] leading-[1.7] max-w-[580px] mb-7">
-                            Leading exporter & importer of premium quality Metal Scrap - Copper, Aluminium, Brass, Zinc,
-                            Lead & Steel. Connecting recycling industries across 40+ countries.
+                            Leading Metal Scrap Traders Since 2009 - Sourcing premium quality Copper, Aluminium, Brass, Zinc,
+                            Lead & Steel scrap from USA, UK, Europe, and Middle East. Serving recycling industries with excellence.
                         </p>
 
                         <div class="flex flex-wrap gap-2 mb-8">
@@ -569,7 +590,7 @@
                             <div
                                 class="font-poppins font-bold text-[28px] md:text-[36px] text-[#1E3A5F] leading-none mb-1">
                                 15+</div>
-                            <div class="text-[#666666] text-[12px] md:text-[13px]">Years Experience</div>
+                            <div class="text-[#666666] text-[12px] md:text-[13px]">Years Since 2009</div>
                         </div>
                         <div class="bg-white p-5 md:px-[28px] rounded-[8px] border-l-4 border-[#C9A227] shadow-lg">
                             <div
@@ -643,7 +664,7 @@
                         class="text-[#1A1A1A] font-poppins font-bold text-[28px] md:text-[38px] leading-[1.3] mb-6 text-center lg:text-left">
                         Leading Metal Scrap Traders Since 2009</h2>
                     <p class="text-[15px] md:text-[16px] leading-[1.8] text-[#4A4A4A] mb-4 text-justify">
-                        With over 15 years in the metal scrap export-import industry, GM International LLP has
+                        With over 15 years in the metal scrap export-import industry, NAAZ SCRAP & GM ENTERPRISE has
                         established itself as a trusted name in global metal recycling trade. We specialize in Copper,
                         Aluminium, Brass, Zinc, Lead, and Steel scrap.
                     </p>
@@ -1029,7 +1050,7 @@
                 <div class="mb-10 md:mb-[56px] text-center md:text-left">
                     <div class="text-[#C9A227] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">WHY
                         PARTNER WITH US</div>
-                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[28px] md:text-[36px]">The GM International
+                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[28px] md:text-[36px]">The Naaz Scrap
                         Advantage</h2>
                 </div>
 
@@ -1207,10 +1228,10 @@
                 <div
                     class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 md:gap-10 text-white font-medium text-[14px] md:text-[15px]">
                     <div class="flex items-center gap-2">
-                        <i class="fa-solid fa-phone text-[16px] md:text-[18px]"></i> +91 98XXX XXXXX
+                        <i class="fa-solid fa-phone text-[16px] md:text-[18px]"></i> +91 98797 67019
                     </div>
                     <div class="flex items-center gap-2">
-                        <i class="fa-solid fa-envelope text-[16px] md:text-[18px]"></i> info@company.com
+                        <i class="fa-solid fa-envelope text-[16px] md:text-[18px]"></i> naazscrap@yahoo.com
                     </div>
                     <div class="flex items-center gap-2 cursor-pointer">
                         <i class="fa-brands fa-whatsapp text-[16px] md:text-[18px]"></i> Chat Now
@@ -1558,7 +1579,7 @@
             <div class="max-w-container flex flex-col lg:flex-row items-center lg:items-start gap-12">
                 <div class="w-full lg:w-[40%] text-center lg:text-left">
                     <div class="text-[#C9A227] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">THE
-                        GM INTERNATIONAL DIFFERENCE</div>
+                        NAAZ SCRAP DIFFERENCE</div>
                     <h2 class="text-[#1A1A1A] font-poppins font-bold text-[28px] md:text-[34px] leading-[1.3] mb-5">Why
                         Partner With Us?</h2>
                     <p class="text-[15px] md:text-[16px] text-[#666666]">We combine decades of experience with modern
@@ -1636,8 +1657,8 @@
 
                 <div
                     class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10 text-white font-medium text-[14px] md:text-[15px]">
-                    <div class="flex items-center gap-2"><i class="fa-solid fa-phone"></i> +91 98XXX XXXXX</div>
-                    <div class="flex items-center gap-2"><i class="fa-solid fa-envelope"></i> info@company.com</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-phone"></i> +91 98797 67019</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-envelope"></i> naazscrap@yahoo.com</div>
                     <div class="flex items-center gap-2 cursor-pointer"><i class="fa-brands fa-whatsapp"></i> Chat Now
                     </div>
                 </div>
@@ -2163,9 +2184,9 @@
                 <div
                     class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 md:gap-10 text-white font-medium text-[14px] md:text-[15px]">
                     <div class="flex items-center gap-2"><i class="fa-solid fa-phone text-[16px] md:text-[18px]"></i>
-                        +91 98XXX XXXXX</div>
+                        +91 98797 67019</div>
                     <div class="flex items-center gap-2"><i class="fa-solid fa-envelope text-[16px] md:text-[18px]"></i>
-                        info@company.com</div>
+                        naazscrap@yahoo.com</div>
                     <div class="flex items-center gap-2 cursor-pointer"><i
                             class="fa-brands fa-whatsapp text-[16px] md:text-[18px]"></i> Chat Now</div>
                 </div>
@@ -2790,11 +2811,157 @@
                 <div
                     class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 md:gap-10 text-white font-medium text-[14px] md:text-[15px]">
                     <div class="flex items-center gap-2"><i class="fa-solid fa-phone text-[16px] md:text-[18px]"></i>
-                        +91 98XXX XXXXX</div>
+                        +91 93165 90507</div>
                     <div class="flex items-center gap-2"><i class="fa-solid fa-envelope text-[16px] md:text-[18px]"></i>
-                        info@company.com</div>
+                        naazscrap@yahoo.com</div>
                     <div class="flex items-center gap-2 cursor-pointer"><i
                             class="fa-brands fa-whatsapp text-[16px] md:text-[18px]"></i> Chat Now</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- METAL SCRAP GALLERY - RUNNING CAROUSEL -->
+        <section class="py-16 md:py-[100px] bg-white overflow-hidden">
+            <div class="max-w-container">
+                <div class="text-center mb-12 md:mb-16">
+                    <div class="text-[#888888] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">
+                        OUR MATERIALS SHOWCASE</div>
+                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[32px] md:text-[38px] mb-4">Quality Metal Scrap Gallery</h2>
+                    <p class="text-[#666666] text-[15px] md:text-[17px] max-w-2xl mx-auto">
+                        Explore our collection of premium quality metal scrap materials sourced from international markets
+                    </p>
+                </div>
+
+                <!-- Running Carousel Container -->
+                <div class="relative">
+                    <div class="carousel-track flex gap-6 animate-scroll">
+                        <!-- Images from update images folder -->
+                        <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
+                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.04 AM.jpeg" 
+                                 alt="Metal Scrap 1" 
+                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
+                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.05 AM (1).jpeg" 
+                                 alt="Metal Scrap 2" 
+                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
+                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.05 AM (2).jpeg" 
+                                 alt="Metal Scrap 3" 
+                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
+                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.05 AM.jpeg" 
+                                 alt="Metal Scrap 4" 
+                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
+                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.06 AM (1).jpeg" 
+                                 alt="Metal Scrap 5" 
+                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
+                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.06 AM (2).jpeg" 
+                                 alt="Metal Scrap 6" 
+                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
+                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.06 AM.jpeg" 
+                                 alt="Metal Scrap 7" 
+                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
+                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.07 AM (1).jpeg" 
+                                 alt="Metal Scrap 8" 
+                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
+                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.07 AM (2).jpeg" 
+                                 alt="Metal Scrap 9" 
+                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
+                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.07 AM.jpeg" 
+                                 alt="Metal Scrap 10" 
+                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <!-- Duplicate images for seamless loop -->
+                        <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
+                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.04 AM.jpeg" 
+                                 alt="Metal Scrap 1" 
+                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
+                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.05 AM (1).jpeg" 
+                                 alt="Metal Scrap 2" 
+                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
+                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.05 AM (2).jpeg" 
+                                 alt="Metal Scrap 3" 
+                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <button onclick="navigateTo('contact')"
+                        class="px-10 h-[54px] bg-[#0277BD] hover:bg-[#1E3A5F] text-white font-poppins font-semibold text-[14px] rounded-[4px] flex items-center justify-center gap-2 transition-all mx-auto">
+                        REQUEST A QUOTE <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO SHOWCASE SECTION -->
+        <section class="py-16 md:py-[100px] bg-[#F5F7FA]">
+            <div class="max-w-container">
+                <div class="text-center mb-12 md:mb-16">
+                    <div class="text-[#888888] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">
+                        WATCH US IN ACTION</div>
+                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[32px] md:text-[38px] mb-4">Our Operations & Facilities</h2>
+                    <p class="text-[#666666] text-[15px] md:text-[17px] max-w-2xl mx-auto">
+                        See how we process, grade, and prepare metal scrap for international export
+                    </p>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <!-- Video Placeholder -->
+                    <div class="relative bg-[#1E3A5F] rounded-lg overflow-hidden shadow-2xl aspect-video">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+                            <div class="w-20 h-20 rounded-full bg-[#C9A227] flex items-center justify-center mb-6 cursor-pointer hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-play text-3xl ml-1"></i>
+                            </div>
+                            <h3 class="font-poppins font-bold text-2xl mb-2">Company Video Coming Soon</h3>
+                            <p class="text-white/80 text-sm">Your promotional video will be displayed here</p>
+                        </div>
+                        <!-- When you have a video, replace the placeholder with:
+                        <video controls class="w-full h-full">
+                            <source src="path/to/your/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        -->
+                    </div>
+
+                    <!-- Video Features -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+                        <div class="bg-white p-6 rounded-lg text-center">
+                            <i class="fa-solid fa-warehouse text-3xl text-[#0277BD] mb-3"></i>
+                            <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A] mb-2">Modern Warehouse</h4>
+                            <p class="text-[13px] text-[#666666]">State-of-the-art storage facilities</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg text-center">
+                            <i class="fa-solid fa-microscope text-3xl text-[#0277BD] mb-3"></i>
+                            <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A] mb-2">Quality Testing</h4>
+                            <p class="text-[13px] text-[#666666]">Advanced grading equipment</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg text-center">
+                            <i class="fa-solid fa-users text-3xl text-[#0277BD] mb-3"></i>
+                            <h4 class="font-poppins font-semibold text-[16px] text-[#1A1A1A] mb-2">Expert Team</h4>
+                            <p class="text-[13px] text-[#666666]">Experienced professionals</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -3614,11 +3781,11 @@
                     class="mt-8 md:mt-[28px] flex flex-col md:flex-row items-center justify-center gap-6 md:gap-[40px]">
                     <div class="flex items-center gap-3">
                         <i class="fa-solid fa-phone text-[18px] md:text-[20px] text-[#C9A227]"></i>
-                        <span class="text-white font-medium text-[15px] md:text-[16px]">+91 98XXX XXXXX</span>
+                        <span class="text-white font-medium text-[15px] md:text-[16px]">+91 98797 67019</span>
                     </div>
                     <div class="flex items-center gap-3">
                         <i class="fa-solid fa-envelope text-[18px] md:text-[20px] text-[#C9A227]"></i>
-                        <span class="text-white font-medium text-[15px] md:text-[16px]">info@company.com</span>
+                        <span class="text-white font-medium text-[15px] md:text-[16px]">naazscrap@yahoo.com</span>
                     </div>
                 </div>
             </div>
@@ -3642,25 +3809,25 @@
                                 </div>
                                 <!-- Owner Info -->
                                 <div class="text-center md:text-left flex-1">
-                                    <span class="inline-block bg-[#C9A227]/10 text-[#C9A227] font-poppins font-semibold text-[11px] md:text-[12px] tracking-[2px] uppercase px-4 py-1.5 rounded-full mb-3">Founder & Managing Partner</span>
-                                    <h2 class="font-poppins font-bold text-[28px] md:text-[34px] text-[#1A1A1A] leading-tight">Rajesh Kumar</h2>
-                                    <p class="text-[#1E3A5F] font-medium text-[16px] md:text-[18px] mt-1">GM International LLP</p>
+                                    <span class="inline-block bg-[#C9A227]/10 text-[#C9A227] font-poppins font-semibold text-[11px] md:text-[12px] tracking-[2px] uppercase px-4 py-1.5 rounded-full mb-3">Owner & Founder</span>
+                                    <h2 class="font-poppins font-bold text-[28px] md:text-[34px] text-[#1A1A1A] leading-tight">Mr. Arifbhai Hamirbhai Nakani</h2>
+                                    <p class="text-[#1E3A5F] font-medium text-[16px] md:text-[18px] mt-1">NAAZ SCRAP & GM ENTERPRISE</p>
                                     
                                     <!-- Direct Contact Details -->
                                     <div class="mt-6 space-y-3">
-                                        <a href="tel:+919876543210" class="flex items-center justify-center md:justify-start gap-3 text-[#333333] hover:text-[#1E3A5F] transition-colors">
+                                        <a href="tel:+919879767019" class="flex items-center justify-center md:justify-start gap-3 text-[#333333] hover:text-[#1E3A5F] transition-colors">
                                             <div class="w-10 h-10 bg-[#1E3A5F] rounded-full flex items-center justify-center">
                                                 <i class="fa-solid fa-phone text-white text-[14px]"></i>
                                             </div>
-                                            <span class="font-medium text-[15px] md:text-[16px]">+91 98765 43210</span>
+                                            <span class="font-medium text-[15px] md:text-[16px]">+91 98797 67019</span>
                                         </a>
-                                        <a href="mailto:rajesh@gminternational.com" class="flex items-center justify-center md:justify-start gap-3 text-[#333333] hover:text-[#1E3A5F] transition-colors">
+                                        <a href="mailto:naazscrap@yahoo.com" class="flex items-center justify-center md:justify-start gap-3 text-[#333333] hover:text-[#1E3A5F] transition-colors">
                                             <div class="w-10 h-10 bg-[#1E3A5F] rounded-full flex items-center justify-center">
                                                 <i class="fa-solid fa-envelope text-white text-[14px]"></i>
                                             </div>
-                                            <span class="font-medium text-[15px] md:text-[16px]">rajesh@gminternational.com</span>
+                                            <span class="font-medium text-[15px] md:text-[16px]">naazscrap@yahoo.com</span>
                                         </a>
-                                        <a href="https://wa.me/919876543210" target="_blank" class="flex items-center justify-center md:justify-start gap-3 text-[#333333] hover:text-[#25D366] transition-colors">
+                                        <a href="https://wa.me/919879767019" target="_blank" class="flex items-center justify-center md:justify-start gap-3 text-[#333333] hover:text-[#25D366] transition-colors">
                                             <div class="w-10 h-10 bg-[#25D366] rounded-full flex items-center justify-center">
                                                 <i class="fa-brands fa-whatsapp text-white text-[16px]"></i>
                                             </div>
@@ -3679,7 +3846,7 @@
                                     <i class="fa-solid fa-user text-[#C9A227]"></i> About
                                 </h3>
                                 <p class="text-[#666666] text-[14px] md:text-[15px] leading-[1.8] text-justify">
-                                    A visionary entrepreneur with a passion for global trade, Rajesh Kumar founded GM International LLP with the mission to connect Indian metal recycling excellence with global markets. His deep understanding of commodity markets, combined with a commitment to ethical business practices, has established the company as a trusted name in international metal scrap trading.
+                                    A visionary entrepreneur with deep expertise in metal recycling, Mr. Arifbhai Hamirbhai Nakani founded NAAZ SCRAP & GM ENTERPRISE in 2009 with the mission to revolutionize metal scrap trading in India. His commitment to quality, ethical practices, and customer satisfaction has positioned the company as a trusted partner for sourcing premium metal scrap from USA, UK, Europe, and Middle East markets.
                                 </p>
                             </div>
 
@@ -3735,6 +3902,29 @@
                                     </a>
                                 </div>
                             </div>
+
+                            <!-- Co-Director Section -->
+                            <div class="mt-10 pt-8 border-t-2 border-[#E8E8E8]">
+                                <div class="bg-gradient-to-r from-[#0277BD]/5 to-[#C9A227]/5 p-6 rounded-lg border border-[#E8E8E8]">
+                                    <span class="inline-block bg-[#0277BD]/10 text-[#0277BD] font-poppins font-semibold text-[11px] tracking-[2px] uppercase px-3 py-1.5 rounded-full mb-3">Co-Director</span>
+                                    <h3 class="font-poppins font-bold text-[20px] md:text-[24px] text-[#1A1A1A] mb-1">Nakani Varis Arifbhai</h3>
+                                    <p class="text-[#1E3A5F] font-medium text-[14px] md:text-[15px] mb-4">Strategic Operations & Business Development</p>
+                                    
+                                    <!-- Co-Director Contact -->
+                                    <div class="space-y-2 mb-4">
+                                        <a href="tel:+919316590507" class="flex items-center gap-3 text-[#333333] hover:text-[#0277BD] transition-colors">
+                                            <div class="w-8 h-8 bg-[#0277BD] rounded-full flex items-center justify-center">
+                                                <i class="fa-solid fa-phone text-white text-[12px]"></i>
+                                            </div>
+                                            <span class="font-medium text-[14px]">+91 93165 90507</span>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="text-[#666666] text-[13px] leading-[1.7] text-justify">
+                                        Varis brings fresh perspectives and modern business strategies to the company, focusing on digital transformation, operational efficiency, and expanding international partnerships. His expertise in logistics and supply chain management ensures seamless execution of all import-export operations.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -3749,7 +3939,7 @@
                                     class="block font-poppins font-semibold text-[11px] text-[#888888] tracking-[2px]">HEAD
                                     OFFICE</span>
                                 <div class="mt-[12px] text-[#333333] text-[15px] leading-[1.8]">
-                                    <p class="font-bold text-[16px] text-[#1A1A1A]">GM International LLP</p>
+                                    <p class="font-bold text-[16px] text-[#1A1A1A]">NAAZ SCRAP & GM ENTERPRISE</p>
                                     <p>12th Floor, Tower B, Business Hub</p>
                                     <p>Andheri-Kurla Road, Sakinaka</p>
                                     <p>Mumbai, Maharashtra - 400072, India</p>
@@ -3763,7 +3953,8 @@
                                     class="block font-poppins font-semibold text-[11px] text-[#888888] tracking-[2px]">CALL
                                     US</span>
                                 <div class="mt-[12px] space-y-2">
-                                    <p class="font-semibold text-[18px] text-[#1A1A1A]">+91 98XXX XXXXX</p>
+                                    <p class="font-semibold text-[18px] text-[#1A1A1A]">+91 98797 67019 (Arifbhai)</p>
+                                    <p class="font-semibold text-[18px] text-[#1A1A1A]">+91 93165 90507 (Varis)</p>
                                     <p class="text-[12px] text-[#888888] mt-2 italic">Mon-Sat: 9:00 AM - 6:00 PM IST</p>
                                 </div>
                             </div>
@@ -3775,8 +3966,8 @@
                                     class="block font-poppins font-semibold text-[11px] text-[#888888] tracking-[2px]">EMAIL
                                     US</span>
                                 <div class="mt-[12px]">
-                                    <a href="mailto:info@company.com"
-                                        class="font-medium text-[16px] text-[#1E3A5F] block">info@company.com</a>
+                                    <a href="mailto:naazscrap@yahoo.com"
+                                        class="font-medium text-[16px] text-[#1E3A5F] block">naazscrap@yahoo.com</a>
                                     <p class="text-[12px] text-[#888888] pt-2">We respond within 24 hours</p>
                                 </div>
                             </div>
@@ -3954,11 +4145,11 @@
                         </div>
                         <div class="flex gap-3 text-[14px] text-white/70 items-center">
                             <i class="fa-solid fa-phone text-[#C9A227]"></i>
-                            <div>+91 98XXX XXXXX</div>
+                            <div>+91 98797 67019 / +91 93165 90507</div>
                         </div>
                         <div class="flex gap-3 text-[14px] text-white/70 items-center">
                             <i class="fa-solid fa-envelope text-[#C9A227]"></i>
-                            <div>info@company.com</div>
+                            <div>naazscrap@yahoo.com</div>
                         </div>
                         <div class="flex gap-3 text-[14px] text-white/70 items-center">
                             <i class="fa-solid fa-clock text-[#C9A227]"></i>
@@ -3987,7 +4178,7 @@
             <!-- Bottom Bar -->
             <div
                 class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-[13px] text-white/50 text-center md:text-left">
-                <div>© 2026 GM International LLP. All rights reserved.</div>
+                <div>© 2026 NAAZ SCRAP & GM ENTERPRISE. All rights reserved.</div>
                 <div>Made with ❤️ in India 🇮🇳</div>
                 <div class="flex flex-wrap justify-center gap-6">
                     <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
