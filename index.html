@@ -4197,7 +4197,7 @@
                             <img src="assets/images/gallery-10.jpg" alt="Video Thumbnail"
                                 class="w-full h-full object-cover">
                             <div
-                                class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition-colors cursor-pointer">
+                                class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition-colors">
                                 <div
                                     class="w-16 h-16 md:w-20 md:h-20 bg-[#C9A227] hover:bg-[#B8911F] rounded-full flex items-center justify-center transition-all group-hover:scale-110">
                                     <i class="fa-solid fa-play text-white text-2xl md:text-3xl ml-1"></i>
@@ -4210,6 +4210,9 @@
                             <p class="text-[14px] md:text-[15px] text-[#666666]">
                                 Tour of our state-of-the-art metal scrap processing facility
                             </p>
+                            <p class="text-[12px] text-[#999999] mt-2 italic">
+                                Video coming soon
+                            </p>
                         </div>
                     </div>
 
@@ -4219,7 +4222,7 @@
                             <img src="assets/images/gallery-7.jpg" alt="Video Thumbnail"
                                 class="w-full h-full object-cover">
                             <div
-                                class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition-colors cursor-pointer">
+                                class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition-colors">
                                 <div
                                     class="w-16 h-16 md:w-20 md:h-20 bg-[#C9A227] hover:bg-[#B8911F] rounded-full flex items-center justify-center transition-all group-hover:scale-110">
                                     <i class="fa-solid fa-play text-white text-2xl md:text-3xl ml-1"></i>
@@ -4232,6 +4235,9 @@
                             <p class="text-[14px] md:text-[15px] text-[#666666]">
                                 See how we ensure the highest quality standards for all our products
                             </p>
+                            <p class="text-[12px] text-[#999999] mt-2 italic">
+                                Video coming soon
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -4241,24 +4247,28 @@
 
     <!-- Gallery Modal -->
     <div id="galleryModal" class="hidden fixed inset-0 bg-black/90 z-[9999] flex items-center justify-center p-4"
+        role="dialog" aria-modal="true" aria-label="Image gallery viewer"
         onclick="closeGalleryModal()">
         <button class="absolute top-4 right-4 text-white text-4xl hover:text-[#C9A227] transition-colors"
-            onclick="closeGalleryModal()">
+            aria-label="Close gallery"
+            onclick="event.stopPropagation(); closeGalleryModal()">
             <i class="fa-solid fa-xmark"></i>
         </button>
         <button
             class="absolute left-4 top-1/2 -translate-y-1/2 text-white text-4xl hover:text-[#C9A227] transition-colors"
+            aria-label="Previous image"
             onclick="event.stopPropagation(); prevGalleryImage()">
             <i class="fa-solid fa-chevron-left"></i>
         </button>
         <button
             class="absolute right-4 top-1/2 -translate-y-1/2 text-white text-4xl hover:text-[#C9A227] transition-colors"
+            aria-label="Next image"
             onclick="event.stopPropagation(); nextGalleryImage()">
             <i class="fa-solid fa-chevron-right"></i>
         </button>
-        <img id="galleryModalImage" src="" alt="Gallery Image" class="max-w-full max-h-full object-contain"
+        <img id="galleryModalImage" src="" alt="Gallery facility image" class="max-w-full max-h-full object-contain"
             onclick="event.stopPropagation()">
-        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-lg">
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-lg" aria-live="polite">
             <span id="galleryCounter"></span>
         </div>
     </div>
