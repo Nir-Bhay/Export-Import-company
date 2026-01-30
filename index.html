@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leading Metal Scrap Traders | NAAZ SCRAP & GM ENTERPRISE</title>
+    <title>Leading Metal Scrap Traders | GM ENTERPRISE</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -377,7 +377,7 @@
         }
 
         .animate-scroll {
-            animation: scroll 40s linear infinite;
+            animation: scroll 15s linear infinite;
         }
 
         .carousel-track:hover {
@@ -422,10 +422,10 @@
             <div class="max-w-container h-full flex items-center justify-between py-1 md:py-3">
                 <!-- Logo Zone -->
                 <div class="flex items-center gap-3 md:gap-4">
-                    <img src="assets/images/logo.png" alt="Naaz Scrap Logo" class="h-[70px] md:h-20 w-auto">
+                    <img src="assets/images/logo.png" alt="GM Enterprise Logo" class="h-[70px] md:h-20 w-auto">
                     <div class="hidden sm:flex flex-col">
                         <span
-                            class="font-poppins font-bold text-lg md:text-2xl tracking-tight text-[#C9A227] uppercase">NAAZ SCRAP & GM ENTERPRISE</span>
+                            class="font-poppins font-bold text-lg md:text-2xl tracking-tight text-[#C9A227] uppercase">GM ENTERPRISE</span>
                         <div class="w-full h-[1.5px] bg-[#1A1A1A] mt-0.5 opacity-80"></div>
                     </div>
                 </div>
@@ -492,7 +492,7 @@
     <div id="mobile-menu" class="mobile-menu">
         <div class="flex justify-between items-center mb-10">
             <div class="flex flex-col">
-                <span class="font-poppins font-bold text-xl text-[#C9A227] uppercase">NAAZ SCRAP</span>
+                <span class="font-poppins font-bold text-xl text-[#C9A227] uppercase">GM ENTERPRISE</span>
                 <div class="w-full h-[1.5px] bg-[#1A1A1A] mt-0.5 opacity-80"></div>
             </div>
             <button class="text-2xl text-gray-500" onclick="toggleMobileMenu()">
@@ -526,7 +526,7 @@
             class="relative min-h-[600px] md:h-[720px] w-full overflow-hidden bg-gray-900 flex flex-col justify-center">
             <!-- Background Image with Overlay -->
             <div class="absolute inset-0 z-0">
-                <img src="assets/images/hero-bg.png" alt="Global Trade" class="w-full h-full object-cover">
+                <img src="assets/images/hero-bg.png" alt="Global Trade" class="w-full h-full object-cover" fetchpriority="high" decoding="async">
                 <div class="absolute inset-0 hero-gradient"></div>
             </div>
 
@@ -664,7 +664,7 @@
                         class="text-[#1A1A1A] font-poppins font-bold text-[28px] md:text-[38px] leading-[1.3] mb-6 text-center lg:text-left">
                         Leading Metal Scrap Traders Since 2009</h2>
                     <p class="text-[15px] md:text-[16px] leading-[1.8] text-[#4A4A4A] mb-4 text-justify">
-                        With over 15 years in the metal scrap export-import industry, NAAZ SCRAP & GM ENTERPRISE has
+                        With over 15 years in the metal scrap export-import industry, GM ENTERPRISE has
                         established itself as a trusted name in global metal recycling trade. We specialize in Copper,
                         Aluminium, Brass, Zinc, Lead, and Steel scrap.
                     </p>
@@ -694,7 +694,7 @@
                     </div>
                 </div>
                 <div class="w-full lg:w-[45%] relative">
-                    <img src="assets/images/about-facility.png" alt="Our Facility"
+                    <img src="assets/images/about-facility.png" alt="Our Facility" loading="lazy" decoding="async"
                         class="w-full aspect-[4/3] object-cover rounded-[8px] border border-[#E0E0E0]">
                     <div
                         class="absolute bottom-[-15px] right-[15px] md:bottom-[-20px] md:right-[-20px] bg-[#C9A227] text-white px-[16px] py-[10px] md:px-[20px] md:py-[12px] font-poppins font-semibold text-[13px] md:text-[14px] rounded-[4px] shadow-lg">
@@ -721,8 +721,7 @@
                     <div
                         class="product-card bg-white border border-[#E8E8E8] rounded-[12px] overflow-hidden flex flex-col h-[380px]">
                         <div class="h-[55%] relative overflow-hidden">
-                            <img src="assets/images/product-copper.png" alt="Copper Scrap"
-                                class="w-full h-full object-cover">
+                            <img src="assets/images/product-copper.png" alt="Copper Scrap" loading="lazy" decoding="async" class="w-full h-full object-cover">
                             <div
                                 class="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center">
                                 <i class="fa-solid fa-recycle text-[#B87333]"></i>
@@ -742,8 +741,7 @@
                     <div
                         class="product-card bg-white border border-[#E8E8E8] rounded-[12px] overflow-hidden flex flex-col h-[380px]">
                         <div class="h-[55%] relative overflow-hidden">
-                            <img src="assets/images/product-aluminium.png" alt="Aluminium Scrap"
-                                class="w-full h-full object-cover">
+                            <img src="assets/images/product-aluminium.png" alt="Aluminium Scrap" loading="lazy" decoding="async" class="w-full h-full object-cover">
                             <div
                                 class="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center">
                                 <i class="fa-solid fa-recycle text-[#A8A9AD]"></i>
@@ -763,8 +761,7 @@
                     <div
                         class="product-card bg-white border border-[#E8E8E8] rounded-[12px] overflow-hidden flex flex-col h-[380px]">
                         <div class="h-[55%] relative overflow-hidden">
-                            <img src="assets/images/product-brass.png" alt="Brass Scrap"
-                                class="w-full h-full object-cover">
+                            <img src="assets/images/product-brass.png" alt="Brass Scrap" loading="lazy" decoding="async" class="w-full h-full object-cover">
                             <div
                                 class="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center">
                                 <i class="fa-solid fa-recycle text-[#C9A227]"></i>
@@ -785,8 +782,7 @@
                     <div
                         class="product-card bg-white border border-[#E8E8E8] rounded-[12px] overflow-hidden flex flex-col h-[380px]">
                         <div class="h-[55%] relative overflow-hidden">
-                            <img src="assets/images/product-zinc.png" alt="Zinc Scrap"
-                                class="w-full h-full object-cover">
+                            <img src="assets/images/product-zinc.png" alt="Zinc Scrap" loading="lazy" decoding="async" class="w-full h-full object-cover">
                             <div
                                 class="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center">
                                 <i class="fa-solid fa-recycle text-[#7D7F7D]"></i>
@@ -806,8 +802,7 @@
                     <div
                         class="product-card bg-white border border-[#E8E8E8] rounded-[12px] overflow-hidden flex flex-col h-[380px]">
                         <div class="h-[55%] relative overflow-hidden">
-                            <img src="assets/images/product-lead.png" alt="Lead Scrap"
-                                class="w-full h-full object-cover">
+                            <img src="assets/images/product-lead.png" alt="Lead Scrap" loading="lazy" decoding="async" class="w-full h-full object-cover">
                             <div
                                 class="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center">
                                 <i class="fa-solid fa-recycle text-[#4A4A4A]"></i>
@@ -827,8 +822,7 @@
                     <div
                         class="product-card bg-white border border-[#E8E8E8] rounded-[12px] overflow-hidden flex flex-col h-[380px]">
                         <div class="h-[55%] relative overflow-hidden">
-                            <img src="assets/images/product-gunmetal.png" alt="Gun Metal & MS Scrap"
-                                class="w-full h-full object-cover">
+                            <img src="assets/images/product-gunmetal.png" alt="Gun Metal & MS Scrap" loading="lazy" decoding="async" class="w-full h-full object-cover">
                             <div
                                 class="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center">
                                 <i class="fa-solid fa-recycle text-[#434343]"></i>
@@ -1050,7 +1044,7 @@
                 <div class="mb-10 md:mb-[56px] text-center md:text-left">
                     <div class="text-[#C9A227] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">WHY
                         PARTNER WITH US</div>
-                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[28px] md:text-[36px]">The Naaz Scrap
+                    <h2 class="text-[#1A1A1A] font-poppins font-bold text-[28px] md:text-[36px]">The GM Enterprise
                         Advantage</h2>
                 </div>
 
@@ -1156,7 +1150,7 @@
                     <!-- News 1 -->
                     <div class="border border-[#E8E8E8] rounded-[8px] overflow-hidden group">
                         <div class="h-[180px] overflow-hidden">
-                            <img src="assets/images/product-copper.png"
+                            <img src="assets/images/product-copper.png" loading="lazy" decoding="async"
                                 alt="News 1"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
@@ -1173,7 +1167,7 @@
                     <!-- News 2 -->
                     <div class="border border-[#E8E8E8] rounded-[8px] overflow-hidden group">
                         <div class="h-[180px] overflow-hidden">
-                            <img src="assets/images/about-facility.png"
+                            <img src="assets/images/about-facility.png" loading="lazy" decoding="async"
                                 alt="News 2"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
@@ -1246,7 +1240,7 @@
         <!-- PAGE HERO -->
         <section class="relative h-[300px] md:h-[420px] w-full overflow-hidden bg-gray-900">
             <div class="absolute inset-0 z-0">
-                <img src="assets/images/about-operations.png"
+                <img src="assets/images/about-operations.png" loading="lazy" decoding="async"
                     alt="About Us" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-[#1E3A5F]/70"></div>
             </div>
@@ -1298,7 +1292,7 @@
                 <div class="w-full lg:w-[40%] relative">
                     <div
                         class="relative w-full aspect-[4/5] md:aspect-[3/4] rounded-lg border border-[#E0E0E0] overflow-hidden">
-                        <img src="assets/images/about-team.png" alt="Team" class="w-full h-full object-cover">
+                        <img src="assets/images/about-team.png" alt="Team" loading="lazy" decoding="async" class="w-full h-full object-cover">
                         <div
                             class="absolute bottom-6 right-6 bg-[#C9A227] text-white px-6 py-3.5 rounded-sm font-poppins font-semibold text-[16px] shadow-xl">
                             Since 2009
@@ -1306,7 +1300,7 @@
                     </div>
                     <div
                         class="absolute -bottom-10 -left-10 w-[60%] aspect-video rounded-lg border-4 border-white shadow-2xl overflow-hidden mt-6 lg:mt-0 hidden xl:block">
-                        <img src="assets/images/about-operations.png" alt="Operations"
+                        <img src="assets/images/about-operations.png" alt="Operations" loading="lazy" decoding="async"
                             class="w-full h-full object-cover">
                     </div>
                 </div>
@@ -1482,7 +1476,7 @@
                     <div class="bg-[#F5F7FA] rounded-lg p-8">
                         <div
                             class="w-[120px] h-[120px] bg-gray-300 rounded-full mx-auto overflow-hidden border-2 border-[#E8E8E8]">
-                            <img src="assets/images/team-ceo.png" alt="CEO" class="w-full h-full object-cover">
+                            <img src="assets/images/team-ceo.png" alt="CEO" loading="lazy" decoding="async" class="w-full h-full object-cover">
                         </div>
                         <h3 class="mt-5 font-poppins font-semibold text-[18px] md:text-[20px] text-[#1A1A1A]">[Founder
                             Name]</h3>
@@ -1495,7 +1489,7 @@
                     <div class="bg-[#F5F7FA] rounded-lg p-8">
                         <div
                             class="w-[120px] h-[120px] bg-gray-300 rounded-full mx-auto overflow-hidden border-2 border-[#E8E8E8]">
-                            <img src="assets/images/team-ops.png" alt="Ops" class="w-full h-full object-cover">
+                            <img src="assets/images/team-ops.png" alt="Ops" loading="lazy" decoding="async" class="w-full h-full object-cover">
                         </div>
                         <h3 class="mt-5 font-poppins font-semibold text-[18px] md:text-[20px] text-[#1A1A1A]">[Name]
                         </h3>
@@ -1508,7 +1502,7 @@
                     <div class="bg-[#F5F7FA] rounded-lg p-8 sm:col-span-2 lg:col-span-1">
                         <div
                             class="w-[120px] h-[120px] bg-gray-300 rounded-full mx-auto overflow-hidden border-2 border-[#E8E8E8]">
-                            <img src="assets/images/team-bd.png" alt="BD" class="w-full h-full object-cover">
+                            <img src="assets/images/team-bd.png" alt="BD" loading="lazy" decoding="async" class="w-full h-full object-cover">
                         </div>
                         <h3 class="mt-5 font-poppins font-semibold text-[18px] md:text-[20px] text-[#1A1A1A]">[Name]
                         </h3>
@@ -1532,24 +1526,24 @@
                 <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
                     <div
                         class="bg-white border border-[#E8E8E8] rounded-lg p-6 md:p-8 flex flex-col items-center justify-center">
-                        <div class="h-[50px] md:h-[60px] flex items-center"><img src="assets/images/cert-iso.png"
-                                alt="ISO" class="h-full grayscale opacity-70"></div>
+                        <div class="h-[50px] md:h-[60px] flex items-center"><img src="assets/images/cert-iso.png" loading="lazy" decoding="async"
+                            alt="ISO" class="h-full grayscale opacity-70"></div>
                         <div class="mt-4 font-poppins font-semibold text-[13px] md:text-[15px] text-[#1A1A1A]">ISO
                             9001:2015</div>
                         <p class="mt-2 text-[11px] md:text-[12px] text-[#888888]">Quality Management System</p>
                     </div>
                     <div
                         class="bg-white border border-[#E8E8E8] rounded-lg p-6 md:p-8 flex flex-col items-center justify-center">
-                        <div class="h-[50px] md:h-[60px] flex items-center"><img src="assets/images/cert-iec.png"
-                                alt="IEC" class="h-full grayscale opacity-70"></div>
+                        <div class="h-[50px] md:h-[60px] flex items-center"><img src="assets/images/cert-iec.png" loading="lazy" decoding="async"
+                            alt="IEC" class="h-full grayscale opacity-70"></div>
                         <div class="mt-4 font-poppins font-semibold text-[13px] md:text-[15px] text-[#1A1A1A]">IEC
                             Registration</div>
                         <p class="mt-2 text-[11px] md:text-[12px] text-[#888888]">Import Export Code</p>
                     </div>
                     <div
                         class="bg-white border border-[#E8E8E8] rounded-lg p-6 md:p-8 flex flex-col items-center justify-center">
-                        <div class="h-[50px] md:h-[60px] flex items-center"><img src="assets/images/cert-gst.png"
-                                alt="GST" class="h-full grayscale opacity-70"></div>
+                        <div class="h-[50px] md:h-[60px] flex items-center"><img src="assets/images/cert-gst.png" loading="lazy" decoding="async"
+                            alt="GST" class="h-full grayscale opacity-70"></div>
                         <div class="mt-4 font-poppins font-semibold text-[13px] md:text-[15px] text-[#1A1A1A]">GST
                             Compliant</div>
                         <p class="mt-2 text-[11px] md:text-[12px] text-[#888888]">Tax Registration</p>
@@ -1579,7 +1573,7 @@
             <div class="max-w-container flex flex-col lg:flex-row items-center lg:items-start gap-12">
                 <div class="w-full lg:w-[40%] text-center lg:text-left">
                     <div class="text-[#C9A227] font-poppins font-medium text-[12px] tracking-[3px] uppercase mb-3">THE
-                        NAAZ SCRAP DIFFERENCE</div>
+                        GM ENTERPRISE DIFFERENCE</div>
                     <h2 class="text-[#1A1A1A] font-poppins font-bold text-[28px] md:text-[34px] leading-[1.3] mb-5">Why
                         Partner With Us?</h2>
                     <p class="text-[15px] md:text-[16px] text-[#666666]">We combine decades of experience with modern
@@ -2837,70 +2831,70 @@
                     <div class="carousel-track flex gap-6 animate-scroll">
                         <!-- Images from update images folder -->
                         <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
-                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.04 AM.jpeg" 
-                                 alt="Metal Scrap 1" 
-                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                               <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.04 AM.jpeg" loading="lazy" decoding="async"
+                                   alt="Metal Scrap 1" 
+                                   class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
                         </div>
                         <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
-                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.05 AM (1).jpeg" 
-                                 alt="Metal Scrap 2" 
-                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                               <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.05 AM (1).jpeg" loading="lazy" decoding="async"
+                                   alt="Metal Scrap 2" 
+                                   class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
                         </div>
                         <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
-                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.05 AM (2).jpeg" 
-                                 alt="Metal Scrap 3" 
-                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                               <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.05 AM (2).jpeg" loading="lazy" decoding="async"
+                                   alt="Metal Scrap 3" 
+                                   class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
                         </div>
                         <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
-                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.05 AM.jpeg" 
-                                 alt="Metal Scrap 4" 
-                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                               <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.05 AM.jpeg" loading="lazy" decoding="async"
+                                   alt="Metal Scrap 4" 
+                                   class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
                         </div>
                         <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
-                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.06 AM (1).jpeg" 
-                                 alt="Metal Scrap 5" 
-                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                               <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.06 AM (1).jpeg" loading="lazy" decoding="async"
+                                   alt="Metal Scrap 5" 
+                                   class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
                         </div>
                         <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
-                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.06 AM (2).jpeg" 
-                                 alt="Metal Scrap 6" 
-                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                               <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.06 AM (2).jpeg" loading="lazy" decoding="async"
+                                   alt="Metal Scrap 6" 
+                                   class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
                         </div>
                         <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
-                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.06 AM.jpeg" 
-                                 alt="Metal Scrap 7" 
-                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                               <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.06 AM.jpeg" loading="lazy" decoding="async"
+                                   alt="Metal Scrap 7" 
+                                   class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
                         </div>
                         <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
-                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.07 AM (1).jpeg" 
-                                 alt="Metal Scrap 8" 
-                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                               <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.07 AM (1).jpeg" loading="lazy" decoding="async"
+                                   alt="Metal Scrap 8" 
+                                   class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
                         </div>
                         <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
-                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.07 AM (2).jpeg" 
-                                 alt="Metal Scrap 9" 
-                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                               <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.07 AM (2).jpeg" loading="lazy" decoding="async"
+                                   alt="Metal Scrap 9" 
+                                   class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
                         </div>
                         <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
-                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.07 AM.jpeg" 
-                                 alt="Metal Scrap 10" 
-                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                               <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.07 AM.jpeg" loading="lazy" decoding="async"
+                                   alt="Metal Scrap 10" 
+                                   class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
                         </div>
                         <!-- Duplicate images for seamless loop -->
                         <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
-                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.04 AM.jpeg" 
-                                 alt="Metal Scrap 1" 
-                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                               <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.04 AM.jpeg" loading="lazy" decoding="async"
+                                   alt="Metal Scrap 1" 
+                                   class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
                         </div>
                         <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
-                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.05 AM (1).jpeg" 
-                                 alt="Metal Scrap 2" 
-                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                               <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.05 AM (1).jpeg" loading="lazy" decoding="async"
+                                   alt="Metal Scrap 2" 
+                                   class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
                         </div>
                         <div class="carousel-item flex-shrink-0 w-[300px] md:w-[350px] rounded-lg overflow-hidden shadow-lg">
-                            <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.05 AM (2).jpeg" 
-                                 alt="Metal Scrap 3" 
-                                 class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
+                               <img src="assets/update images/WhatsApp Image 2026-01-28 at 12.55.05 AM (2).jpeg" loading="lazy" decoding="async"
+                                   alt="Metal Scrap 3" 
+                                   class="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition-transform duration-500">
                         </div>
                     </div>
                 </div>
@@ -3804,14 +3798,14 @@
                                 <!-- Owner Photo -->
                                 <div class="flex-shrink-0">
                                     <div class="w-[180px] h-[180px] md:w-[220px] md:h-[220px] rounded-full overflow-hidden border-4 border-[#C9A227] shadow-xl">
-                                        <img src="assets/images/team-1.jpg" alt="Owner - GM International LLP" class="w-full h-full object-cover">
+                                        <img src="assets/images/director.jpg" alt="Mr. Arifbhai Hamirbhai Nakani - Director, GM Enterprise" class="w-full h-full object-cover">
                                     </div>
                                 </div>
                                 <!-- Owner Info -->
                                 <div class="text-center md:text-left flex-1">
                                     <span class="inline-block bg-[#C9A227]/10 text-[#C9A227] font-poppins font-semibold text-[11px] md:text-[12px] tracking-[2px] uppercase px-4 py-1.5 rounded-full mb-3">Owner & Founder</span>
                                     <h2 class="font-poppins font-bold text-[28px] md:text-[34px] text-[#1A1A1A] leading-tight">Mr. Arifbhai Hamirbhai Nakani</h2>
-                                    <p class="text-[#1E3A5F] font-medium text-[16px] md:text-[18px] mt-1">NAAZ SCRAP & GM ENTERPRISE</p>
+                                    <p class="text-[#1E3A5F] font-medium text-[16px] md:text-[18px] mt-1">GM ENTERPRISE</p>
                                     
                                     <!-- Direct Contact Details -->
                                     <div class="mt-6 space-y-3">
@@ -3846,7 +3840,7 @@
                                     <i class="fa-solid fa-user text-[#C9A227]"></i> About
                                 </h3>
                                 <p class="text-[#666666] text-[14px] md:text-[15px] leading-[1.8] text-justify">
-                                    A visionary entrepreneur with deep expertise in metal recycling, Mr. Arifbhai Hamirbhai Nakani founded NAAZ SCRAP & GM ENTERPRISE in 2009 with the mission to revolutionize metal scrap trading in India. His commitment to quality, ethical practices, and customer satisfaction has positioned the company as a trusted partner for sourcing premium metal scrap from USA, UK, Europe, and Middle East markets.
+                                    A visionary entrepreneur with deep expertise in metal recycling, Mr. Arifbhai Hamirbhai Nakani founded GM ENTERPRISE in 2009 with the mission to revolutionize metal scrap trading in India. His commitment to quality, ethical practices, and customer satisfaction has positioned the company as a trusted partner for sourcing premium metal scrap from USA, UK, Europe, and Middle East markets.
                                 </p>
                             </div>
 
@@ -3939,10 +3933,10 @@
                                     class="block font-poppins font-semibold text-[11px] text-[#888888] tracking-[2px]">HEAD
                                     OFFICE</span>
                                 <div class="mt-[12px] text-[#333333] text-[15px] leading-[1.8]">
-                                    <p class="font-bold text-[16px] text-[#1A1A1A]">NAAZ SCRAP & GM ENTERPRISE</p>
-                                    <p>12th Floor, Tower B, Business Hub</p>
-                                    <p>Andheri-Kurla Road, Sakinaka</p>
-                                    <p>Mumbai, Maharashtra - 400072, India</p>
+                                    <p class="font-bold text-[16px] text-[#1A1A1A]">GM ENTERPRISE</p>
+                                    <p>126 FF, Sadguru Empire</p>
+                                    <p>Dhrab, Mundra, Kachchh</p>
+                                    <p>Gujarat - 370421, India</p>
                                 </div>
                             </div>
 
@@ -3980,7 +3974,7 @@
         <!-- Map Section -->
         <section class="mt-12 md:mt-[80px] relative h-[300px] md:h-[420px] bg-gray-100 border-t border-[#E8E8E8]">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120658.26189569033!2d72.82736165842287!3d19.082522321453472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14823.927421474045!2d69.71!3d22.84!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39511e2a7a2c6c25%3A0x8c55f65774c8d0c8!2sMundra%2C%20Gujarat%20370421!5e0!3m2!1sen!2sin!4v1706600000000!5m2!1sen!2sin"
                 width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
         </section>
@@ -4141,7 +4135,7 @@
                     <div class="flex flex-col gap-5">
                         <div class="flex gap-3 text-[14px] text-white/70 leading-[1.6]">
                             <i class="fa-solid fa-location-dot text-[#C9A227] mt-1"></i>
-                            <div>12th Floor, Tower B, Business Hub<br>Andheri-Kurla Road, Mumbai - 400072</div>
+                            <div>126 FF, Sadguru Empire, Dhrab<br>Mundra, Kachchh, Gujarat - 370421</div>
                         </div>
                         <div class="flex gap-3 text-[14px] text-white/70 items-center">
                             <i class="fa-solid fa-phone text-[#C9A227]"></i>
@@ -4178,7 +4172,7 @@
             <!-- Bottom Bar -->
             <div
                 class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-[13px] text-white/50 text-center md:text-left">
-                <div>© 2026 NAAZ SCRAP & GM ENTERPRISE. All rights reserved.</div>
+                <div>© 2026 GM ENTERPRISE. All rights reserved.</div>
                 <div>Made with ❤️ in India 🇮🇳</div>
                 <div class="flex flex-wrap justify-center gap-6">
                     <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
