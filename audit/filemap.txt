@@ -1,0 +1,24 @@
+Audit file map - grep results
+Binary file assets/images/product-copper.png matches
+index.html:402:                        <i class="fa-solid fa-envelope text-[#C9A227] text-[14px]"></i> naazscrap@yahoo.com
+index.html:409:                    <span class="text-nowrap">IEC: 3712000472</span>
+index.html:627:                            <div class="font-medium text-[13px] md:text-[15px] text-white">IEC Registered</div>
+index.html:986:                                <i class="fa-solid fa-check text-[#2E7D32]"></i> Export documentation (IEC, GST, Phyto)
+index.html:1019:                        <span class="font-poppins font-bold text-[12px] md:text-[14px] text-[#1E3A5F] tracking-wide">IEC
+index.html:1228:                        <i class="fa-solid fa-envelope text-[16px] md:text-[18px]"></i> naazscrap@yahoo.com
+index.html:1270:                        <p class="text-justify">Founded in 2009, [COMPANY NAME] began with a simple vision: to become India's trusted partner
+index.html:1522:                            alt="IEC" class="h-full grayscale opacity-70"></div>
+index.html:1523:                        <div class="mt-4 font-poppins font-semibold text-[13px] md:text-[15px] text-[#1A1A1A]">IEC
+index.html:1639:                    <div class="flex items-center gap-2"><i class="fa-solid fa-envelope"></i> naazscrap@yahoo.com</div>
+index.html:2167:                        naazscrap@yahoo.com</div>
+index.html:2714:                        IEC REGISTERED</div>
+index.html:2870:                        naazscrap@yahoo.com</div>
+index.html:3842:                        <span class="text-white font-medium text-[15px] md:text-[16px]">naazscrap@yahoo.com</span>
+index.html:3878:                                        <a href="mailto:naazscrap@yahoo.com" class="flex items-center justify-center md:justify-start gap-3 text-[#333333] hover:text-[#1E3A5F] transition-colors">
+index.html:3882:                                            <span class="font-medium text-[15px] md:text-[16px]">naazscrap@yahoo.com</span>
+index.html:4026:                                    <a href="mailto:naazscrap@yahoo.com"
+index.html:4027:                                        class="font-medium text-[16px] text-[#1E3A5F] block">naazscrap@yahoo.com</a>
+index.html:4040:                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.5!2d69.7219!3d22.8372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39511e2a7a2c6c25%3A0x8c55f65774c8d0c8!2sSadguru%20Empire%2C%20Dhrab%2C%20Mundra%2C%20Kachchh%2C%20Gujarat%20370421!5e0!3m2!1sen!2sin!4v1706600000000!5m2!1sen!2sin"
+index.html:4348:                        <div>IEC NO.: 3712000472</div>
+index.html:4445:                            <div>naazscrap@yahoo.com</div>
+index.html:4462:                    IEC Registered</div>
